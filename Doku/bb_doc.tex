@@ -63,6 +63,41 @@ aboveskip=1.2em,
 
 \tableofcontents
 
+
+\chapter{Item - List}
+\begin{tabular}{l l l l l}
+	Item & \# & Weight[g] & Weblink & Picture\\
+	OpenCR Board (Controlling the motors, IMU)&1&60&\mylink{https://github.com/ROBOTIS-GIT/OpenCR/wiki/Hardware_Specification\#specification}{github\_wiki} 
+	&\includegraphics[width=0.1\textwidth]{img/opencr.png}  \\
+	
+	
+	UpBoard (Main PC)&1 &80 & \mylink{arg1}{???}
+	&\includegraphics[width=0.1\textwidth]{img/upboard.jpg} \\
+	
+	Intel RealSense R200&1& 9.4& \mylink{https://www.intel.de/content/www/de/de/support/articles/000023534/emerging-technologies/intel-realsense-technology.html}{datasheet}&
+	\includegraphics[width=0.1\textwidth]{img/r200.jpg} \\
+	
+	LaserSensor&1 & & & \\
+	
+	Battery: LI-PO 11.1 1800mAh LB-12 19&1& & & \\
+	Turtlebot3 Layers()&4& & & \\
+	XM430-W350-R Dynamixel (Motors)&3& & & \\
+	
+	Ball (aluminium, diameter: 140mm)&1&400 & & \\
+	
+	Omni wheels(dia: 60mm, thickness:25mm)&3&46 &\mylink{http://krause-robotics.de/xtshop/Antriebe/Raeder/Allseitenraeder/Allseitenraeder-60-mm:::99_100_106_114.html}{buy here} &  	\includegraphics[width=0.1\textwidth]{img/wheel.jpg}   \\
+	
+
+	
+\end{tabular}
+
+
+TODO:\\
+\begin{enumerate}
+	\item Abmessungen von einer struckture layer
+	\item welches upboard verwenden wir 2 oder das normale
+\end{enumerate}
+
 \chapter{Simulation}
 
 \section{Launch}
@@ -127,4 +162,36 @@ See: \mylink{http://osrf-distributions.s3.amazonaws.com/gazebo/api/dev/classgaze
 git@git.sim.informatik.tu-darmstadt.de:TurtleBot/jsonlab.git
 git@git.sim.informatik.tu-darmstadt.de:TurtleBot/octave_rosbridge.git
 	\end{lstlisting}
+	
+	\section{Control}
+	sobald diff drive plugin angeschaltet drehen sich die raeder viel zu schnell ....
+	
+	
+	\subsection{Plugins}
+	\begin{itemize}
+		\item gazebo-ros-control
+		\item diff drive
+	\end{itemize}
+	
+	\subsection{Launch}
+	\begin{lstlisting}[style=BashInputStyle]
+	roslaunch rrbot_control rrbot_control.launch
+	\end{lstlisting}
+	
+	These files are executed one after another:
+	\begin{enumerate}
+		\item load config
+		\item controller\_spawner
+	\end{enumerate}
+	
+	\section{Sensors}
+	\subsection{IMU}
+	
+		We want to simulate the IMU of the opencr board. STRG+T to see imu topic values!
+	\mylink{https://www.youtube.com/watch?v=wXN_7oRHst0}{Imu of opencr board simulated}
+
+	Simulate like this:
+	rviz rviz dann als fixed frame nimm: imu\_link. Und add topic imu und waehle als topic ballbot/sensor/imu
+	
+	
 \end{document}

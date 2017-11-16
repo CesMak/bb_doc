@@ -1,4 +1,10 @@
-\BOOKMARK [0][-]{chapter.1}{Simulation}{}% 1
-\BOOKMARK [1][-]{section.1.1}{Launch}{chapter.1}% 2
-\BOOKMARK [1][-]{section.1.2}{Simulation design}{chapter.1}% 3
-\BOOKMARK [1][-]{section.1.3}{Gazebo Parameters}{chapter.1}% 4
+\BOOKMARK [0][-]{chapter.1}{Item - List}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Simulation}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Launch}{chapter.2}% 3
+\BOOKMARK [1][-]{section.2.2}{Simulation design}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.3}{Gazebo Parameters}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.4}{Control}{chapter.2}% 6
+\BOOKMARK [2][-]{subsection.2.4.1}{Plugins}{section.2.4}% 7
+\BOOKMARK [2][-]{subsection.2.4.2}{Launch}{section.2.4}% 8
+\BOOKMARK [1][-]{section.2.5}{Sensors}{chapter.2}% 9
+\BOOKMARK [2][-]{subsection.2.5.1}{IMU}{section.2.5}% 10
