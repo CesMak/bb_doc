@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.15)  16 NOV 2017 18:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.15)  17 NOV 2017 11:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -571,10 +571,19 @@ s TUD-Design package
 \TUD@sponsorlogo=\box30
 \TUD@titleskip=\skip100
 ))
+(/usr/share/texlive/texmf-dist/tex/generic/german/german.sty v2.5e 1998-07-08
+Package: german 1998/07/08 v2.5e Support for writing german texts (br)
+\grmnU@D=\dimen120
+german -- \language number for Austrian undefined, default 4 used.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/eurosym/eurosym.sty
+Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
+\@eurobox=\box31
+)
 (/usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
 \FN@temptoken=\toks19
-\footnotemargin=\dimen120
+\footnotemargin=\dimen121
 \c@pp@next@reset=\count100
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
 Package footmisc Info: Declaring symbol style chicago on input line 863.
@@ -637,7 +646,7 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
-\@linkdim=\dimen121
+\@linkdim=\dimen122
 \Hy@linkcounter=\count101
 \Hy@pagecounter=\count102
 
@@ -664,10 +673,10 @@ Package hyperref Info: Bookmarks ON on input line 4688.
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen122
+\XeTeXLinkMargin=\dimen123
 \Fld@menulength=\count105
-\Field@Width=\dimen123
-\Fld@charsize=\dimen124
+\Field@Width=\dimen124
+\Fld@charsize=\dimen125
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -698,31 +707,31 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen125
-\extrarowheight=\dimen126
+\col@sep=\dimen126
+\extrarowheight=\dimen127
 \NC@list=\toks20
 \extratabsurround=\skip102
 \backup@length=\skip103
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count111
-\lst@gtempboxa=\box31
+\lst@gtempboxa=\box32
 \lst@token=\toks21
 \lst@length=\count112
-\lst@currlwidth=\dimen127
+\lst@currlwidth=\dimen128
 \lst@column=\count113
 \lst@pos=\count114
-\lst@lostspace=\dimen128
-\lst@width=\dimen129
+\lst@lostspace=\dimen129
+\lst@width=\dimen130
 \lst@newlines=\count115
 \lst@lineno=\count116
-\lst@maxwidth=\dimen130
+\lst@maxwidth=\dimen131
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 \c@lstnumber=\count117
 \lst@skipnumbers=\count118
-\lst@framebox=\box32
+\lst@framebox=\box33
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
@@ -731,26 +740,26 @@ Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
 (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen131
-\lightrulewidth=\dimen132
-\cmidrulewidth=\dimen133
-\belowrulesep=\dimen134
-\belowbottomsep=\dimen135
-\aboverulesep=\dimen136
-\abovetopsep=\dimen137
-\cmidrulesep=\dimen138
-\cmidrulekern=\dimen139
-\defaultaddspace=\dimen140
+\heavyrulewidth=\dimen132
+\lightrulewidth=\dimen133
+\cmidrulewidth=\dimen134
+\belowrulesep=\dimen135
+\belowbottomsep=\dimen136
+\aboverulesep=\dimen137
+\abovetopsep=\dimen138
+\cmidrulesep=\dimen139
+\cmidrulekern=\dimen140
+\defaultaddspace=\dimen141
 \@cmidla=\count119
 \@cmidlb=\count120
-\@aboverulesep=\dimen141
-\@belowrulesep=\dimen142
+\@aboverulesep=\dimen142
+\@belowrulesep=\dimen143
 \@thisruleclass=\count121
 \@lastruleclass=\count122
-\@thisrulewidth=\dimen143
+\@thisrulewidth=\dimen144
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
-\bigstrutjot=\dimen144
+\bigstrutjot=\dimen145
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
@@ -759,69 +768,69 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LTpre=\skip106
 \LTpost=\skip107
 \LTchunksize=\count123
-\LTcapwidth=\dimen145
-\LT@head=\box33
-\LT@firsthead=\box34
-\LT@foot=\box35
-\LT@lastfoot=\box36
+\LTcapwidth=\dimen146
+\LT@head=\box34
+\LT@firsthead=\box35
+\LT@foot=\box36
+\LT@lastfoot=\box37
 \LT@cols=\count124
 \LT@rows=\count125
 \c@LT@tables=\count126
 \c@LT@chunks=\count127
 \LT@p@ftn=\toks22
 )
-Class scrreprt Info: longtable captions redefined on input line 39.
+Class scrreprt Info: longtable captions redefined on input line 42.
 \longtablewidth=\skip108
  (./bb_doc.aux)
 \openout1 = `bb_doc.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 60.
-LaTeX Font Info:    Try loading font information for MDA+cmr on input line 60.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 63.
+LaTeX Font Info:    Try loading font information for MDA+cmr on input line 63.
 
 (/usr/share/texlive/texmf-dist/tex/latex/mathdesign/mdacmr.fd
 File: mdacmr.fd 
 )
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for MDB/cmr/m/n on input line 60.
-LaTeX Font Info:    Try loading font information for MDB+cmr on input line 60.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for MDB/cmr/m/n on input line 63.
+LaTeX Font Info:    Try loading font information for MDB+cmr on input line 63.
 
 (/usr/share/texlive/texmf-dist/tex/latex/mathdesign/mdbcmr.fd
 File: mdbcmr.fd 
 )
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Try loading font information for T1+5ch on input line 60.
-LaTeX Font Info:    No file T15ch.fd. on input line 60.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Try loading font information for T1+5ch on input line 63.
+LaTeX Font Info:    No file T15ch.fd. on input line 63.
 
 
 LaTeX Font Warning: Font shape `T1/5ch/m/n' undefined
-(Font)              using `T1/cmr/m/n' instead on input line 60.
+(Font)              using `T1/cmr/m/n' instead on input line 63.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count128
-\scratchdimen=\dimen146
-\scratchbox=\box37
+\scratchdimen=\dimen147
+\scratchbox=\box38
 \nofMPsegments=\count129
 \nofMParguments=\count130
 \everyMPshowfont=\toks23
 \MPscratchCnt=\count131
-\MPscratchDim=\dimen147
+\MPscratchDim=\dimen148
 \MPnumerator=\count132
 \makeMPintoPDFobject=\count133
 \everyMPtoPDFconversion=\toks24
@@ -840,7 +849,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box38
+\AtBeginShipoutBox=\box39
 
 *geometry* detected driver: dvips
 *geometry* verbose mode - [ preamble ] result:
@@ -876,7 +885,7 @@ e
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \TUD@part@topskip=\skip109
-Package hyperref Info: Link coloring OFF on input line 60.
+Package hyperref Info: Link coloring OFF on input line 63.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -885,21 +894,21 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count134
 )
-LaTeX Info: Redefining \ref on input line 60.
-LaTeX Info: Redefining \pageref on input line 60.
-LaTeX Info: Redefining \nameref on input line 60.
+LaTeX Info: Redefining \ref on input line 63.
+LaTeX Info: Redefining \pageref on input line 63.
+LaTeX Info: Redefining \nameref on input line 63.
 
 (./bb_doc.out) (./bb_doc.out)
 \@outlinefile=\write3
 \openout3 = `bb_doc.out'.
 
 \c@lstlisting=\count135
-LaTeX Font Info:    Try loading font information for T1+5fp on input line 64.
-LaTeX Font Info:    No file T15fp.fd. on input line 64.
+LaTeX Font Info:    Try loading font information for T1+5fp on input line 67.
+LaTeX Font Info:    No file T15fp.fd. on input line 67.
 
 
 LaTeX Font Warning: Font shape `T1/5fp/mb/n' undefined
-(Font)              using `T1/cmr/m/n' instead on input line 64.
+(Font)              using `T1/cmr/m/n' instead on input line 67.
 
 (./bb_doc.toc
 LaTeX Font Info:    Try loading font information for OT1+mdbch on input line 3.
@@ -999,7 +1008,7 @@ LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
 
 
 LaTeX Font Warning: Font shape `T1/5fp/m/n' undefined
-(Font)              using `T1/cmr/m/n' instead on input line 67.
+(Font)              using `T1/cmr/m/n' instead on input line 70.
 
 [1
 Non-PDF special ignored!
@@ -1026,61 +1035,96 @@ Class scrreprt Warning: \float@addtolists detected!
 
 
 LaTeX Font Warning: Font shape `T1/5ch/m/it' undefined
-(Font)              using `T1/5ch/m/n' instead on input line 70.
+(Font)              using `T1/5ch/m/n' instead on input line 73.
 
 <img/opencr.png, id=63, 675.12225pt x 408.3255pt>
 File: img/opencr.png Graphic file (type png)
  <use img/opencr.png>
-Package pdftex.def Info: img/opencr.png used on input line 71.
+Package pdftex.def Info: img/opencr.png used on input line 74.
 (pdftex.def)             Requested size: 49.79535pt x 30.11218pt.
 
 <img/upboard.jpg, id=66, 459.7175pt x 459.7175pt>
 File: img/upboard.jpg Graphic file (type jpg)
  <use img/upboard.jpg>
-Package pdftex.def Info: img/upboard.jpg used on input line 75.
+Package pdftex.def Info: img/upboard.jpg used on input line 78.
 (pdftex.def)             Requested size: 49.79535pt x 49.79044pt.
 
 <img/r200.jpg, id=68, 587.58652pt x 134.14665pt>
 File: img/r200.jpg Graphic file (type jpg)
  <use img/r200.jpg>
-Package pdftex.def Info: img/r200.jpg used on input line 78.
+Package pdftex.def Info: img/r200.jpg used on input line 81.
 (pdftex.def)             Requested size: 49.79535pt x 11.36649pt.
 
-<img/wheel.jpg, id=70, 200.75pt x 167.62625pt>
+<img/lasersensor.png, id=70, 144.54pt x 118.4425pt>
+File: img/lasersensor.png Graphic file (type png)
+ <use img/lasersensor.png>
+Package pdftex.def Info: img/lasersensor.png used on input line 84.
+(pdftex.def)             Requested size: 49.79535pt x 40.80305pt.
+
+<img/battery.png, id=72, 374.39874pt x 152.57pt>
+File: img/battery.png Graphic file (type png)
+ <use img/battery.png>
+Package pdftex.def Info: img/battery.png used on input line 87.
+(pdftex.def)             Requested size: 49.79535pt x 20.29108pt.
+
+<img/dynamixel.png, id=74, 290.08376pt x 324.21124pt>
+File: img/dynamixel.png Graphic file (type png)
+ <use img/dynamixel.png>
+Package pdftex.def Info: img/dynamixel.png used on input line 92.
+(pdftex.def)             Requested size: 49.79535pt x 55.64946pt.
+
+<img/ball.png, id=76, 387.4475pt x 373.395pt>
+File: img/ball.png Graphic file (type png)
+ <use img/ball.png>
+Package pdftex.def Info: img/ball.png used on input line 94.
+(pdftex.def)             Requested size: 49.79535pt x 47.9847pt.
+
+<img/wheel.jpg, id=78, 200.75pt x 167.62625pt>
 File: img/wheel.jpg Graphic file (type jpg)
  <use img/wheel.jpg>
-Package pdftex.def Info: img/wheel.jpg used on input line 88.
+Package pdftex.def Info: img/wheel.jpg used on input line 96.
 (pdftex.def)             Requested size: 49.79535pt x 41.57906pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--100
+Overfull \hbox (9.46738pt too wide) in paragraph at lines 71--107
+[] 
+ []
+
+
+LaTeX Font Warning: Font shape `T1/5ch/b/n' undefined
+(Font)              using `T1/5ch/m/n' instead on input line 108.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
 
  []
 
 [2
 
- <./img/opencr.png> <./img/upboard.jpg> <./img/r200.jpg> <./img/wheel.jpg>]
+ <./img/opencr.png> <./img/upboard.jpg> <./img/r200.jpg> <./img/lasersensor.png
+> <./img/battery.png> <./img/dynamixel.png> <./img/ball.png> <./img/wheel.jpg>]
+
 chapter 2.
-<img/filestructure.png, id=84, 306.14375pt x 509.905pt>
+<img/filestructure.png, id=97, 306.14375pt x 509.905pt>
 File: img/filestructure.png Graphic file (type png)
 
 <use img/filestructure.png>
-Package pdftex.def Info: img/filestructure.png used on input line 126.
+Package pdftex.def Info: img/filestructure.png used on input line 137.
 (pdftex.def)             Requested size: 99.58313pt x 165.85721pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
 
  []
 
-LaTeX Font Info:    Try loading font information for TS1+5ch on input line 131.
+LaTeX Font Info:    Try loading font information for TS1+5ch on input line 142.
 
-LaTeX Font Info:    No file TS15ch.fd. on input line 131.
+LaTeX Font Info:    No file TS15ch.fd. on input line 142.
 
 LaTeX Font Warning: Font shape `TS1/5ch/m/n' undefined
 (Font)              using `TS1/cmr/m/n' instead
-(Font)              for symbol `textbullet' on input line 131.
+(Font)              for symbol `textbullet' on input line 142.
 
 
-Overfull \hbox (21.46146pt too wide) in paragraph at lines 145--160
+Overfull \hbox (21.46146pt too wide) in paragraph at lines 156--171
 [] 
  []
 
@@ -1093,35 +1137,35 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-LaTeX Font Info:    Try loading font information for T1+txtt on input line 165.
+LaTeX Font Info:    Try loading font information for T1+txtt on input line 176.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
 ) [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 201.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 212.
  [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 201.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 212.
 
 (./bb_doc.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 201.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 201.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 212.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 212.
 Package rerunfilecheck Info: File `bb_doc.out' has not changed.
 (rerunfilecheck)             Checksum: 9FA7F26998520B35771A661998CEB800;551.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 201.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 212.
  ) 
 Here is how much of TeX's memory you used:
- 12857 strings out of 494428
- 199503 string characters out of 6169213
- 374703 words of memory out of 5000000
- 16006 multiletter control sequences out of 15000+600000
- 26613 words of font info for 49 fonts, out of 8000000 for 9000
+ 13118 strings out of 494428
+ 203228 string characters out of 6169213
+ 378368 words of memory out of 5000000
+ 16249 multiletter control sequences out of 15000+600000
+ 27362 words of font info for 51 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
- 59i,13n,122p,269b,1150s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 59i,13n,122p,295b,1149s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{https://www.youtube.com/watch?v=wXN_7oRHst0} has 
 been referenced but does not exist, replaced by a fixed one
 
@@ -1140,12 +1184,27 @@ pdfTeX warning (dest): name{http://krause-robotics.de/xtshop/Antriebe/Raeder/Al
 lseitenraeder/Allseitenraeder-60-mm:::99_100_106_114.html} has been referenced 
 but does not exist, replaced by a fixed one
 
+pdfTeX warning (dest): name{http://www.ball-tech.de/Hohlkugeln/Aluminium/} has 
+been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{http://support.robotis.com/en/product/actuator/dyna
+mixel_x/xm_series/xm430-w350.htm} has been referenced but does not exist, repla
+ced by a fixed one
+
+pdfTeX warning (dest): name{https://nodna.de/Robotis-LIPO-111V-Akkupack-1800mAh
+-LBS-012} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{https://wiki.ros.org/hls_lfcd_lds_driver?action=Att
+achFile&do=view&target=LDS_Basic_Specification.pdf} has been referenced but doe
+s not exist, replaced by a fixed one
+
 pdfTeX warning (dest): name{https://www.intel.de/content/www/de/de/support/arti
 cles/000023534/emerging-technologies/intel-realsense-technology.html} has been 
 referenced but does not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{arg1} has been referenced but does not exist, repla
-ced by a fixed one
+pdfTeX warning (dest): name{https://up-shop.org/up-boards/44-up-board-4gb-ram-6
+4-gb-emmc.html} has been referenced but does not exist, replaced by a fixed one
+
 
 pdfTeX warning (dest): name{https://github.com/ROBOTIS-GIT/OpenCR/wiki/Hardware
 _Specification\\#specification} has been referenced but does not exist, replace
@@ -1153,13 +1212,14 @@ d by a fixed one
 
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/texmf/f
 onts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/latxfont/lcircle1.pfb></usr/share/texmf/fonts/type1/public/
-cm-super/sfrm1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts
-/t1xtt.pfb>
-Output written on bb_doc.pdf (5 pages, 1067419 bytes).
+pe1/public/amsfonts/latxfont/lcircle1.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/mathdesign/mdbch/md-chrma.pfb></usr/share/texmf/fonts/type1/public
+/cm-super/sfrm1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfont
+s/t1xtt.pfb>
+Output written on bb_doc.pdf (5 pages, 1442576 bytes).
 PDF statistics:
- 147 PDF objects out of 1000 (max. 8388607)
- 129 compressed objects within 2 object streams
- 41 named destinations out of 1000 (max. 500000)
- 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 164 PDF objects out of 1000 (max. 8388607)
+ 141 compressed objects within 2 object streams
+ 45 named destinations out of 1000 (max. 500000)
+ 126 words of extra memory for PDF output out of 10000 (max. 10000000)
 

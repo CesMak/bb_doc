@@ -1,5 +1,8 @@
 \documentclass[twoside,colorback,accentcolor=tud4c,11pt]{tudreport}
 %\usepackage{ngerman}
+\usepackage{german} %damit euro zeichen richtig
+\usepackage{eurosym}
+
 
 \usepackage[stable]{footmisc}
 \usepackage[ngerman,pdfview=FitH,pdfstartview=FitV]{hyperref}
@@ -66,26 +69,31 @@ aboveskip=1.2em,
 
 \chapter{Item - List}
 \begin{tabular}{l l l l l}
-	Item & \# & Weight[g] & Weblink & Picture\\
+	Item & \# & W.[g] & Weblink & Picture\\
 	OpenCR Board (Controlling the motors, IMU)&1&60&\mylink{https://github.com/ROBOTIS-GIT/OpenCR/wiki/Hardware_Specification\#specification}{github\_wiki} 
 	&\includegraphics[width=0.1\textwidth]{img/opencr.png}  \\
 	
 	
-	UpBoard (Main PC)&1 &96 & \mylink{arg1}{???}
+	UpBoard (Main PC)&1 &96 & \mylink{https://up-shop.org/up-boards/44-up-board-4gb-ram-64-gb-emmc.html}{\EUR{127}}
 	&\includegraphics[width=0.1\textwidth]{img/upboard.jpg} \\
 	
-	Intel RealSense R200&1& 9.4& \mylink{https://www.intel.de/content/www/de/de/support/articles/000023534/emerging-technologies/intel-realsense-technology.html}{datasheet}&
+	Intel RealSense R200&1& 9.4& \mylink{https://www.intel.de/content/www/de/de/support/articles/000023534/emerging-technologies/intel-realsense-technology.html}{datasheet, \EUR{84.15}}&
 	\includegraphics[width=0.1\textwidth]{img/r200.jpg} \\
 	
-	LaserSensor&1 & & & \\
+	Laser Distance Sensor&1 &124 &\mylink{https://wiki.ros.org/hls_lfcd_lds_driver?action=AttachFile&do=view&target=LDS_Basic_Specification.pdf}{specs, \EUR{100}} & 
+	\includegraphics[width=0.1\textwidth]{img/lasersensor.png}\\
 	
-	Battery: LI-PO 11.1 1800mAh LB-12 19&1&132 & & \\
+	Battery: LI-PO 11.1 1800mAh LB-12 19&1&132 &\mylink{https://nodna.de/Robotis-LIPO-111V-Akkupack-1800mAh-LBS-012}{\EUR{44.90}} &
+	\includegraphics[width=0.1\textwidth]{img/battery.png} \\
+	
 	Turtlebot3 Layers()&4& & & \\
-	XM430-W350-R Dynamixel (Motors)&3&72 & & \\
 	
-	Ball (aluminium, diameter: 140mm)&1&400 & & \\
+	XM430-W350-R Dynamixel (Motors)&3&72 &\mylink{http://support.robotis.com/en/product/actuator/dynamixel_x/xm_series/xm430-w350.htm}{robotis,\EUR{250}} &
+	\includegraphics[width=0.1\textwidth]{img/dynamixel.png} \\
 	
-	Omni wheels(dia: 60mm, thickness:25mm)&3&46 &\mylink{http://krause-robotics.de/xtshop/Antriebe/Raeder/Allseitenraeder/Allseitenraeder-60-mm:::99_100_106_114.html}{buy here} &  	\includegraphics[width=0.1\textwidth]{img/wheel.jpg}   \\
+	Ball(alum., dia.: 140mm, material thickness 2.5mm)&1&400&\mylink{http://www.ball-tech.de/Hohlkugeln/Aluminium/}{ball-tech gmbh,\EUR{40}. } & \includegraphics[width=0.1\textwidth]{img/ball.png}\\
+	
+	Omni wheels(dia: 60mm, thickness:25mm)&3&46 &\mylink{http://krause-robotics.de/xtshop/Antriebe/Raeder/Allseitenraeder/Allseitenraeder-60-mm:::99_100_106_114.html}{\EUR{10.38}} &  	\includegraphics[width=0.1\textwidth]{img/wheel.jpg}   \\
 	
 	Kreisring (PLA, 3D printeted)&1&28 & & \\
 	
@@ -93,8 +101,11 @@ aboveskip=1.2em,
 	
 	Mitnehmer (PLA, 3D printeted)&0.8&18 & & \\
 	
+	plain washer (beilagscheibe) (PLA, 3D printeted)&0.8&18 & & \\
+	
 \end{tabular}
 
+\textbf{Total Cost: \EUR{1176} + Cost of opencr board and all plastic (incl. tb3 structure) and scrwes }
 
 TODO:\\
 \begin{enumerate}
