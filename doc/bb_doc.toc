@@ -1,10 +1,10 @@
 \contentsline {chapter}{\numberline {1}Item - List}{2}{chapter.1}
-\contentsline {chapter}{\numberline {2}Simulation}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}Launch}{3}{section.2.1}
-\contentsline {section}{\numberline {2.2}Simulation design}{3}{section.2.2}
-\contentsline {section}{\numberline {2.3}Gazebo Parameters}{4}{section.2.3}
-\contentsline {section}{\numberline {2.4}Control}{4}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Plugins}{4}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Launch}{4}{subsection.2.4.2}
-\contentsline {section}{\numberline {2.5}Sensors}{5}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}IMU}{5}{subsection.2.5.1}
+\contentsline {chapter}{\numberline {2}Simulation}{4}{chapter.2}
+\contentsline {section}{\numberline {2.1}Launch}{4}{section.2.1}
+\contentsline {section}{\numberline {2.2}Simulation design}{4}{section.2.2}
+\contentsline {section}{\numberline {2.3}Gazebo Parameters}{5}{section.2.3}
+\contentsline {section}{\numberline {2.4}Control}{5}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Plugins}{5}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Launch}{5}{subsection.2.4.2}
+\contentsline {section}{\numberline {2.5}Sensors}{6}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}IMU}{6}{subsection.2.5.1}
