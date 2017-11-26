@@ -173,6 +173,17 @@ See: \mylink{http://osrf-distributions.s3.amazonaws.com/gazebo/api/dev/classgaze
 	\section{Control}
 	sobald diff drive plugin angeschaltet drehen sich die raeder viel zu schnell ....
 	
+	Diff Drive in ballbot.launch an oder ausschalten. 
+	
+	in bb.gazebo.xacro transmission und controller festlegen.
+	
+	zudem yaml file(currently I use: effort\_controllers/JointVelocityController)
+	
+	Effort Joint Interface as Hardware Interface is used.
+	
+	Do this example first: \url{http://gazebosim.org/tutorials/?tut=ros_control}
+	
+	Also try this bb8 gazebo tutorial: \url{https://www.youtube.com/watch?v=j5qC9l448p8}
 	
 	\subsection{Plugins}
 	\begin{itemize}
@@ -200,7 +211,9 @@ See: \mylink{http://osrf-distributions.s3.amazonaws.com/gazebo/api/dev/classgaze
 	Simulate like this:
 	rviz rviz dann als fixed frame nimm: imu\_link. Und add topic imu und waehle als topic ballbot/sensor/imu
 	
-	bbbb
+	The simulated IMU outputs values like: orientation (x,y,z,w), angluar velocity(x,y,z), linear velocity(x,y,z), linear acceleration(x,y,z).
+	
+	The opencr real IMU gives values like: orientation(x,y,z,w), angular velocity(x,y,z), linear acceleration(x,y,z) see \mylink{OpenCR board IMU }{http://turtlebot3.readthedocs.io/en/latest/appendix\_opencr.html}
 	
 	\chapter{Model}
 	
