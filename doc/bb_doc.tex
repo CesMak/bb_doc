@@ -39,7 +39,7 @@ aboveskip=1.2em,
 \setlength{\longtablewidth}{0.675\linewidth}
 
 \title{Project Ballbot}
-\subtitle{Florian Müller \\ Markus Lamprecht \\ Michael Suffel}
+\subtitle{Markus Lamprecht \\ Florian M\"uller \\ Michael Suffel}
 %\subsubtitle{email: \textaccent{tud-design@pro-kevin.de}}
 %\uppertitleback{(\textaccent{\textbackslash uppertitleback})}
 %\lowertitleback{(\textaccent{\textbackslash lowertitleback})\hfill\today}
@@ -69,14 +69,14 @@ aboveskip=1.2em,
 	Battery: LI-PO 11.1 1800mAh LB-12 19&1&132 &\mylink{https://nodna.de/Robotis-LIPO-111V-Akkupack-1800mAh-LBS-012}{\EUR{44.90}} &
 	\includegraphics[width=0.1\textwidth]{img/battery.png} \\
 	
-	Turtlebot3 Layers()&4& & & \\
+	Turtlebot3 Layers(125cmx125cm)&4& & & \\
 	
-	XM430-W350-R Dynamixel (Motors)&3&72 &\mylink{http://support.robotis.com/en/product/actuator/dynamixel_x/xm_series/xm430-w350.htm}{robotis,\EUR{250}} &
+	XM430-W350-R Dynamixel (Motors)&3&82 &\mylink{http://support.robotis.com/en/product/actuator/dynamixel_x/xm_series/xm430-w350.htm}{robotis,\EUR{250}} &
 	\includegraphics[width=0.1\textwidth]{img/dynamixel.png} \\
 	
 	Ball(alum., dia.: 140mm, material thickness 2.5mm)&1&400&\mylink{http://www.ball-tech.de/Hohlkugeln/Aluminium/}{ball-tech gmbh,\EUR{40}. } & \includegraphics[width=0.1\textwidth]{img/ball.png}\\
 	
-	Omni wheels(dia: 60mm, thickness:25mm)&3&46 &\mylink{http://krause-robotics.de/xtshop/Antriebe/Raeder/Allseitenraeder/Allseitenraeder-60-mm:::99_100_106_114.html}{\EUR{10.38}} &  	\includegraphics[width=0.1\textwidth]{img/wheel.jpg}   \\
+	Omni wheels(dia: 60mm, thickness:25mm)&3&51.46 &\mylink{http://krause-robotics.de/xtshop/Antriebe/Raeder/Allseitenraeder/Allseitenraeder-60-mm:::99_100_106_114.html}{\EUR{10.38}} &  	\includegraphics[width=0.1\textwidth]{img/wheel.jpg}   \\
 	
 	Kreisring (PLA, 3D printeted)&1&28 & & 
 	\includegraphics[width=0.1\textwidth]{img/kreisring.png}\\
@@ -87,17 +87,18 @@ aboveskip=1.2em,
 	Mitnehmer (PLA, 3D printeted)&3&8 & &
 	\includegraphics[height=0.06\textwidth]{img/mitnehmer.png}  \\
 	
-	Plain washer (Beilagscheibe),(PLA, 3D printeted)&3&0.8 & &
+	Plain washer (Beilagscheibe),(PLA, 3D printeted)&3&0.45 & &
 	\includegraphics[height=0.06\textwidth]{img/beilagscheibe.png}  \\
 	
 	M3  (Mutter-Halterung-Kreisring-Layer)&9& & & \\
 	M2.5  (Kreisring-Layer)&2& & & \\
 	M3x8mm Halterung &6& &Zylinderkopf (Imbus) & \\
-	M3x22mm Layer&3& &Zylinderkopf (Imbus) & \\
+	M3x22mm Layer&3&1.34 &Zylinderkopf (Imbus) & \\
 	M2.5x22 (Motoren-Halterung) &12&&Sechskant & \\
 	M2.5x38 (Motoren-Rad)&3& &Zylinderkopf (Imbus) & \\
 	M2.5x24 (Layer)&2& &Zylinderkopf (Imbus) & \\
 	M2x6mm  (Mitnehmer-Motor)&12 & &Zylinderkopf (Imbus) & \\
+	Distanzbolzen&???& &???& \\
 	
 \end{tabular}
 
@@ -131,6 +132,11 @@ TODO:\\
 \end{enumerate}
 
 \chapter{Simulation}
+
+TODO: 
+check if controller works
+
+check why imu fails
 
 \section{Launch}
 These files are executed one after another:
@@ -190,14 +196,21 @@ See: \mylink{http://osrf-distributions.s3.amazonaws.com/gazebo/api/dev/classgaze
 
 \section{Gazebo Parameters}
 
-	\begin{lstlisting}[style=BashInputStyle]
-git@git.sim.informatik.tu-darmstadt.de:TurtleBot/jsonlab.git
-git@git.sim.informatik.tu-darmstadt.de:TurtleBot/octave_rosbridge.git
-	\end{lstlisting}
 	
 	\section{Control}
 	sobald diff drive plugin angeschaltet drehen sich die raeder viel zu schnell ....
 	
+	Diff Drive in ballbot.launch an oder ausschalten. 
+	
+	in bb.gazebo.xacro transmission und controller festlegen.
+	
+	zudem yaml file(currently I use: effort\_controllers/JointVelocityController)
+	
+	Effort Joint Interface as Hardware Interface is used.
+	
+	Do this example first: \url{http://gazebosim.org/tutorials/?tut=ros_control}
+	
+	Also try this bb8 gazebo tutorial: \url{https://www.youtube.com/watch?v=j5qC9l448p8}
 	
 	\subsection{Plugins}
 	\begin{itemize}
@@ -225,7 +238,9 @@ git@git.sim.informatik.tu-darmstadt.de:TurtleBot/octave_rosbridge.git
 	Simulate like this:
 	rviz rviz dann als fixed frame nimm: imu\_link. Und add topic imu und waehle als topic ballbot/sensor/imu
 	
-	bbbb
+	The simulated IMU outputs values like: orientation (x,y,z,w), angluar velocity(x,y,z), linear velocity(x,y,z), linear acceleration(x,y,z).
+	
+	The opencr real IMU gives values like: orientation(x,y,z,w), angular velocity(x,y,z), linear acceleration(x,y,z) see \mylink{OpenCR board IMU }{http://turtlebot3.readthedocs.io/en/latest/appendix\_opencr.html}
 	
 	\chapter{Model}
 	
@@ -241,10 +256,16 @@ git@git.sim.informatik.tu-darmstadt.de:TurtleBot/octave_rosbridge.git
 	
 	\begin{figure}[htbp]
 		\centering
-			\includegraphics[width=0.60\textwidth]{D:/BallBot/Dokumentation/bb_doc/doc/img/Strucuture.PNG}
+		\includegraphics[width=0.9\textwidth]{img/Strucuture.PNG}
 		\caption{Parts for the 3D-Model}
 		\label{fig:Structure}
 	\end{figure}
+	
+	\begin{tabular}{l l p{15mm} l p{60mm}}
+		name & Mass [kg] & inertia & pic &Translation from basis point to name\\
+		Upstructure (all except wheels)&1.557 &$i_{xx}=??$\newline $i_{yy}=??$
+		\newline $i_{zz}=??$ \newline $i_{xy}=??$ \newline $i_{zy}=??$ \newline $i_{xz}=??$& &x= \newline y= \newline z= \\
+	\end{tabular}
 	
 	\section{Assumptions}
 	
