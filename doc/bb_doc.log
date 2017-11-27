@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.11.17)  24 NOV 2017 13:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.11.17)  27 NOV 2017 20:31
 entering extended mode
 **D:/BallBot/Dokumentation/bb_doc/doc/bb_doc.tex
 (D:/BallBot/Dokumentation/bb_doc/doc/bb_doc.tex
@@ -796,7 +796,11 @@ File: listings.cfg 2015/06/04 1.6 listings configuration
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 \longtablewidth=\skip118
 
-(bb_doc.aux)
+(bb_doc.aux
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+)
 \openout1 = `bb_doc.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
@@ -815,8 +819,7 @@ LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
 LaTeX Font Info:    ... okay on input line 48.
 LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 48.
 LaTeX Font Info:    Try loading font information for MDA+cmr on input line 48.
-
-(C:\Users\Florian\AppData\Roaming\MiKTeX\2.9\tex\latex\mathdesign\mdacmr.fd
+ (C:\Users\Florian\AppData\Roaming\MiKTeX\2.9\tex\latex\mathdesign\mdacmr.fd
 File: mdacmr.fd 
 )
 LaTeX Font Info:    ... okay on input line 48.
@@ -1042,7 +1045,7 @@ LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
 LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
 (Font)              scaled to size 6.48601pt on input line 50.
 \@TUD@titlelines=\count136
-<tud_logo.pdf, id=55, pagebox=cropbox, 157.58875pt x 63.23625pt>
+<tud_logo.pdf, id=59, pagebox=cropbox, 157.58875pt x 63.23625pt>
 File: tud_logo.pdf Graphic file (type pdf)
 <use tud_logo.pdf>
 Package pdftex.def Info: tud_logo.pdf  used on input line 50. on input line 50.
@@ -1088,84 +1091,84 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              a package that still implements the
 (scrreprt)              deprecated \float@addtolist interface .
 
-<img/opencr.png, id=94, 675.12225pt x 408.3255pt>
+<img/opencr.png, id=99, 675.12225pt x 408.3255pt>
 File: img/opencr.png Graphic file (type png)
 <use img/opencr.png>
 Package pdftex.def Info: img/opencr.png  used on input line 57. on input line 5
 7.
 Package pdftex.def Info: Requested size: 49.79535pt x 30.11218pt on input line 
 57.
-<img/upboard.jpg, id=97, 459.7175pt x 459.7175pt>
+<img/upboard.jpg, id=102, 459.7175pt x 459.7175pt>
 File: img/upboard.jpg Graphic file (type jpg)
 <use img/upboard.jpg>
 Package pdftex.def Info: img/upboard.jpg  used on input line 61. on input line 
 61.
 Package pdftex.def Info: Requested size: 49.79535pt x 49.79044pt on input line 
 61.
-<img/r200.jpg, id=99, 587.58652pt x 134.14665pt>
+<img/r200.jpg, id=104, 587.58652pt x 134.14665pt>
 File: img/r200.jpg Graphic file (type jpg)
 <use img/r200.jpg>
 Package pdftex.def Info: img/r200.jpg  used on input line 64. on input line 64.
 
 Package pdftex.def Info: Requested size: 49.79535pt x 11.36649pt on input line 
 64.
-<img/lasersensor.png, id=101, 144.54pt x 118.4425pt>
+<img/lasersensor.png, id=106, 144.54pt x 118.4425pt>
 File: img/lasersensor.png Graphic file (type png)
 <use img/lasersensor.png>
 Package pdftex.def Info: img/lasersensor.png  used on input line 67. on input l
 ine 67.
 Package pdftex.def Info: Requested size: 49.79535pt x 40.80305pt on input line 
 67.
-<img/battery.png, id=103, 374.39874pt x 152.57pt>
+<img/battery.png, id=108, 374.39874pt x 152.57pt>
 File: img/battery.png Graphic file (type png)
 <use img/battery.png>
 Package pdftex.def Info: img/battery.png  used on input line 70. on input line 
 70.
 Package pdftex.def Info: Requested size: 49.79535pt x 20.29108pt on input line 
 70.
-<img/dynamixel.png, id=105, 290.08376pt x 324.21124pt>
+<img/dynamixel.png, id=110, 290.08376pt x 324.21124pt>
 File: img/dynamixel.png Graphic file (type png)
 <use img/dynamixel.png>
 Package pdftex.def Info: img/dynamixel.png  used on input line 75. on input lin
 e 75.
 Package pdftex.def Info: Requested size: 49.79535pt x 55.64946pt on input line 
 75.
-<img/ball.png, id=107, 387.4475pt x 373.395pt>
+<img/ball.png, id=112, 387.4475pt x 373.395pt>
 File: img/ball.png Graphic file (type png)
 <use img/ball.png>
 Package pdftex.def Info: img/ball.png  used on input line 77. on input line 77.
 
 Package pdftex.def Info: Requested size: 49.79535pt x 47.9847pt on input line 7
 7.
-<img/wheel.jpg, id=109, 200.75pt x 167.62625pt>
+<img/wheel.jpg, id=114, 200.75pt x 167.62625pt>
 File: img/wheel.jpg Graphic file (type jpg)
 <use img/wheel.jpg>
 Package pdftex.def Info: img/wheel.jpg  used on input line 79. on input line 79
 .
 Package pdftex.def Info: Requested size: 49.79535pt x 41.57906pt on input line 
 79.
-<img/kreisring.png, id=110, 722.7pt x 963.6pt>
+<img/kreisring.png, id=115, 722.7pt x 963.6pt>
 File: img/kreisring.png Graphic file (type png)
 <use img/kreisring.png>
 Package pdftex.def Info: img/kreisring.png  used on input line 82. on input lin
 e 82.
 Package pdftex.def Info: Requested size: 49.79535pt x 66.38554pt on input line 
 82.
-<img/halterung.png, id=111, 156.585pt x 113.42375pt>
+<img/halterung.png, id=116, 156.585pt x 113.42375pt>
 File: img/halterung.png Graphic file (type png)
 <use img/halterung.png>
 Package pdftex.def Info: img/halterung.png  used on input line 85. on input lin
 e 85.
 Package pdftex.def Info: Requested size: 49.79535pt x 36.06961pt on input line 
 85.
-<img/mitnehmer.png, id=112, 99.37125pt x 108.405pt>
+<img/mitnehmer.png, id=117, 99.37125pt x 108.405pt>
 File: img/mitnehmer.png Graphic file (type png)
 <use img/mitnehmer.png>
 Package pdftex.def Info: img/mitnehmer.png  used on input line 88. on input lin
 e 88.
 Package pdftex.def Info: Requested size: 27.38403pt x 29.87418pt on input line 
 88.
-<img/beilagscheibe.png, id=113, 53.19875pt x 64.24pt>
+<img/beilagscheibe.png, id=118, 53.19875pt x 64.24pt>
 File: img/beilagscheibe.png Graphic file (type png)
 <use img/beilagscheibe.png>
 Package pdftex.def Info: img/beilagscheibe.png  used on input line 91. on input
@@ -1177,38 +1180,42 @@ Overfull \hbox (6.989pt too wide) in paragraph at lines 54--103
 [] 
  []
 
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 107.
+
 [2
 
  <./img/opencr.png> <./img/upboard.jpg> <./img/r200.jpg> <./img/lasersensor.png
 > <./img/battery.png> <./img/dynamixel.png> <./img/ball.png> <./img/wheel.jpg> 
 <./img/kreisring.png> <./img/halterung.png> <./img/mitnehmer.png> <./img/beilag
 scheibe.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
 
  []
 
 [3]
 chapter 2.
-<img/filestructure.png, id=138, 306.14375pt x 509.905pt>
+<img/filestructure.png, id=144, 306.14375pt x 509.905pt>
 File: img/filestructure.png Graphic file (type png)
 <use img/filestructure.png>
-Package pdftex.def Info: img/filestructure.png  used on input line 133. on inpu
-t line 133.
+Package pdftex.def Info: img/filestructure.png  used on input line 154. on inpu
+t line 154.
 Package pdftex.def Info: Requested size: 99.58313pt x 165.85721pt on input line
- 133.
+ 154.
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--137
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
 
  []
 
-LaTeX Font Info:    Try loading font information for TS1+5ch on input line 138.
+LaTeX Font Info:    Try loading font information for TS1+5ch on input line 159.
 
 
 ("C:\Program Files (x86)\TUD-Design\tex\latex\tex-tudfonts\softmake\charter\ts1
 5ch.fd"
 File: ts15ch.fd 2008/06/23 Fontinst v1.927 font definitions for TS1/5ch.
 )
-Overfull \hbox (24.51068pt too wide) in paragraph at lines 152--167
+Overfull \hbox (24.51068pt too wide) in paragraph at lines 173--188
 [] 
  []
 
@@ -1221,7 +1228,7 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 (C:\Users\Florian\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-LaTeX Font Info:    Try loading font information for T1+txtt on input line 172.
+LaTeX Font Info:    Try loading font information for T1+txtt on input line 193.
 
 
 (C:\Users\Florian\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\t1txtt.fd
@@ -1229,42 +1236,43 @@ File: t1txtt.fd 2000/12/15 v3.1
 )
 [5] [6]
 chapter 3.
-<D:/BallBot/Dokumentation/bb_doc/doc/img/Strucuture.PNG, id=175, 298.11375pt x 
+<D:/BallBot/Dokumentation/bb_doc/doc/img/Strucuture.PNG, id=181, 298.11375pt x 
 255.20343pt>
 File: D:/BallBot/Dokumentation/bb_doc/doc/img/Strucuture.PNG Graphic file (type
  png)
 <use D:/BallBot/Dokumentation/bb_doc/doc/img/Strucuture.PNG>
 Package pdftex.def Info: D:/BallBot/Dokumentation/bb_doc/doc/img/Strucuture.PNG
-  used on input line 223. on input line 223.
+  used on input line 244. on input line 244.
 Package pdftex.def Info: Requested size: 298.75697pt x 255.76744pt on input lin
-e 223.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 245.
+e 244.
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 267.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 295.
 [7
 
- <D:/BallBot/Dokumentation/bb_doc/doc/img/Strucuture.PNG>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 245.
+ <D:/BallBot/Dokumentation/bb_doc/doc/img/Strucuture.PNG>] [8]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 295.
  (bb_doc.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 245.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 245.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 295.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 295.
+Package rerunfilecheck Info: File `bb_doc.out' has not changed.
+(rerunfilecheck)             Checksum: 3ACD2ED05A6370DFF426DC7CF67B7EDD;785.
 
 
-Package rerunfilecheck Warning: File `bb_doc.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: Checksums for `bb_doc.out':
-(rerunfilecheck)             Before: CAB8CDA07B6A978A4C88607CB6913899;721
-(rerunfilecheck)             After:  CD7AEBD5A80A6FB154E46F4729205C7F;776.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 245.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 295.
  ) 
 Here is how much of TeX's memory you used:
- 13662 strings out of 493318
- 218769 string characters out of 3138991
- 418161 words of memory out of 3000000
- 16859 multiletter control sequences out of 15000+200000
- 111380 words of font info for 72 fonts, out of 3000000 for 9000
+ 13674 strings out of 493318
+ 218876 string characters out of 3138991
+ 418251 words of memory out of 3000000
+ 16861 multiletter control sequences out of 15000+200000
+ 113604 words of font info for 79 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,13n,122p,8901b,1143s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 59i,14n,122p,8901b,1143s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{https://www.youtube.com/watch?v=wXN_7oRHst0} has 
 been referenced but does not exist, replaced by a fixed one
 
@@ -1309,18 +1317,23 @@ pdfTeX warning (dest): name{https://github.com/ROBOTIS-GIT/OpenCR/wiki/Hardware
 _Specification\\#specification} has been referenced but does not exist, replace
 d by a fixed one
 
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files (x86
-)/TUD-Design/fonts/type1/softmake/charter/5chb8a.pfb><C:/Program Files (x86)/TU
-D-Design/fonts/type1/softmake/charter/5chr8a.pfb><C:/Program Files (x86)/TUD-De
-sign/fonts/type1/softmake/charter/5chri8a.pfb><C:/Program Files (x86)/TUD-Desig
-n/fonts/type1/softmake/frontpage/5fpm8a.pfb><C:/Program Files (x86)/TUD-Design/
-fonts/type1/softmake/frontpage/5fpr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/latxfont/lcircle1.pfb><C:/Users/Florian/AppData/Roaming/MiK
-TeX/2.9/fonts/type1/mathdesign/mdbch/md-chrma.pfb><C:/Users/Florian/AppData/Roa
-ming/MiKTeX/2.9/fonts/type1/public/txfonts/t1xtt.pfb>
-Output written on bb_doc.pdf (9 pages, 1659426 bytes).
+{C:/Users/Florian/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/ly1/texnansi.enc}{
+C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files (x86)
+/TUD-Design/fonts/type1/softmake/charter/5chb8a.pfb><C:/Program Files (x86)/TUD
+-Design/fonts/type1/softmake/charter/5chr8a.pfb><C:/Program Files (x86)/TUD-Des
+ign/fonts/type1/softmake/charter/5chri8a.pfb><C:/Program Files (x86)/TUD-Design
+/fonts/type1/softmake/frontpage/5fpm8a.pfb><C:/Program Files (x86)/TUD-Design/f
+onts/type1/softmake/frontpage/5fpr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/bitstrea/charter/bchr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bitstre
+a/charter/bchri8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+latxfont/lcircle1.pfb><C:/Users/Florian/AppData/Roaming/MiKTeX/2.9/fonts/type1/
+mathdesign/mdbch/md-chr7m.pfb><C:/Users/Florian/AppData/Roaming/MiKTeX/2.9/font
+s/type1/mathdesign/mdbch/md-chri7m.pfb><C:/Users/Florian/AppData/Roaming/MiKTeX
+/2.9/fonts/type1/mathdesign/mdbch/md-chrma.pfb><C:/Users/Florian/AppData/Roamin
+g/MiKTeX/2.9/fonts/type1/public/txfonts/t1xtt.pfb>
+Output written on bb_doc.pdf (10 pages, 1683439 bytes).
 PDF statistics:
- 224 PDF objects out of 1000 (max. 8388607)
- 54 named destinations out of 1000 (max. 500000)
- 192 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 252 PDF objects out of 1000 (max. 8388607)
+ 57 named destinations out of 1000 (max. 500000)
+ 200 words of extra memory for PDF output out of 10000 (max. 10000000)
 

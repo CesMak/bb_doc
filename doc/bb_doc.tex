@@ -101,6 +101,27 @@ aboveskip=1.2em,
 	
 \end{tabular}
 
+% Please add the following required packages to your document preamble:
+% \usepackage[normalem]{ulem}
+% \useunder{\uline}{\ul}{}
+\begin{table}[]
+\centering
+\caption{My caption}
+\label{my-label}
+\begin{tabular}{|c|c|c|c|}
+\hline
+{\textbf{Type}} & {\textbf{Size}}                                             & { \textbf{Amount}} & { \textbf{Place}} \\ \hline
+Cylinderhead screw  & M3 x 11mm                                                       & 8                     & Motor mounts         \\ \hline
+Cylinderhead screw  & M2,5 x 22mm                                                     & 16                    & Motor plate          \\ \hline
+Cylinderhead screw  & M2 x 6 mm                                                       & 18                    & Wheel shaft          \\ \hline
+Cylinderhead screw  & \begin{tabular}[c]{@{}c@{}}M2,5  x 36 mm\\ (38 mm)\end{tabular} & 5                     & Wheel shaft cover    \\ \hline
+Cylinderhead screw  & \begin{tabular}[c]{@{}c@{}}M3 x 20 mm\\ (21mm)\end{tabular}     & 4                     & Layer mounting       \\ \hline
+Nut                 & M2                                                              & 5                     & Layer mounting       \\ \hline
+Cylinderhead screw  & \begin{tabular}[c]{@{}c@{}}M2,5 x 22mm\\ (23mm)\end{tabular}    & 4                     & Layer mounting       \\ \hline
+\end{tabular}
+\end{table}
+
+
 \textbf{Total Cost: \EUR{1176} + Cost of opencr board and all plastic (incl. tb3 structure) and scrwes }
 
 TODO:\\
@@ -237,9 +258,38 @@ git@git.sim.informatik.tu-darmstadt.de:TurtleBot/octave_rosbridge.git
 		\item \textbf{Ball moves only horizontal}
 	\end{itemize}
 	
-	\section{Dynamic}
+	\section{Model Parameters}
 	
 	
+	% Please add the following required packages to your document preamble:
+% \usepackage[normalem]{ulem}
+% \useunder{\uline}{\ul}{}
+\begin{table}[]
+\centering
+\caption{My caption}
+\label{my-label}
+\begin{tabular}{|l|l|l|l|}
+\hline
+{ \textbf{Parameter}}        & {\textbf{Variable}} & { \textbf{Value}}               & { \textbf{Source}} \\ \hline
+Mass of the ball                & $m_{K}$                & 0,4 $kg$                            & Datasheet             \\ \hline
+Mass of the body                & $m_{B}$                & 1,646 $kg$                           & SolidEdge             \\ \hline
+Mass of the virtual wheel       & $m_{VW}$               & 0,384 $kg$                           & Measured              \\ \hline
+Radius of the ball              & $r_{K}$                & 0,07 $m$                             & Datasheet             \\ \hline
+Radius of the body              & $r_{B}$                & 0,0703 $m$                           & Measured              \\ \hline
+Radius of the Wheels            & $r_{W}$              & 0,03 $m$                             & Datasheet             \\ \hline
+Height of the center of gravity & $l$                       & 0,24045 $m$                          & SolidEdge             \\ \hline
+Height of the body              & $h$                       & 0,34294 $m$                          & SolidEdge             \\ \hline
+Inertia of the Ball             & $\Theta_{K}$           & 0,00131 $kgm^{2}$  & Computed              \\ \hline
+Inertia of the Body (x-axis)    & $\Theta_{Bx}$          & 0,08751 $kgm^{2}$  & SolidEdge             \\ \hline
+Inertia of the Body (y-axis)    & $\Theta_{By}$          & 0,08788 $kgm^{2}$  & SolidEdge             \\ \hline
+Inertia of the body (z-axis)    & $\Theta_{Bz}$          & 0,00329 $kgm^{2}$  & SolidEdge             \\ \hline
+Inertia of the body (xy plane)  & $\Theta_{Bxy}$         & -0,00001 $kgm^{2}$ & SolidEdge             \\ \hline
+Inertia of the body (xz plane)  & $\Theta_{Bxz}$         & 0,00203 $kgm^{2}$  & SolidEdge             \\ \hline
+Inertia of the body(zy plane)   & $\Theta_{Bzy}$         & 0,00018 $kgm^{2}$  & SolidEdge             \\ \hline
+Gear ratio                      & $i$                       & 353,5                              & Datasheet             \\ \hline
+Gravitational acceleration      & $g$                       & 9,81 $m/s^{2}$     & BachelorThesis        \\ \hline
+\end{tabular}
+\end{table}
 	
 	
 \end{document}
