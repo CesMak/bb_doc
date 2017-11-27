@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.15)  27 NOV 2017 15:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.15)  27 NOV 2017 16:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1147,55 +1147,57 @@ File: img/beilagscheibe.png Graphic file (type png)
 Package pdftex.def Info: img/beilagscheibe.png used on input line 91.
 (pdftex.def)             Requested size: 24.73958pt x 29.87418pt.
 
-Overfull \hbox (6.41257pt too wide) in paragraph at lines 54--103
+Overfull \hbox (10.99478pt too wide) in paragraph at lines 54--104
 [] 
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2
+
+]
+
 LaTeX Font Warning: Font shape `T1/5ch/b/n' undefined
-(Font)              using `T1/5ch/m/n' instead on input line 104.
+(Font)              using `T1/5ch/m/n' instead on input line 105.
 
-[2
 
- <./img/opencr.png> <./img/upboard.jpg> <./img/r200.jpg> <./img/lasersensor.png
-> <./img/battery.png> <./img/dynamixel.png> <./img/ball.png> <./img/wheel.jpg> 
-<./img/kreisring.png> <./img/halterung.png> <./img/mitnehmer.png> <./img/beilag
-scheibe.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
 
  []
 
-[3]
+[3 <./img/opencr.png> <./img/upboard.jpg> <./img/r200.jpg> <./img/lasersensor.p
+ng> <./img/battery.png> <./img/dynamixel.png> <./img/ball.png> <./img/wheel.jpg
+> <./img/kreisring.png> <./img/halterung.png> <./img/mitnehmer.png> <./img/beil
+agscheibe.png>] [4]
 chapter 2.
-<img/filestructure.png, id=142, 306.14375pt x 509.905pt>
+<img/filestructure.png, id=146, 306.14375pt x 509.905pt>
 File: img/filestructure.png Graphic file (type png)
 
 <use img/filestructure.png>
-Package pdftex.def Info: img/filestructure.png used on input line 133.
+Package pdftex.def Info: img/filestructure.png used on input line 139.
 (pdftex.def)             Requested size: 99.58313pt x 165.85721pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--137
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
 
  []
 
-LaTeX Font Info:    Try loading font information for TS1+5ch on input line 138.
+LaTeX Font Info:    Try loading font information for TS1+5ch on input line 144.
 
-LaTeX Font Info:    No file TS15ch.fd. on input line 138.
+LaTeX Font Info:    No file TS15ch.fd. on input line 144.
 
 LaTeX Font Warning: Font shape `TS1/5ch/m/n' undefined
 (Font)              using `TS1/cmr/m/n' instead
-(Font)              for symbol `textbullet' on input line 138.
+(Font)              for symbol `textbullet' on input line 144.
 
+[5
 
-Overfull \hbox (21.46146pt too wide) in paragraph at lines 152--167
+ <./img/filestructure.png>]
+Overfull \hbox (21.46146pt too wide) in paragraph at lines 158--173
 [] 
  []
 
-[4
-
- <./img/filestructure.png>]
-LaTeX Font Info:    Try loading font information for T1+txtt on input line 184.
-
+LaTeX Font Info:    Try loading font information for T1+txtt on input line 190.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
@@ -1205,38 +1207,38 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
-) [5] [6]
+) [6] [7]
 chapter 3.
-<img/Strucuture.PNG, id=182, 298.11375pt x 255.20343pt>
+<img/Strucuture.PNG, id=186, 298.11375pt x 255.20343pt>
 File: img/Strucuture.PNG Graphic file (type png)
 
 <use img/Strucuture.PNG>
-Package pdftex.def Info: img/Strucuture.PNG used on input line 232.
+Package pdftex.def Info: img/Strucuture.PNG used on input line 238.
 (pdftex.def)             Requested size: 448.12788pt x 383.64922pt.
 
 Underfull \vbox (badness 2486) has occurred while \output is active []
 
- [7
+ [8
 
  <./img/Strucuture.PNG>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 260.
- [8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 260.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 266.
+ [9]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 266.
  (./bb_doc.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 260.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 260.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 266.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 266.
 Package rerunfilecheck Info: File `bb_doc.out' has not changed.
 (rerunfilecheck)             Checksum: 8DC02296AF72D4D1FCB36CE8CAB7C252;762.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 260.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 266.
  ) 
 Here is how much of TeX's memory you used:
- 13167 strings out of 494428
- 204012 string characters out of 6169213
- 378358 words of memory out of 5000000
+ 13168 strings out of 494428
+ 204018 string characters out of 6169213
+ 378516 words of memory out of 5000000
  16275 multiletter control sequences out of 15000+600000
  31635 words of font info for 60 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
@@ -1299,10 +1301,10 @@ md-chr7t.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathdesign/mdbch
 share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/ty
 pe1/public/cm-super/sfrm1728.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/txfonts/t1xtt.pfb>
-Output written on bb_doc.pdf (10 pages, 1660994 bytes).
+Output written on bb_doc.pdf (11 pages, 1661640 bytes).
 PDF statistics:
- 245 PDF objects out of 1000 (max. 8388607)
- 202 compressed objects within 3 object streams
- 53 named destinations out of 1000 (max. 500000)
+ 249 PDF objects out of 1000 (max. 8388607)
+ 205 compressed objects within 3 object streams
+ 54 named destinations out of 1000 (max. 500000)
  200 words of extra memory for PDF output out of 10000 (max. 10000000)
 
