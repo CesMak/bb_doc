@@ -276,33 +276,51 @@ See: \mylink{http://osrf-distributions.s3.amazonaws.com/gazebo/api/dev/classgaze
 	\section{Model Parameters}
 	
 	
-	% Please add the following required packages to your document preamble:
+% Please add the following required packages to your document preamble:
 % \usepackage[normalem]{ulem}
 % \useunder{\uline}{\ul}{}
 \begin{table}[]
 \centering
 \caption{My caption}
 \label{my-label}
-\begin{tabular}{|l|l|l|l|}
+\begin{tabular}{cccc}
 \hline
-{ \textbf{Parameter}}        & {\textbf{Variable}} & { \textbf{Value}}               & { \textbf{Source}} \\ \hline
-Mass of the ball                & $m_{K}$                & 0,4 $kg$                            & Datasheet             \\ \hline
-Mass of the body                & $m_{B}$                & 1,646 $kg$                           & SolidEdge             \\ \hline
-Mass of the virtual wheel       & $m_{VW}$               & 0,384 $kg$                           & Measured              \\ \hline
-Radius of the ball              & $r_{K}$                & 0,07 $m$                             & Datasheet             \\ \hline
-Radius of the body              & $r_{B}$                & 0,0703 $m$                           & Measured              \\ \hline
-Radius of the Wheels            & $r_{W}$              & 0,03 $m$                             & Datasheet             \\ \hline
-Height of the center of gravity & $l$                       & 0,24045 $m$                          & SolidEdge             \\ \hline
-Height of the body              & $h$                       & 0,34294 $m$                          & SolidEdge             \\ \hline
-Inertia of the Ball             & $\Theta_{K}$           & 0,00131 $kgm^{2}$  & Computed              \\ \hline
-Inertia of the Body (x-axis)    & $\Theta_{Bx}$          & 0,08751 $kgm^{2}$  & SolidEdge             \\ \hline
-Inertia of the Body (y-axis)    & $\Theta_{By}$          & 0,08788 $kgm^{2}$  & SolidEdge             \\ \hline
-Inertia of the body (z-axis)    & $\Theta_{Bz}$          & 0,00329 $kgm^{2}$  & SolidEdge             \\ \hline
-Inertia of the body (xy plane)  & $\Theta_{Bxy}$         & -0,00001 $kgm^{2}$ & SolidEdge             \\ \hline
-Inertia of the body (xz plane)  & $\Theta_{Bxz}$         & 0,00203 $kgm^{2}$  & SolidEdge             \\ \hline
-Inertia of the body(zy plane)   & $\Theta_{Bzy}$         & 0,00018 $kgm^{2}$  & SolidEdge             \\ \hline
-Gear ratio                      & $i$                       & 353,5                              & Datasheet             \\ \hline
-Gravitational acceleration      & $g$                       & 9,81 $m/s^{2}$     & BachelorThesis        \\ \hline
+\multicolumn{1}{|c|}{{ \textbf{Parameter}}}                                                                          & \multicolumn{1}{c|}{{\textbf{Variable}}} & \multicolumn{1}{c|}{{ \textbf{Value}}}                  & \multicolumn{1}{c|}{{ \textbf{Source}}} \\ \hline
+                                                                                                                        &                                              &                                                            &                                            \\ \hline
+\multicolumn{1}{|c|}{Mass of the ball}                                                                                  & \multicolumn{1}{c|}{$m_{K}$}                & \multicolumn{1}{c|}{0,4 kg}                                & \multicolumn{1}{c|}{Datasheet}             \\ \hline
+\multicolumn{1}{|c|}{Mass of the ball}                                                                                  & \multicolumn{1}{c|}{$m_{K}$}                & \multicolumn{1}{c|}{0,397 kg}                              & \multicolumn{1}{c|}{Measured}              \\ \hline
+\multicolumn{1}{|c|}{Mass of the ball}                                                                                  & \multicolumn{1}{c|}{$m_{K}$}                & \multicolumn{1}{c|}{0,631 kg}                              & \multicolumn{1}{c|}{SolidEdge}             \\ \hline
+\multicolumn{1}{|c|}{\begin{tabular}[c]{@{}c@{}}Mass of the body, complete\\ (with motors/wheels)\end{tabular}}         & \multicolumn{1}{c|}{$m_{B}$}                & \multicolumn{1}{c|}{?}                                     & \multicolumn{1}{c|}{Measured}              \\ \hline
+\multicolumn{1}{|c|}{\begin{tabular}[c]{@{}c@{}}Mass of the body, complete\\ (with motors/wheels)\end{tabular}}         & \multicolumn{1}{c|}{$m_{B}$}                & \multicolumn{1}{c|}{1,785 kg}                              & \multicolumn{1}{c|}{SolidEdge}             \\ \hline
+\multicolumn{1}{|c|}{\begin{tabular}[c]{@{}c@{}}Mass of the body\\ (without motors/wheels)\end{tabular}}                & \multicolumn{1}{c|}{$m_{B}$}                & \multicolumn{1}{c|}{?}                                     & \multicolumn{1}{c|}{Measured}              \\ \hline
+\multicolumn{1}{|c|}{\begin{tabular}[c]{@{}c@{}}Mass of the body\\ (without motors/wheels)\end{tabular}}                & \multicolumn{1}{c|}{$m_{B}$}                & \multicolumn{1}{c|}{1,394 kg}                              & \multicolumn{1}{c|}{SolidEdge}             \\ \hline
+\multicolumn{1}{|c|}{Mass of Omniwheel}                                                                                 & \multicolumn{1}{c|}{$m_{OW}$}               & \multicolumn{1}{c|}{0,050 kg}                              & \multicolumn{1}{c|}{Measured}              \\ \hline
+\multicolumn{1}{|c|}{Mass of Omniwheel}                                                                                 & \multicolumn{1}{c|}{$m_{OW}$}               & \multicolumn{1}{c|}{0,046 kg}                              & \multicolumn{1}{c|}{SolidEdge}             \\ \hline
+\multicolumn{1}{|c|}{Mass of the virtual wheel}                                                                         & \multicolumn{1}{c|}{$m_{VW}$}               & \multicolumn{1}{c|}{0,384 kg}                              & \multicolumn{1}{c|}{Measured}              \\ \hline
+\multicolumn{1}{|c|}{\begin{tabular}[c]{@{}c@{}}Mass of the substructure, complete\\ (with motors/wheels)\end{tabular}} & \multicolumn{1}{c|}{$m_{S}$}                & \multicolumn{1}{c|}{0,506 kg}                              & \multicolumn{1}{c|}{Measured}              \\ \hline
+\multicolumn{1}{|c|}{\begin{tabular}[c]{@{}c@{}}Mass of the substructure, complete\\ (with motors/wheels)\end{tabular}} & \multicolumn{1}{c|}{$m_{S}$}                & \multicolumn{1}{c|}{0,457 kg}                              & \multicolumn{1}{c|}{SolidEdge}             \\ \hline
+\multicolumn{1}{|c|}{Mass of plate}                                                                                     & \multicolumn{1}{c|}{$m_{P}$}                & \multicolumn{1}{c|}{0,078 kg}                              & \multicolumn{1}{c|}{Measured}              \\ \hline
+\multicolumn{1}{|c|}{Mass of plate}                                                                                     & \multicolumn{1}{c|}{$m_{P}$}                & \multicolumn{1}{c|}{?}                                     & \multicolumn{1}{c|}{SolidEdge}             \\ \hline
+                                                                                                                        &                                              &                                                            &                                            \\ \hline
+\multicolumn{1}{|c|}{Radius of the ball}                                                                                & \multicolumn{1}{c|}{$r_{K}$}                & \multicolumn{1}{c|}{0,07 m}                                & \multicolumn{1}{c|}{Datasheet}             \\ \hline
+\multicolumn{1}{|c|}{Radius of the body}                                                                                & \multicolumn{1}{c|}{$r_{B}$}                & \multicolumn{1}{c|}{0,0703 m}                              & \multicolumn{1}{c|}{Measured}              \\ \hline
+\multicolumn{1}{|c|}{Radius of the Wheels}                                                                              & \multicolumn{1}{c|}{$r_{W}$}                & \multicolumn{1}{c|}{0,03 m}                                & \multicolumn{1}{c|}{Datasheet}             \\ \hline
+\multicolumn{1}{|c|}{Height of the center of gravity}                                                                   & \multicolumn{1}{c|}{$l$}                       & \multicolumn{1}{c|}{0,24045 m}                             & \multicolumn{1}{c|}{SolidEdge}             \\ \hline
+\multicolumn{1}{|c|}{Height of the body}                                                                                & \multicolumn{1}{c|}{$h$}                       & \multicolumn{1}{c|}{0,34294 m}                             & \multicolumn{1}{c|}{SolidEdge}             \\ \hline
+\multicolumn{1}{|c|}{Inertia of the Ball}                                                                               & \multicolumn{1}{c|}{$\Theta_{K}$}           & \multicolumn{1}{c|}{0,00131 $kgm^{2}$}     & \multicolumn{1}{c|}{Computed}              \\ \hline
+\multicolumn{1}{|c|}{Inertia of the Body (x-axis)}                                                                      & \multicolumn{1}{c|}{$\Theta_{Bx}$}          & \multicolumn{1}{c|}{0,08751 $kgm^{2}$}     & \multicolumn{1}{c|}{SolidEdge}             \\ \hline
+\multicolumn{1}{|c|}{Inertia of the Body (y-axis)}                                                                      & \multicolumn{1}{c|}{$\Theta_{By}$}          & \multicolumn{1}{c|}{0,08788 $kgm^{2}$}     & \multicolumn{1}{c|}{SolidEdge}             \\ \hline
+\multicolumn{1}{|c|}{Inertia of the body (z-axis)}                                                                      & \multicolumn{1}{c|}{$\Theta_{Bz}$}          & \multicolumn{1}{c|}{0,00329 $kgm^{2}$}     & \multicolumn{1}{c|}{SolidEdge}             \\ \hline
+\multicolumn{1}{|c|}{Inertia of the body (xy plane)}                                                                    & \multicolumn{1}{c|}{$\Theta_{Bxy}$}         & \multicolumn{1}{c|}{-0,00001 $kgm^{2}$}    & \multicolumn{1}{c|}{SolidEdge}             \\ \hline
+\multicolumn{1}{|c|}{Inertia of the body (xz plane)}                                                                    & \multicolumn{1}{c|}{$\Theta_{Bxz}$}         & \multicolumn{1}{c|}{0,00203 $kgm^{2}$}     & \multicolumn{1}{c|}{SolidEdge}             \\ \hline
+\multicolumn{1}{|c|}{Inertia of the body(zy plane)}                                                                     & \multicolumn{1}{c|}{$\Theta_{Bzy}$}         & \multicolumn{1}{c|}{0,00018 $kgm^{2}$}     & \multicolumn{1}{c|}{SolidEdge}             \\ \hline
+\multicolumn{1}{|c|}{Inertia of the rotor (motor)}                                                                      & \multicolumn{1}{c|}{$\Theta_{M}$}           & \multicolumn{1}{c|}{0,444e-6 $kgm^{2}$}    & \multicolumn{1}{c|}{Adoption}              \\ \hline
+\multicolumn{1}{|c|}{Inertia of Omniwheel}                                                                              & \multicolumn{1}{c|}{$\Theta_{OW}$}          & \multicolumn{1}{c|}{0.000023157 $kgm^{2}$} & \multicolumn{1}{c|}{Computed}              \\ \hline
+\multicolumn{1}{|c|}{Inertia of the actuating wheel in yz/xz}                                                            & \multicolumn{1}{c|}{$\Theta_{W}$}           & \multicolumn{1}{c|}{0,058873 $kgm^{2}$}    & \multicolumn{1}{c|}{Computed}              \\ \hline
+\multicolumn{1}{|c|}{Inertia of the actuating wheel in xy}                                                              & \multicolumn{1}{c|}{$\Theta_{Wxy}$}         & \multicolumn{1}{c|}{0,16656 $kgm^{2}$}     & \multicolumn{1}{c|}{Computed}              \\ \hline
+                                                                                                                        &                                              &                                                            &                                            \\ \hline
+\multicolumn{1}{|c|}{Gear ratio}                                                                                        & \multicolumn{1}{c|}{$i$}                       & \multicolumn{1}{c|}{353,5}                                 & \multicolumn{1}{c|}{Datasheet}             \\ \hline
+\multicolumn{1}{|c|}{Gravitational acceleration}                                                                        & \multicolumn{1}{c|}{$g$}                       & \multicolumn{1}{c|}{9,81 $m/s^{2}$}        & \multicolumn{1}{c|}{BachelorThesis}        \\ \hline
 \end{tabular}
 \end{table}
 
