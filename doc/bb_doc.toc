@@ -5,7 +5,7 @@
 \contentsline {section}{\numberline {2.3}Gazebo Parameters}{6}{section.2.3}
 \contentsline {section}{\numberline {2.4}Control}{6}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Plugins}{6}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Launch}{6}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.2}Launch}{7}{subsection.2.4.2}
 \contentsline {section}{\numberline {2.5}Sensors}{7}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}IMU}{7}{subsection.2.5.1}
 \contentsline {chapter}{\numberline {3}Model}{8}{chapter.3}

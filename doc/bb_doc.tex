@@ -191,9 +191,16 @@ Gazebo Parameter's List:\\
 	If set to 0, two objects interpenetrating each other will not be pushed apart.  & &ode \\
 	slip1&Artificial contact slip in the primary friction direction  & &ode \\
 	slip2&Artificial contact slip in the secondary friction dirction.& &ode \\
-\end{tabular}
+	\end{tabular}
 
 See: \mylink{http://osrf-distributions.s3.amazonaws.com/gazebo/api/dev/classgazebo_1_1physics_1_1ODESurfaceParams.html}{ODESurfaceParams}
+
+	Urdf Parameter's List: JOINT TAGS:\\
+	\begin{tabular}{l l l}
+		name(xacro tag)&description&value\\
+		axis&this is the axis around the joint is revolting or linear &xyz=``0 1 0''\\
+		dynamics&set the friction and the damping &friction=``0.7'' damping = ``0.0''\\
+	\end{tabular}
 
 \section{Gazebo Parameters}
 
