@@ -107,7 +107,7 @@ aboveskip=1.2em,
 % \useunder{\uline}{\ul}{}
 \begin{table}[]
 \centering
-\caption{My caption}
+\caption{Screws:}
 \label{my-label}
 \begin{tabular}{|c|c|c|c|}
 \hline
@@ -124,12 +124,6 @@ Cylinderhead screw  & \begin{tabular}[c]{@{}c@{}}M2,5 x 22mm\\ (23mm)\end{tabula
 
 
 \textbf{Total Cost: \EUR{1176} + Cost of opencr board and all plastic (incl. tb3 structure) and scrwes }
-
-TODO:\\
-\begin{enumerate}
-	\item Abmessungen von einer struckture layer
-	\item upboard1-link noch eintragen
-\end{enumerate}
 
 \chapter{Simulation}
 
@@ -148,6 +142,30 @@ These files are executed one after another:
 	\item bb\_description -> urdf: common\_properties.xacro
 	\item bb\_description -> urdf: bb.gazebo.xacro
 \end{enumerate}
+
+\section{Gazebo - Controller Synchronization }
+The calculation of the 2D torques takes around: 0.000187 s. 
+
+Consider to take the right joint states as also all subwheel states are published.
+
+Erst wenn das Motordrehmoment grosser als die wheel joint friction ist, bewegt sich das rad!.
+
+Denke daran die joint states position und velocity in einen winkel und winkelgeschwindigkeit umzurechnen.
+
+ The state of each joint (revolute or prismatic) is defined by:
+
+ the position of the joint (rad or m),
+ 
+ the velocity of the joint (rad/s or m/s) and 
+ 
+ the effort that is applied in the joint (Nm or N).
+ 
+ 
+ Muss ich nun in winkelgeschwindigkeit umrechnen oder nicht?!
+ 
+ Das seltsame: Ich kann keinen kontinuierlichen effort draufgeben. Unabhängig von der publish rate, es wird of 3 mal eine 1 drauf gegeben und anschließend eine 0.
+ 
+ Groesstes Problem bleibt: Die motor commands (torques) koennen nicht kontinuierlich rausgeschickt werden. Es werden immer wieder 0 rausgschickt ..... - warum ist das so?
 
 \section{Simulation design}
 
@@ -181,7 +199,7 @@ Gazebo Parameter's List:\\
 	name(xacro)&description&value&sdf group\\
 	mu1&is the Coulomb friction coefficient for the first friction direction&1.0&ode\\
 	mu2& is the friction coefficient for the second friction direction (perpendicular to the first friction direction)&2.0&ode\\
-	fdir1& 3-tuple specifying direction of mu1 in the collision local reference frame.&0 0 0&ode\\
+	fdir1& 3-tuple specifying direction of mu1 in the collision local reference frame. fdir1 is the vector that defines the direction of mu1, which is the principal contact direction &0 0 0&ode\\
 	kp&spring constant equivalents of a contact as a function of SurfaceParams::cfm and SurfaceParams::erp & &ode \\
 	kd&spring damping constant equivalents of a contact as a function of SurfaceParams::cfm and SurfaceParams::erp.   & &ode \\
 	cfm&Constraint Force Mixing parameter.& &ode \\
@@ -204,6 +222,25 @@ See: \mylink{http://osrf-distributions.s3.amazonaws.com/gazebo/api/dev/classgaze
 
 \section{Gazebo Parameters}
 
+\section{How to model an omni wheel gazebo:}
+\begin{enumerate}
+	\item \url{http://answers.gazebosim.org/question/5562/modeling-omni-wheels/}
+	\item \url{http://answers.gazebosim.org/question/5562/modeling-omni-wheels/}
+	\item \url{http://answers.gazebosim.org/question/5476/parameters-for-a-skid-steeringsimulated-tracked-robot-use-of-the-fdir1-tag/}
+	\item \url{https://bitbucket.org/osrf/gazebo/pull-requests/2652/added-support-for-tracked-vehicles/diff}
+	\item \url{https://bitbucket.org/osrf/gazebo/pull-requests/2652/added-support-for-tracked-vehicles/diff}
+	\item \url{https://bitbucket.org/osrf/gazebo/issues/2068/directional-friction-still-broken}
+	
+	\item \url{https://answers.ros.org/question/212889/gazebo-planar-move-plugin-for-omni-directional-wheel/}
+	
+	
+	For instance, the PR2 and Care-O-Bot are omnidirectional drive robots available for simulation in gazebo. Both use a system of four steered and driven casters (for a total of 8 motors) to achieve omnidirectional mobility. If you're interested in simulation of a meccanum-wheel drive robot, I'm not sure there is one available for gazebo. Last time I looked, the youbot for gazebo used no true meccanum wheels, but a similar system to the two robots I mentioned above.
+\end{enumerate}
+
+\section{omni wheel controllers}
+\begin{enumerate}
+	\item libgazebo\_ros\_skid\_steer\_drive.so \url{https://github.com/fsuarez6/labrob/blob/master/labrob_description/urdf/labrob.urdf.xacro}
+\end{enumerate}
 	
 	\section{Control}
 	sobald diff drive plugin angeschaltet drehen sich die raeder viel zu schnell ....

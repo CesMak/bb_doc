@@ -1,14 +1,17 @@
 \BOOKMARK [0][-]{chapter.1}{Item - List}{}% 1
 \BOOKMARK [0][-]{chapter.2}{Simulation}{}% 2
 \BOOKMARK [1][-]{section.2.1}{Launch}{chapter.2}% 3
-\BOOKMARK [1][-]{section.2.2}{Simulation design}{chapter.2}% 4
-\BOOKMARK [1][-]{section.2.3}{Gazebo Parameters}{chapter.2}% 5
-\BOOKMARK [1][-]{section.2.4}{Control}{chapter.2}% 6
-\BOOKMARK [2][-]{subsection.2.4.1}{Plugins}{section.2.4}% 7
-\BOOKMARK [2][-]{subsection.2.4.2}{Launch}{section.2.4}% 8
-\BOOKMARK [1][-]{section.2.5}{Sensors}{chapter.2}% 9
-\BOOKMARK [2][-]{subsection.2.5.1}{IMU}{section.2.5}% 10
-\BOOKMARK [0][-]{chapter.3}{Model}{}% 11
-\BOOKMARK [1][-]{section.3.1}{Composition}{chapter.3}% 12
-\BOOKMARK [1][-]{section.3.2}{Assumptions}{chapter.3}% 13
-\BOOKMARK [1][-]{section.3.3}{Model Parameters}{chapter.3}% 14
+\BOOKMARK [1][-]{section.2.2}{Gazebo - Controller Synchronization }{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.3}{Simulation design}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.4}{Gazebo Parameters}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.5}{How to model an omni wheel gazebo:}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.6}{omni wheel controllers}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.7}{Control}{chapter.2}% 9
+\BOOKMARK [2][-]{subsection.2.7.1}{Plugins}{section.2.7}% 10
+\BOOKMARK [2][-]{subsection.2.7.2}{Launch}{section.2.7}% 11
+\BOOKMARK [1][-]{section.2.8}{Sensors}{chapter.2}% 12
+\BOOKMARK [2][-]{subsection.2.8.1}{IMU}{section.2.8}% 13
+\BOOKMARK [0][-]{chapter.3}{Model}{}% 14
+\BOOKMARK [1][-]{section.3.1}{Composition}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.2}{Assumptions}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.3}{Model Parameters}{chapter.3}% 17
