@@ -167,6 +167,18 @@ Denke daran die joint states position und velocity in einen winkel und winkelges
  
  Groesstes Problem bleibt: Die motor commands (torques) koennen nicht kontinuierlich rausgeschickt werden. Es werden immer wieder 0 rausgschickt ..... - warum ist das so?
 
+
+use\_sim\_time parameter:
+ros time is the same as simulation time when the use\_sim\_time parameter is enabled.
+
+In order for a ROS node to use simulation time according to the /clock topic, the use\_sim\_timeparameter must be set to true before the node is initialized. This can be done in a launchfile or from the command line.
+
+If the use\_sim\_time time parameter is set, the ROS Time API will return time=0 until it has received a value from the /clock topic. Then, the time will only be updated on receipt of a message from the /clock topic, and will stay constant between updates.
+
+For calculations of time durations when using simulation time, clients should always wait until the first non-zero time value has been received before starting, because the first simulation time value from /clock topic may be a high value.
+
+Note: Prior to ROS C Turtle, nodes were automatically subscribed to the /clock topic, and would use simulation time if there was anything published to the /clock topic. 
+
 \section{Simulation design}
 
 Ballbot SDF Reference:
@@ -242,6 +254,29 @@ See: \mylink{http://osrf-distributions.s3.amazonaws.com/gazebo/api/dev/classgaze
 	\item libgazebo\_ros\_skid\_steer\_drive.so \url{https://github.com/fsuarez6/labrob/blob/master/labrob_description/urdf/labrob.urdf.xacro}
 \end{enumerate}
 	
+	\section{Equations for Controller:}
+$\vartheta_{x,y,z}$ represent the orientation of the body
+
+ $\varphi_{x,y,z}$ represent the orientation of the ball
+ 
+  $\psi_{x,y,z}$ are the angles of the virtual actuating wheels.
+  
+$T_{x,y,z}$ are the virtual motor torques.
+		
+$T_{1,2,3}$ are the real motor torques.
+	Inputs:
+\begin{enumerate}
+	\item The Gain Matrix K derived from the Simulink Simulation
+	\item 	IMU-Measurements: $\vartheta_{x,y,z} (rad), \quad \dot{\vartheta}_{x,y,z} (rad/sec)$
+	\item Motor-Measurements(rotation of actuating wheel): $\psi_{x,y,z} (rad), \quad \dot{\psi}_{x,y,z} (rad/sec)$
+	\end{enumerate}	
+	
+	Wie von virtual wheels auf real wheels umrechnen?!
+	
+	
+
+	
+
 	\section{Control}
 	sobald diff drive plugin angeschaltet drehen sich die raeder viel zu schnell ....
 	
@@ -256,6 +291,8 @@ See: \mylink{http://osrf-distributions.s3.amazonaws.com/gazebo/api/dev/classgaze
 	Do this example first: \url{http://gazebosim.org/tutorials/?tut=ros_control}
 	
 	Also try this bb8 gazebo tutorial: \url{https://www.youtube.com/watch?v=j5qC9l448p8}
+	
+	
 	
 	\subsection{Plugins}
 	\begin{itemize}
@@ -317,9 +354,15 @@ See: \mylink{http://osrf-distributions.s3.amazonaws.com/gazebo/api/dev/classgaze
 		\item \textbf{Fast motor dynamics}; The controlling of the motor is much faster than the controller of the Ballbot
 		\item \textbf{Ball moves only horizontal}
 	\end{itemize}
-	
+			
+			
+			\section{TODO}
+			
+			\begin{enumerate}
+				\item Horn komplett rein auf beilagscheibe und schauen dass das mit der 0 position stimmt!
+			\end{enumerate}
 	\section{Model Parameters}
-	
+
 	
 % Please add the following required packages to your document preamble:
 % \usepackage[normalem]{ulem}
@@ -372,6 +415,5 @@ See: \mylink{http://osrf-distributions.s3.amazonaws.com/gazebo/api/dev/classgaze
 Traegheitsmoment kugel Hohlzylinder: $J=m \frac{r_i^2+r_a^2}{2} = 0.4 * \frac{65^2+70^2}{2} kg *10^ {-6} m^2=1.825 *10^{-3} kg m^2$ 
 
 Traegheitsmoment wheel Vollzylinder: $J=m \frac{1}{2} r^2 = 0.05146 * 0.020^2 = 1.0292 * 10^{-4} kg m^2$ 
-	
-	
+
 \end{document}
