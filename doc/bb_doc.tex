@@ -66,7 +66,7 @@ aboveskip=1.2em,
 	Laser Distance Sensor&1 &124 &\mylink{https://wiki.ros.org/hls_lfcd_lds_driver?action=AttachFile\&do=view\&target=LDS_Basic_Specification.pdf}{specs, \EUR{100}} & 
 	\includegraphics[width=0.1\textwidth]{img/lasersensor.png}\\
 	
-	Battery: LI-PO 11.1 1800mAh LB-12 19&1&132 &\mylink{https://nodna.de/Robotis-LIPO-111V-Akkupack-1800mAh-LBS-012}{\EUR{44.90}} &
+	Battery: LI-PO 11.1 1800mAh LB-12 19&1&150 &\mylink{https://nodna.de/Robotis-LIPO-111V-Akkupack-1800mAh-LBS-012}{\EUR{44.90}} &
 	\includegraphics[width=0.1\textwidth]{img/battery.png} \\
 	
 	Turtlebot3 Layers(125cmx125cm)&4& & & \\
@@ -89,6 +89,10 @@ aboveskip=1.2em,
 	
 	Plain washer (Beilagscheibe),(PLA, 3D printeted)&3&0.45 & &
 	\includegraphics[height=0.06\textwidth]{img/beilagscheibe.png}  \\
+	
+	Omni double wheels(dia: 56mm, thickness:25mm)&3&62 &{\EUR{15}} &  	\includegraphics[width=0.05\textwidth]{img/wheel_double.jpg}   \\
+		
+	Mitnehmer double wheels&3&7 & &  	\includegraphics[width=0.05\textwidth]{img/mitnehmer_double.png}   \\
 	
 	M3  (Mutter-Halterung-Kreisring-Layer)&9& & & \\
 	M2.5  (Kreisring-Layer)&2& & & \\
@@ -131,6 +135,12 @@ TODO:
 check if controller works
 
 check why imu fails
+
+The controller works! 
+But if the max vel limit is too slow and a constant force is applied dann wird sehr schnell das max vel limit ueberschritten und daher springt es beim effort control immer wieder auf 0!
+
+Die Ausgabe der joint states der velocity ist in rad pro sec.! bei den continuous joints
+
 
 \section{Launch}
 These files are executed one after another:
@@ -323,6 +333,16 @@ $T_{1,2,3}$ are the real motor torques.
 	The simulated IMU outputs values like: orientation (x,y,z,w), angluar velocity(x,y,z), linear velocity(x,y,z), linear acceleration(x,y,z).
 	
 	The opencr real IMU gives values like: orientation(x,y,z,w), angular velocity(x,y,z), linear acceleration(x,y,z) see \mylink{OpenCR board IMU }{http://turtlebot3.readthedocs.io/en/latest/appendix\_opencr.html}
+	
+	\subsection{Friction Omniwheels - Ball}
+	Yellow Ball, double omniwheel friction: The motor starts to turn at 11 Units so the offset threshold is 10 Units. Which is 47.4mNm (when 4.3mNm/Unit - Factor is 232).
+	
+	\chapter{Testing to balance}
+	good values:
+	\begin{itemize}
+		\item ohne filter, K exp = 12, Alpha = 40, Beta = -120, sample time 6ms
+	\end{itemize}
+	
 	
 	\chapter{Model}
 	
