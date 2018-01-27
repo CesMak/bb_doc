@@ -1,0 +1,21 @@
+\BOOKMARK [0][-]{chapter.1}{Item - List}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Simulation}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Launch}{chapter.2}% 3
+\BOOKMARK [1][-]{section.2.2}{Gazebo - Controller Synchronization }{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.3}{Simulation design}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.4}{Gazebo Parameters}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.5}{How to model an omni wheel gazebo:}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.6}{omni wheel controllers}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.7}{Equations for Controller:}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.8}{Control}{chapter.2}% 10
+\BOOKMARK [2][-]{subsection.2.8.1}{Plugins}{section.2.8}% 11
+\BOOKMARK [2][-]{subsection.2.8.2}{Launch}{section.2.8}% 12
+\BOOKMARK [1][-]{section.2.9}{Sensors}{chapter.2}% 13
+\BOOKMARK [2][-]{subsection.2.9.1}{IMU}{section.2.9}% 14
+\BOOKMARK [2][-]{subsection.2.9.2}{Friction Omniwheels - Ball}{section.2.9}% 15
+\BOOKMARK [0][-]{chapter.3}{Testing to balance}{}% 16
+\BOOKMARK [0][-]{chapter.4}{Model}{}% 17
+\BOOKMARK [1][-]{section.4.1}{Composition}{chapter.4}% 18
+\BOOKMARK [1][-]{section.4.2}{Assumptions}{chapter.4}% 19
+\BOOKMARK [1][-]{section.4.3}{TODO}{chapter.4}% 20
+\BOOKMARK [1][-]{section.4.4}{Model Parameters}{chapter.4}% 21
