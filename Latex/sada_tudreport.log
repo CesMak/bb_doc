@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.11.17)  27 JAN 2018 15:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.11.17)  27 JAN 2018 18:10
 entering extended mode
 **D:/BallBot/Dokumentation/bb_doc/Latex/sada_tudreport.tex
 (D:/BallBot/Dokumentation/bb_doc/Latex/sada_tudreport.tex
@@ -1699,29 +1699,6 @@ LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
 LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
 (Font)              scaled to size 6.48601pt on input line 3.
 \@TUD@titlelines=\count326
-
-! Undefined control sequence.
-\@subsubtitle ...\SADABetreuer {} \SADABetreuerII 
-                                                  {} \SADABetreuerIII {}
-l.3 
-    
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\@subsubtitle ...DABetreuerII {} \SADABetreuerIII 
-                                                  {}
-l.3 
-    
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 <tud_logo.pdf, id=3, pagebox=cropbox, 157.58875pt x 63.23625pt>
 File: tud_logo.pdf Graphic file (type pdf)
 <use tud_logo.pdf>
@@ -1755,7 +1732,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 3.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 3.
-[-1
+ [-1
 Non-PDF special ignored!
 Non-PDF special ignored!
 
@@ -1781,24 +1758,6 @@ LaTeX Font Info:    Try loading font information for T1+txtt on input line 4.
 (C:\Users\Florian\AppData\Roaming\MiKTeX\2.9\tex\latex\txfonts\t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
 )
-! Undefined control sequence.
-l.18  &\SADABetreuerII
-                      \\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.19  &\SADABetreuerIII
-                       
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 <./common/IAT_rtm.pdf, id=27, pagebox=cropbox, 91.53557pt x 43.78036pt>
 File: ./common/IAT_rtm.pdf Graphic file (type pdf)
 <use ./common/IAT_rtm.pdf>
@@ -1933,12 +1892,64 @@ Package babel Info: Redefining ngerman shorthand "~
  [8
 
 
-])
+]) (inc/Modellierung.tex
+chapter 1.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 3.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 3.
+)
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 111.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 111.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 111.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 111.
+ [1
+
+
+]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 111.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 111.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 111.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 111.
+ [2
+
+
+]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 113.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 113.
+ (sada_tudreport.bbl
+
+LaTeX Warning: Empty `thebibliography' environment or \BreakBibliography
+               before end of `thebibliography' environment on input line 3.
+
+)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 123.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 123.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 123.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 123.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 123.
+ [3
+
+
+]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 123.
  (sada_tudreport.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 123.
@@ -1949,33 +1960,30 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 25503 strings out of 493318
- 445501 string characters out of 3138991
- 631731 words of memory out of 3000000
- 28555 multiletter control sequences out of 15000+200000
+ 25531 strings out of 493318
+ 445956 string characters out of 3138991
+ 631735 words of memory out of 3000000
+ 28570 multiletter control sequences out of 15000+200000
  614176 words of font info for 112 fonts, out of 3000000 for 9000
  1147 hyphenation exceptions out of 8191
- 70i,13n,108p,10572b,526s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{section*.8} has been referenced but does not exis
-t, replaced by a fixed one
-
-{C:/Users/Florian/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/ly1/texnansi.enc}{
-C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files (x86)
-/TUD-Design/fonts/type1/softmake/charter/5chb8a.pfb><C:/Program Files (x86)/TUD
--Design/fonts/type1/softmake/charter/5chr8a.pfb><C:/Program Files (x86)/TUD-Des
-ign/fonts/type1/softmake/charter/5chri8a.pfb><C:/Program Files (x86)/TUD-Design
-/fonts/type1/softmake/frontpage/5fpm8a.pfb><C:/Program Files (x86)/TUD-Design/f
-onts/type1/softmake/frontpage/5fpr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/bitstrea/charter/bchr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bitstre
-a/charter/bchri8a.pfb><C:/Users/Florian/AppData/Roaming/MiKTeX/2.9/fonts/type1/
-mathdesign/mdbch/md-chb7m.pfb><C:/Users/Florian/AppData/Roaming/MiKTeX/2.9/font
-s/type1/mathdesign/mdbch/md-chr7m.pfb><C:/Users/Florian/AppData/Roaming/MiKTeX/
-2.9/fonts/type1/mathdesign/mdbch/md-chr7y.pfb><C:/Users/Florian/AppData/Roaming
-/MiKTeX/2.9/fonts/type1/mathdesign/mdbch/md-chri7m.pfb><C:/Users/Florian/AppDat
-a/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/t1xtt.pfb>
-Output written on sada_tudreport.pdf (10 pages, 123870 bytes).
+ 70i,13n,108p,10572b,527s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Florian/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/ly1/texnansi.enc
+}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files (x8
+6)/TUD-Design/fonts/type1/softmake/charter/5chb8a.pfb><C:/Program Files (x86)/T
+UD-Design/fonts/type1/softmake/charter/5chr8a.pfb><C:/Program Files (x86)/TUD-D
+esign/fonts/type1/softmake/charter/5chri8a.pfb><C:/Program Files (x86)/TUD-Desi
+gn/fonts/type1/softmake/frontpage/5fpm8a.pfb><C:/Program Files (x86)/TUD-Design
+/fonts/type1/softmake/frontpage/5fpr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/bitstrea/charter/bchr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bitst
+rea/charter/bchri8a.pfb><C:/Users/Florian/AppData/Roaming/MiKTeX/2.9/fonts/type
+1/mathdesign/mdbch/md-chb7m.pfb><C:/Users/Florian/AppData/Roaming/MiKTeX/2.9/fo
+nts/type1/mathdesign/mdbch/md-chr7m.pfb><C:/Users/Florian/AppData/Roaming/MiKTe
+X/2.9/fonts/type1/mathdesign/mdbch/md-chr7y.pfb><C:/Users/Florian/AppData/Roami
+ng/MiKTeX/2.9/fonts/type1/mathdesign/mdbch/md-chri7m.pfb><C:/Users/Florian/AppD
+ata/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/t1xtt.pfb>
+Output written on sada_tudreport.pdf (13 pages, 128097 bytes).
 PDF statistics:
- 136 PDF objects out of 1000 (max. 8388607)
- 18 named destinations out of 1000 (max. 500000)
- 64 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 163 PDF objects out of 1000 (max. 8388607)
+ 25 named destinations out of 1000 (max. 500000)
+ 80 words of extra memory for PDF output out of 10000 (max. 10000000)
 

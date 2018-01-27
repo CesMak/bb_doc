@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.11.17)  19 JAN 2018 12:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.11.17)  27 JAN 2018 15:54
 entering extended mode
 **D:/BallBot/Dokumentation/bb_doc/doc/bb_doc.tex
 (D:/BallBot/Dokumentation/bb_doc/doc/bb_doc.tex
@@ -796,7 +796,11 @@ File: listings.cfg 2015/06/04 1.6 listings configuration
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 \longtablewidth=\skip118
 
-(bb_doc.aux)
+(bb_doc.aux
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+)
 \openout1 = `bb_doc.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
@@ -815,8 +819,7 @@ LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
 LaTeX Font Info:    ... okay on input line 48.
 LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 48.
 LaTeX Font Info:    Try loading font information for MDA+cmr on input line 48.
-
-(C:\Users\Florian\AppData\Roaming\MiKTeX\2.9\tex\latex\mathdesign\mdacmr.fd
+ (C:\Users\Florian\AppData\Roaming\MiKTeX\2.9\tex\latex\mathdesign\mdacmr.fd
 File: mdacmr.fd 
 )
 LaTeX Font Info:    ... okay on input line 48.
@@ -1064,14 +1067,11 @@ Non-PDF special ignored!{C:/Users/Florian/AppData/Local/MiKTeX/2.9/pdftex/confi
 g/pdftex.map} <C:/Program Files (x86)/TUD-Design/tex/latex/tuddesign/logo/tud_l
 ogo.pdf>] [0
 
-]
-
-Package hyperref Warning: old toc file detected, not used; run LaTeX again.
-
+] (bb_doc.toc)
 \tf@toc=\write4
 \openout4 = `bb_doc.toc'.
 
-[1
+ [1
 
 
 ]
@@ -1091,84 +1091,84 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              a package that still implements the
 (scrreprt)              deprecated \float@addtolist interface .
 
-<img/opencr.png, id=104, 675.12225pt x 408.3255pt>
+<img/opencr.png, id=124, 675.12225pt x 408.3255pt>
 File: img/opencr.png Graphic file (type png)
 <use img/opencr.png>
 Package pdftex.def Info: img/opencr.png  used on input line 57. on input line 5
 7.
 Package pdftex.def Info: Requested size: 49.79535pt x 30.11218pt on input line 
 57.
-<img/upboard.jpg, id=107, 459.7175pt x 459.7175pt>
+<img/upboard.jpg, id=127, 459.7175pt x 459.7175pt>
 File: img/upboard.jpg Graphic file (type jpg)
 <use img/upboard.jpg>
 Package pdftex.def Info: img/upboard.jpg  used on input line 61. on input line 
 61.
 Package pdftex.def Info: Requested size: 49.79535pt x 49.79044pt on input line 
 61.
-<img/r200.jpg, id=109, 587.58652pt x 134.14665pt>
+<img/r200.jpg, id=129, 587.58652pt x 134.14665pt>
 File: img/r200.jpg Graphic file (type jpg)
 <use img/r200.jpg>
 Package pdftex.def Info: img/r200.jpg  used on input line 64. on input line 64.
 
 Package pdftex.def Info: Requested size: 49.79535pt x 11.36649pt on input line 
 64.
-<img/lasersensor.png, id=111, 144.54pt x 118.4425pt>
+<img/lasersensor.png, id=131, 144.54pt x 118.4425pt>
 File: img/lasersensor.png Graphic file (type png)
 <use img/lasersensor.png>
 Package pdftex.def Info: img/lasersensor.png  used on input line 67. on input l
 ine 67.
 Package pdftex.def Info: Requested size: 49.79535pt x 40.80305pt on input line 
 67.
-<img/battery.png, id=113, 374.39874pt x 152.57pt>
+<img/battery.png, id=133, 374.39874pt x 152.57pt>
 File: img/battery.png Graphic file (type png)
 <use img/battery.png>
 Package pdftex.def Info: img/battery.png  used on input line 70. on input line 
 70.
 Package pdftex.def Info: Requested size: 49.79535pt x 20.29108pt on input line 
 70.
-<img/dynamixel.png, id=115, 290.08376pt x 324.21124pt>
+<img/dynamixel.png, id=135, 290.08376pt x 324.21124pt>
 File: img/dynamixel.png Graphic file (type png)
 <use img/dynamixel.png>
 Package pdftex.def Info: img/dynamixel.png  used on input line 75. on input lin
 e 75.
 Package pdftex.def Info: Requested size: 49.79535pt x 55.64946pt on input line 
 75.
-<img/ball.png, id=117, 387.4475pt x 373.395pt>
+<img/ball.png, id=137, 387.4475pt x 373.395pt>
 File: img/ball.png Graphic file (type png)
 <use img/ball.png>
 Package pdftex.def Info: img/ball.png  used on input line 77. on input line 77.
 
 Package pdftex.def Info: Requested size: 49.79535pt x 47.9847pt on input line 7
 7.
-<img/wheel.jpg, id=119, 200.75pt x 167.62625pt>
+<img/wheel.jpg, id=139, 200.75pt x 167.62625pt>
 File: img/wheel.jpg Graphic file (type jpg)
 <use img/wheel.jpg>
 Package pdftex.def Info: img/wheel.jpg  used on input line 79. on input line 79
 .
 Package pdftex.def Info: Requested size: 49.79535pt x 41.57906pt on input line 
 79.
-<img/kreisring.png, id=120, 722.7pt x 963.6pt>
+<img/kreisring.png, id=140, 722.7pt x 963.6pt>
 File: img/kreisring.png Graphic file (type png)
 <use img/kreisring.png>
 Package pdftex.def Info: img/kreisring.png  used on input line 82. on input lin
 e 82.
 Package pdftex.def Info: Requested size: 49.79535pt x 66.38554pt on input line 
 82.
-<img/halterung.png, id=121, 156.585pt x 113.42375pt>
+<img/halterung.png, id=141, 156.585pt x 113.42375pt>
 File: img/halterung.png Graphic file (type png)
 <use img/halterung.png>
 Package pdftex.def Info: img/halterung.png  used on input line 85. on input lin
 e 85.
 Package pdftex.def Info: Requested size: 49.79535pt x 36.06961pt on input line 
 85.
-<img/mitnehmer.png, id=122, 99.37125pt x 108.405pt>
+<img/mitnehmer.png, id=142, 99.37125pt x 108.405pt>
 File: img/mitnehmer.png Graphic file (type png)
 <use img/mitnehmer.png>
 Package pdftex.def Info: img/mitnehmer.png  used on input line 88. on input lin
 e 88.
 Package pdftex.def Info: Requested size: 27.38403pt x 29.87418pt on input line 
 88.
-<img/beilagscheibe.png, id=123, 53.19875pt x 64.24pt>
+<img/beilagscheibe.png, id=143, 53.19875pt x 64.24pt>
 File: img/beilagscheibe.png Graphic file (type png)
 <use img/beilagscheibe.png>
 Package pdftex.def Info: img/beilagscheibe.png  used on input line 91. on input
@@ -1204,7 +1204,7 @@ ing to the /clock to-pic, the use_sim_timeparameter
 [5
 
 ]
-<img/filestructure.png, id=155, 306.14375pt x 509.905pt>
+<img/filestructure.png, id=174, 306.14375pt x 509.905pt>
 File: img/filestructure.png Graphic file (type png)
 <use img/filestructure.png>
 Package pdftex.def Info: img/filestructure.png  used on input line 190. on inpu
@@ -1279,11 +1279,7 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 [8] [9]
 chapter 3.
-
-LaTeX Warning: Reference `fig:Structure' on page 10 undefined on input line 330
-.
-
-<img/Strucuture.PNG, id=210, 298.11375pt x 255.20343pt>
+<img/Strucuture.PNG, id=230, 298.11375pt x 255.20343pt>
 File: img/Strucuture.PNG Graphic file (type png)
 <use img/Strucuture.PNG>
 Package pdftex.def Info: img/Strucuture.PNG  used on input line 341. on input l
@@ -1307,19 +1303,16 @@ Package rerunfilecheck Info: File `bb_doc.out' has not changed.
 (rerunfilecheck)             Checksum: 2B81DFB245E9AA68B70FB2E185711E32;1146.
 
 
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 419.
  ) 
 Here is how much of TeX's memory you used:
- 13671 strings out of 493318
- 217699 string characters out of 3138991
- 423548 words of memory out of 3000000
- 16850 multiletter control sequences out of 15000+200000
- 113594 words of font info for 85 fonts, out of 3000000 for 9000
+ 13679 strings out of 493318
+ 217869 string characters out of 3138991
+ 423587 words of memory out of 3000000
+ 16856 multiletter control sequences out of 15000+200000
+ 115654 words of font info for 86 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  59i,14n,122p,8901b,1138s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Florian/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/ly1/texnansi.enc
@@ -1338,9 +1331,9 @@ X/2.9/fonts/type1/mathdesign/mdbch/md-chr7y.pfb><C:/Users/Florian/AppData/Roami
 ng/MiKTeX/2.9/fonts/type1/mathdesign/mdbch/md-chri7m.pfb><C:/Users/Florian/AppD
 ata/Roaming/MiKTeX/2.9/fonts/type1/mathdesign/mdbch/md-chrma.pfb><C:/Users/Flor
 ian/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/t1xtt.pfb>
-Output written on bb_doc.pdf (14 pages, 1711591 bytes).
+Output written on bb_doc.pdf (14 pages, 1715736 bytes).
 PDF statistics:
- 292 PDF objects out of 1000 (max. 8388607)
+ 312 PDF objects out of 1000 (max. 8388607)
  61 named destinations out of 1000 (max. 500000)
  240 words of extra memory for PDF output out of 10000 (max. 10000000)
 

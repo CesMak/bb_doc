@@ -1,0 +1,10 @@
+% Encoding: UTF-8
+
+@Manual{,
+  title        = {Modeling and Control of a Ballbot},
+  author       = {Péter Fankhauser and Corsin Gwerder},
+  organization = {ETH Zürich},
+  year         = {2010},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
