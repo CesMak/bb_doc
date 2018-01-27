@@ -1,0 +1,39 @@
+\section*{Aufgabenstellung}
+Für schriftliche Arbeiten (Pro-/Projektseminar, Studien-, Bachelor-, Master-, Diplomarbeiten, \etc) soll Studierenden ein \LaTeX-Dokument zur Verfügung gestellt werden, das die Vorgaben aus den \emph{Richtlinien zur Anfertigung von Studien- und Diplomarbeiten}~\cite{Richtlinien} umsetzt. Die Dokumentation soll die Funktionen des Dokumentes beschreiben und Hinweise zu ihrer Anwendung geben.
+
+Grundlage ist die \verb|tudreport|-Klasse. Die damit erstellten Arbeiten müssen sowohl zum Ausdrucken geeignet sein als auch für die Bildschirmdarstellung und die elektronische Archivierung als PDF-Datei.
+
+\vspace{0.5cm}
+\begin{tabular}{ll}
+Beginn: & \SADABegin \\
+Ende:   & \SADAAbgabe \\
+Seminar:& \SADASeminar
+\end{tabular}
+
+\vspace{1cm}
+
+\begin{tabular}{ll}
+\rule{7cm}{0.4pt} \hspace{1cm} & \rule{7cm}{0.4pt} \\
+\SADAProf & \SADABetreuer\\
+ &\SADABetreuerII\\
+ &\SADABetreuerIII
+\end{tabular}
+
+\vfill
+{\renewcommand{\baselinestretch}{1} % für diesen Abschnitt einfacher Zeilenabstand
+\normalsize % anwenden des Zeilenabstandes
+\begin{minipage}{0.8\textwidth}
+	Technische Universität Darmstadt\\
+	\SADAinstitut\\[0.5cm]
+%
+	Landgraf-Georg-Straße 4\\
+	64283 Darmstadt\\
+	Telefon \SADAtel\\
+	\SADAwebsite
+\end{minipage}
+\begin{minipage}{0.2\textwidth}
+\flushright  % rechtsbündig
+\ \\[2.7cm]
+\SADAlogo\;
+\end{minipage}}
+
