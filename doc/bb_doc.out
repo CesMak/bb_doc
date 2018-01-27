@@ -12,10 +12,8 @@
 \BOOKMARK [2][-]{subsection.2.8.2}{Launch}{section.2.8}% 12
 \BOOKMARK [1][-]{section.2.9}{Sensors}{chapter.2}% 13
 \BOOKMARK [2][-]{subsection.2.9.1}{IMU}{section.2.9}% 14
-\BOOKMARK [2][-]{subsection.2.9.2}{Friction Omniwheels - Ball}{section.2.9}% 15
-\BOOKMARK [0][-]{chapter.3}{Testing to balance}{}% 16
-\BOOKMARK [0][-]{chapter.4}{Model}{}% 17
-\BOOKMARK [1][-]{section.4.1}{Composition}{chapter.4}% 18
-\BOOKMARK [1][-]{section.4.2}{Assumptions}{chapter.4}% 19
-\BOOKMARK [1][-]{section.4.3}{TODO}{chapter.4}% 20
-\BOOKMARK [1][-]{section.4.4}{Model Parameters}{chapter.4}% 21
+\BOOKMARK [0][-]{chapter.3}{Model}{}% 15
+\BOOKMARK [1][-]{section.3.1}{Composition}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.2}{Assumptions}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.3}{TODO}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.4}{Model Parameters}{chapter.3}% 19
