@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.11.17)  27 JAN 2018 18:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.11.17)  29 JAN 2018 13:40
 entering extended mode
 **D:/BallBot/Dokumentation/bb_doc/Latex/sada_tudreport.tex
 (D:/BallBot/Dokumentation/bb_doc/Latex/sada_tudreport.tex
@@ -1277,7 +1277,7 @@ File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 (C:\Users\Florian\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
-Package scrhack Info: loading listings hack on input line 52.
+Package scrhack Info: loading listings hack on input line 53.
 
 (C:\Users\Florian\AppData\Roaming\MiKTeX\2.9\tex\latex\koma-script\listings.hak
 File: listings.hak 2017/09/07 v3.24 KOMA-Script package (hacking package listin
@@ -1301,7 +1301,7 @@ Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 )
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of KOMA-Script class, that doesn't
-(scrhack)             need that hack, on input line 61.
+(scrhack)             need that hack, on input line 62.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
@@ -1902,6 +1902,62 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 3.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 3.
+
+LaTeX Warning: Citation `Manual' on page 1 undefined on input line 4.
+
+LaTeX Font Info:    Try loading font information for TS1+5ch on input line 7.
+
+("C:\Program Files (x86)\TUD-Design\tex\latex\tex-tudfonts\softmake\charter\ts1
+5ch.fd"
+File: ts15ch.fd 2008/06/23 Fontinst v1.927 font definitions for TS1/5ch.
+)
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 15.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 15.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 19.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 19.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 19.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 19.
+ [1
+
+
+]
+Overfull \hbox (11.1876pt too wide) detected at line 33
+ $\OML/mdbch/m/it/11.5 T[] \OT1/mdbch/m/n/11.5 = [] \OMS/mdbch/m/n/11.5  \OML/
+mdbch/m/it/11.5 m[] \OMS/mdbch/m/n/11.5  \OT1/mdbch/m/n/11.5 ((\OML/mdbch/m/it
+/11.5 r[] \OMS/mdbch/m/n/11.5  []\OT1/mdbch/m/n/11.5 )[] + 2 \OMS/mdbch/m/n/11
+.5  \OT1/mdbch/m/n/11.5 (\OML/mdbch/m/it/11.5 r[] \OT1/mdbch/m/n/11.5 + \OML/m
+dbch/m/it/11.5 r[]\OT1/mdbch/m/n/11.5 ) \OMS/mdbch/m/n/11.5  []\OT1/mdbch/m/n/
+11.5 (\OML/mdbch/m/it/11.5 []\OT1/mdbch/m/n/11.5 ) \OMS/mdbch/m/n/11.5  []  
+\OT1/mdbch/m/n/11.5 (\OML/mdbch/m/it/11.5 r[] \OMS/mdbch/m/n/11.5  []\OT1/mdbc
+h/m/n/11.5 ) + (\OML/mdbch/m/it/11.5 r[] \OT1/mdbch/m/n/11.5 + \OML/mdbch/m/it/
+11.5 r[]\OT1/mdbch/m/n/11.5 )[] \OMS/mdbch/m/n/11.5  []\OT1/mdbch/m/n/11.5 ) +
+ [] \OMS/mdbch/m/n/11.5  \OML/mdbch/m/it/11.5 I[] \OMS/mdbch/m/n/11.5  \OT1/m
+dbch/m/n/11.5 ([] \OMS/mdbch/m/n/11.5  \OT1/mdbch/m/n/11.5 ([] \OMS/mdbch/m/n/
+11.5   []\OT1/mdbch/m/n/11.5 ) \OMS/mdbch/m/n/11.5   []\OT1/mdbch/m/n/11.5 )[]$
+  
+ []
+
+) (inc/Anhang.tex
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+ [2]
+chapter A.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
 )
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 111.
@@ -1911,7 +1967,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 111.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 111.
- [1
+ [3
 
 
 ]
@@ -1923,10 +1979,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 111.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 111.
- [2
-
-
-]
+ [4]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 113.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1946,7 +1999,9 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 123.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 123.
- [3
+ [5
+
+
 
 
 ]
@@ -1960,13 +2015,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 25531 strings out of 493318
- 445956 string characters out of 3138991
- 631735 words of memory out of 3000000
- 28570 multiletter control sequences out of 15000+200000
- 614176 words of font info for 112 fonts, out of 3000000 for 9000
+ 25592 strings out of 493318
+ 446820 string characters out of 3138991
+ 636737 words of memory out of 3000000
+ 28603 multiletter control sequences out of 15000+200000
+ 616426 words of font info for 120 fonts, out of 3000000 for 9000
  1147 hyphenation exceptions out of 8191
- 70i,13n,108p,10572b,527s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 70i,15n,108p,10572b,543s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Florian/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/ly1/texnansi.enc
 }{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files (x8
 6)/TUD-Design/fonts/type1/softmake/charter/5chb8a.pfb><C:/Program Files (x86)/T
@@ -1978,12 +2033,13 @@ ype1/bitstrea/charter/bchr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bitst
 rea/charter/bchri8a.pfb><C:/Users/Florian/AppData/Roaming/MiKTeX/2.9/fonts/type
 1/mathdesign/mdbch/md-chb7m.pfb><C:/Users/Florian/AppData/Roaming/MiKTeX/2.9/fo
 nts/type1/mathdesign/mdbch/md-chr7m.pfb><C:/Users/Florian/AppData/Roaming/MiKTe
-X/2.9/fonts/type1/mathdesign/mdbch/md-chr7y.pfb><C:/Users/Florian/AppData/Roami
-ng/MiKTeX/2.9/fonts/type1/mathdesign/mdbch/md-chri7m.pfb><C:/Users/Florian/AppD
-ata/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/t1xtt.pfb>
-Output written on sada_tudreport.pdf (13 pages, 128097 bytes).
+X/2.9/fonts/type1/mathdesign/mdbch/md-chr7t.pfb><C:/Users/Florian/AppData/Roami
+ng/MiKTeX/2.9/fonts/type1/mathdesign/mdbch/md-chr7y.pfb><C:/Users/Florian/AppDa
+ta/Roaming/MiKTeX/2.9/fonts/type1/mathdesign/mdbch/md-chri7m.pfb><C:/Users/Flor
+ian/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/t1xtt.pfb>
+Output written on sada_tudreport.pdf (15 pages, 154634 bytes).
 PDF statistics:
- 163 PDF objects out of 1000 (max. 8388607)
- 25 named destinations out of 1000 (max. 500000)
- 80 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 200 PDF objects out of 1000 (max. 8388607)
+ 39 named destinations out of 1000 (max. 500000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 

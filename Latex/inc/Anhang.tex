@@ -1,0 +1,39 @@
+\chapter{Parameterliste}
+
+
+
+\begin{table*}[ht]
+	\centering
+		\begin{tabular}{|cccc|}
+		\hline
+		\textbf{Parameter} & \textbf{Variable} & \textbf{Wert} & \textbf{Quelle} \\ \hline
+		\multicolumn{1}{|c}{Masse Ball} & \multicolumn{1}{c} {$m_{S}$} &  \multicolumn{1}{c} {0,3280 kg} & \multicolumn{1}{c|} {Gemessen}  \\ \hline
+		\multicolumn{1}{|c}{Masse Motor} & \multicolumn{1}{c} {$m_{M}$} &  \multicolumn{1}{c} {0,0820 kg} & \multicolumn{1}{c|} {Datenblatt}  \\ \hline
+		\multicolumn{1}{|c}{Masse omnidirektionales Rad} & \multicolumn{1}{c} {$m_{OW}$} &  \multicolumn{1}{c} {0.0520 kg} & \multicolumn{1}{c|} {Gemessen}  \\ \hline
+		\multicolumn{1}{|c}{Masse virtuelles Rad} & \multicolumn{1}{c} {$m_{W}$} &  \multicolumn{1}{c} {0,4020 kg} & \multicolumn{1}{c|} {Gemessen}  \\ \hline
+		\multicolumn{1}{|c}{\begin{tabular}[c]{@{}c@{}}Masse Roboterkörper\\ (mit Motoren/Räder)\end{tabular}}  & \multicolumn{1}{c} {$m_{B}$} & \multicolumn{1}{c} {1,603 kg} & \multicolumn{1}{c|} {Gemessen}\\ \hline
+		\multicolumn{1}{|c}{\begin{tabular}[c]{@{}c@{}}Masse Roboterkörper\\ (ohne Motoren/Räder)\end{tabular}}  & \multicolumn{1}{c} {$m_{B}$} & \multicolumn{1}{c} {1,2010 kg} & \multicolumn{1}{c|} {Gemessen}\\ \hline
+		
+		\multicolumn{1}{|c}{Radius Ball} & \multicolumn{1}{c} {$r_{S}$} &  \multicolumn{1}{c} {0,0800 m} & \multicolumn{1}{c|} {Datenblatt}  \\ \hline
+		\multicolumn{1}{|c}{Radius virtuelles Rad} & \multicolumn{1}{c} {$r_{W}$} &  \multicolumn{1}{c} {0,0300 m} & \multicolumn{1}{c|} {Datenblatt}  \\ \hline
+		\multicolumn{1}{|c}{Radius Körper} & \multicolumn{1}{c} {$r_{B}$} &  \multicolumn{1}{c} {0,0703 m} & \multicolumn{1}{c|} {Gemessen}  \\ \hline
+		\multicolumn{1}{|c}{Höhe Massenschwerpunkt} & \multicolumn{1}{c} {$l$} &  \multicolumn{1}{c} {? m} & \multicolumn{1}{c|} {SolidEdge}  \\ \hline
+		\multicolumn{1}{|c}{Höhe Körper} & \multicolumn{1}{c} {$h$} &  \multicolumn{1}{c} {? m} & \multicolumn{1}{c|} {SolidEdge}  \\ \hline
+		
+		
+		\multicolumn{1}{|c}{Trägheitsmoment Ball} & \multicolumn{1}{c} {$I_{S}$} &  \multicolumn{1}{c} {0,0013 $kgm^{2}$} & \multicolumn{1}{c|} {Berechnet}  \\ \hline
+		\multicolumn{1}{|c}{Trägheitsmoment Rotor} & \multicolumn{1}{c} {$I_{M}$} &  \multicolumn{1}{c} {3.8e-8 $kgm^{2}$} & \multicolumn{1}{c|} {Datenblatt}  \\ \hline
+		\multicolumn{1}{|c}{Trägheitsmoment omnidirektionales Rad} & \multicolumn{1}{c} {$I_{OW}$} &  \multicolumn{1}{c} {2,34e-5 $kgm^{2}$} & \multicolumn{1}{c|} {Berechnet}  \\ \hline
+		\multicolumn{1}{|c}{\begin{tabular}[c]{@{}c@{}}Trägheitsmoment virtuelles Rad\\ ($yz$-Ebene)\end{tabular}}  & \multicolumn{1}{c} {$I_{W,yz}$} & \multicolumn{1}{c} {0.00357 $kgm^{2}$} & \multicolumn{1}{c|} {Berechnet}\\ \hline
+		\multicolumn{1}{|c}{\begin{tabular}[c]{@{}c@{}}Trägheitsmoment virtuelles Rad\\ ($xz$-Ebene)\end{tabular}}  & \multicolumn{1}{c} {$I_{W,xz}$} & \multicolumn{1}{c} {0.00357 $kgm^{2}$} & \multicolumn{1}{c|} {Berechnet}\\ \hline
+		\multicolumn{1}{|c}{\begin{tabular}[c]{@{}c@{}}Trägheitsmoment virtuelles Rad\\ ($xy$-Ebene)\end{tabular}}  & \multicolumn{1}{c} {$I_{W,xy}$} & \multicolumn{1}{c} {0.0143 $kgm^{2}$} & \multicolumn{1}{c|} {Berechnet}\\ \hline
+		
+		\multicolumn{1}{|c}{\begin{tabular}[c]{@{}c@{}}Trägheitsmoment Körper\\ ($yz$-Ebene)\end{tabular}}  & \multicolumn{1}{c} {$I_{B,yz}$} & \multicolumn{1}{c} {0.0880 $kgm^{2}$} & \multicolumn{1}{c|} {SolidEdge}\\ \hline
+		\multicolumn{1}{|c}{\begin{tabular}[c]{@{}c@{}}Trägheitsmoment Körper\\ ($xz$-Ebene)\end{tabular}}  & \multicolumn{1}{c} {$I_{B,xz}$} & \multicolumn{1}{c} {0.0880 $kgm^{2}$} & \multicolumn{1}{c|} {SolidEdge}\\ \hline
+		\multicolumn{1}{|c}{\begin{tabular}[c]{@{}c@{}}Trägheitsmoment Körper\\ ($xy$-Ebene)\end{tabular}}  & \multicolumn{1}{c} {$I_{B,xy}$} & \multicolumn{1}{c} {0.0070 $kgm^{2}$} & \multicolumn{1}{c|} {SolidEdge}\\ \hline
+		
+		\multicolumn{1}{|c}{Übersetzungsverhältnis} & \multicolumn{1}{c} {$i$} &  \multicolumn{1}{c} {353,5} & \multicolumn{1}{c|} {Datenblatt}  \\ \hline
+		\multicolumn{1}{|c}{Erdbeschleunigung} & \multicolumn{1}{c} {$g$} &  \multicolumn{1}{c} {9,81 $\frac{m}{s^{2}}$} & \multicolumn{1}{c|} {Datenblatt}  \\ \hline
+		
+		\end{tabular}
+\end{table*}

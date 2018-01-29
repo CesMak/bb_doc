@@ -1,4 +1,56 @@
 \chapter{Modellbildung und Regelung}
 
 \section{Model}
-Für die Systembeschreibung wird der dreidimensionale Ballbot in drei unabhängige planare Modelle aufgeteilt. In jeder Ebene wird das System vereinfacht als eine Kugel, ein virtuelles Rad und einen Körper angenommen und besitzt somit zwei Freiheitsgrade, die sich in eine Translation bzw. Rotation des Balles und eine Rotation des Körpers aufteilen lassen.\cite{Manual} 
+Für die Modellbidung wird der dreidimensionale Ballbot in drei unabhängige planare Modelle aufgeteilt. In jeder Ebene wird das System vereinfacht als Zusammensetzung von drei starren Körpern bestehend aus einer Kugel, ein virtuelles Rad und einen Körper betrachtet und besitzt somit zwei Freiheitsgrade, die sich in eine Translation bzw. Rotation des Balles und eine Rotation des Körpers aufteilen lassen\cite{Manual}.\newline
+Um ein möglichst vereinfachte Modelle der drei Ebenen zu erhalten, werden weitere Annahmen getroffen, die im Folgenden erläutert werden: 
+\begin{itemize}
+	\item Kein Schlupf: Das System besitzt zwei Kontaktpunkte, in denen ein Schlupf auftreten kann. Hierzu zählt zum einen der Kontaktpunkt von Ball und Boden und zum zweiten der Kontaktpunkt zwischen den Rädern und dem Ball. Damit dies gewährleistet wird, müssen die angelegten Drehmomente begrenzt werden.
+	\item Keine Reibung: Der einzige Vorgang im System, bei dem die Reibung nicht vernachlässigt wird, ist bei der Rotation des Balles um die $z$-Achse. Bei den anderen Vorgängen, bei der in der Realität auch Reibung auftritt, wird im Modell vernachlässigt.
+	\item Keine Deformation: Bei dem eingesetzten Ball handelt es sich nicht um eine hohle Stahlkugel, sondern um ein elastischen, mit Luft befüllbaren Ball. Deshalb wird die Deformation des Balles in der Modellbeschreibung nicht mit einbezogen, um die Komplexität gering zu halten. 
+	\item Schnelle Motorendynamik: Für die Gleichgewichtsstabilisierung des Roboters ist es wichtig, dass die Motoren eine schneller Dynamik als das System aufweisen. 
+	\item Horizontale Bewegung: Das System wird für die horizontale Bewegung auf einer flachen Oberfläche ohne starken Neigungen ausgelegt. Somit wird die vertikale Bewegung vernachlässigt. 
+\end{itemize}
+Mit den getroffenen Annahmen ist es möglich, das Modell des Ballbots aufzustellen. 
+
+\section{Energien}
+Für das Aufstellen der Bewegungsgleichungen des Systems wird der Lagrange Ansatz angewendet. Dazu müssen im Voraus die potentiellen und kinetischen Energien der einzelnen Körper aufgestellt werden. Dabei ist darauf zu achten,dass die Formeln der potentiellen und kinetischen Energien für die $yz$- und der $xz$-Ebene identisch sind und dagegen sich sie die Energie $xy$-Ebene unterscheiden. Deshalb werden im Folgenden die Formeln der $yz$ und $xy$-Ebenen angegeben.\newline
+Zunächst werden die kinetischen und potentiellen Energien des Balles in den entsprechenden Ebenen betrachten. 
+Für die kinetische Energie werden folgenden Formeln der jeweiligen Ebenen angegeben.
+\begin{equation}
+	T_{S,yz} = \frac{1}{2} \cdot m_{S} \cdot (r_{S} \cdot \dot \varphi_{x})^2 + \frac{1}{2} \cdot I_{S} \cdot \dot\varphi_{x}^2
+\end{equation}
+\begin{equation}
+	T_{S,xy} =\frac{1}{2} \cdot I_{S} \cdot \dot\varphi_{z}^2
+\end{equation}
+Da der Ursprung des Weltkoordinatensystems in den Mittelpunkt des Balles gelegt wird, besitzt das System sowohl in der $yz$ als auch in der $yx$ Ebene keine potentielle Energie. 
+\begin{equation}
+	V_{S,yz}=0
+\end{equation}
+
+Die kinetischen Energien des virtuellen Rades der jeweiligen Ebene werden mit den folgenden Formeln angegeben.
+\begin{equation}
+	T_{W,yz} = \frac{1}{2} \cdot m_{W} \cdot ((r_{S} \cdot \dot \varphi_{x})^2 + 2 \cdot (r_{S}+r_{W}) \cdot \cos(\theta_{x})\cdot \dot \theta_{x} \cdot (r_{S}\cdot\dot\varphi_{x})+(r_{S} + r_{W})^2\cdot\dot\theta_{x}^2) + \frac{1}{2} \cdot I_{W}\cdot(\frac{r_{S}}{r_{W}}\cdot(\dot\varphi_{x}-\dot\theta_{x})-\dot\theta_{x})^2
+\end{equation}
+\begin{equation}
+	T_{W,xy} =\frac{1}{2} \cdot I_{W} \cdot \dot\Psi_{z}^2
+\end{equation}
+
+Die potentielle Energie des virtuellen Rades in der $yz$ Ebene kann folgendermaßen berechnet werden.
+\begin{equation}
+V_{W,yz} = m_{W} \cdot g \cdot (r_{S} + r_{W})\cdot \cos(\theta_{x})
+\end{equation}
+
+Die kinetischen Energien für die $yz$ und der $xy$ Ebene für den Roboterkörper sind ähnlich der des virtuellen Rades und werden folgendermaßen berechnet. 
+\begin{equation}
+T_{B,yz} = \frac{1}{2} \cdot m_{A} \cdot ((r_{S} \cdot \dot \varphi_{x})^2 + 2 \cdot l \cdot \cos(\theta_{x})\cdot \dot \theta_{x} \cdot (r_{S}\cdot\dot\varphi_{x}) + l^2\cdot\dot\theta_{x}^2)+\frac{1}{2} \cdot I_{A}\cdot\dot\theta_{x}^2
+\end{equation}
+\begin{equation}
+	T_{B,xy} =\frac{1}{2} \cdot I_{W,xy} \cdot \dot\Psi_{z}^2
+\end{equation}
+
+Auch die dazugehörige potentielle Energie ähnelt der des virtuellen Rades. Der Unterschied liegt zum einem im Gewicht des Körpers $m_{B}$ und der Höhe $l$ von Ballmittelpunkt zum Schwerpunkt des Roboteraufbaus.
+\begin{equation}
+V_{B,yz} = m_{A} \cdot g \cdot l \cdot \cos(\theta_{x})
+\end{equation}
+
+
