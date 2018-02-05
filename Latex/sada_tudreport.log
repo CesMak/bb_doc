@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.11.17)  29 JAN 2018 13:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.11.17)  1 FEB 2018 18:31
 entering extended mode
 **D:/BallBot/Dokumentation/bb_doc/Latex/sada_tudreport.tex
 (D:/BallBot/Dokumentation/bb_doc/Latex/sada_tudreport.tex
@@ -1927,13 +1927,13 @@ Package babel Info: Redefining ngerman shorthand "~
 
 
 ]
-Overfull \hbox (11.1876pt too wide) detected at line 33
+Overfull \hbox (13.14413pt too wide) detected at line 33
  $\OML/mdbch/m/it/11.5 T[] \OT1/mdbch/m/n/11.5 = [] \OMS/mdbch/m/n/11.5  \OML/
 mdbch/m/it/11.5 m[] \OMS/mdbch/m/n/11.5  \OT1/mdbch/m/n/11.5 ((\OML/mdbch/m/it
 /11.5 r[] \OMS/mdbch/m/n/11.5  []\OT1/mdbch/m/n/11.5 )[] + 2 \OMS/mdbch/m/n/11
 .5  \OT1/mdbch/m/n/11.5 (\OML/mdbch/m/it/11.5 r[] \OT1/mdbch/m/n/11.5 + \OML/m
 dbch/m/it/11.5 r[]\OT1/mdbch/m/n/11.5 ) \OMS/mdbch/m/n/11.5  []\OT1/mdbch/m/n/
-11.5 (\OML/mdbch/m/it/11.5 []\OT1/mdbch/m/n/11.5 ) \OMS/mdbch/m/n/11.5  []  
+11.5 (\OML/mdbch/m/it/11.5 #[]\OT1/mdbch/m/n/11.5 ) \OMS/mdbch/m/n/11.5  []  
 \OT1/mdbch/m/n/11.5 (\OML/mdbch/m/it/11.5 r[] \OMS/mdbch/m/n/11.5  []\OT1/mdbc
 h/m/n/11.5 ) + (\OML/mdbch/m/it/11.5 r[] \OT1/mdbch/m/n/11.5 + \OML/mdbch/m/it/
 11.5 r[]\OT1/mdbch/m/n/11.5 )[] \OMS/mdbch/m/n/11.5  []\OT1/mdbch/m/n/11.5 ) +
@@ -1942,6 +1942,312 @@ dbch/m/n/11.5 ([] \OMS/mdbch/m/n/11.5  \OT1/mdbch/m/n/11.5 ([] \OMS/mdbch/m/n/
 11.5   []\OT1/mdbch/m/n/11.5 ) \OMS/mdbch/m/n/11.5   []\OT1/mdbch/m/n/11.5 )[]$
   
  []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 56.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 56.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 59.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 59.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 59.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 59.
+[2]
+LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
+(Font)              scaled to size 11.04007pt on input line 70.
+LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
+(Font)              scaled to size 7.68005pt on input line 70.
+LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
+(Font)              scaled to size 6.62404pt on input line 70.
+
+
+! Class scrreprt Error: undefined old font command `\rm'.
+
+See the scrreprt class documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 ... \end{bmatrix} &,& \mathbf{M}_{x} \in {\rm
+                                                   I\!R}\textsuperscript{\te...
+
+You should note that since 1994 LaTeX2e provides a new font selection scheme
+called NFSS2 with several new, combinable font commands. KOMA-Script
+classes had defined the old font commands like `\rm' only for compatibility
+with old LaTeX 2.09 document styles of Script 2.0. Nevertheless, these
+commands are deprecated and undocumented at least since 2003. Since 2013
+KOMA-Script classes warned about soon removement of these deprecated commands.
+Now, after two decades of LaTeX2e and NFSS2, these commands will not work any
+more. If loading a package results in this error message, you should contact
+the author of that package and ask him to replace the deprecated font command
+`\rm', e.g., by `\mathrm `. Otherwise you should reconfigure
+or replace the package. If you have used the old font command `\rm' yourself,
+you should replace it, e.g., by `\mathrm '.
+To make it work for now, you can use the already also deprecated class option
+`enabledeprecatedfontcommands'.
+
+LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
+(Font)              scaled to size 5.76004pt on input line 70.
+LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
+(Font)              scaled to size 4.80003pt on input line 70.
+LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
+(Font)              scaled to size 5.76004pt on input line 70.
+LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
+(Font)              scaled to size 4.80003pt on input line 70.
+LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
+(Font)              scaled to size 5.76004pt on input line 70.
+LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
+(Font)              scaled to size 4.80003pt on input line 70.
+LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
+(Font)              scaled to size 5.76004pt on input line 70.
+LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
+(Font)              scaled to size 4.80003pt on input line 70.
+LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
+(Font)              scaled to size 5.76004pt on input line 70.
+LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
+(Font)              scaled to size 4.80003pt on input line 70.
+LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
+(Font)              scaled to size 5.76004pt on input line 70.
+LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
+(Font)              scaled to size 4.80003pt on input line 70.
+LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
+(Font)              scaled to size 5.76004pt on input line 70.
+LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
+(Font)              scaled to size 4.80003pt on input line 70.
+LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
+(Font)              scaled to size 5.76004pt on input line 70.
+LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
+(Font)              scaled to size 4.80003pt on input line 70.
+LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
+(Font)              scaled to size 5.64001pt on input line 70.
+LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
+(Font)              scaled to size 4.70001pt on input line 70.
+
+! Class scrreprt Error: undefined old font command `\rm'.
+
+See the scrreprt class documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.71 ... \end{bmatrix} &,& \mathbf{C}_{x} \in {\rm
+                                                   I\!R}\textsuperscript{\te...
+
+You should note that since 1994 LaTeX2e provides a new font selection scheme
+called NFSS2 with several new, combinable font commands. KOMA-Script
+classes had defined the old font commands like `\rm' only for compatibility
+with old LaTeX 2.09 document styles of Script 2.0. Nevertheless, these
+commands are deprecated and undocumented at least since 2003. Since 2013
+KOMA-Script classes warned about soon removement of these deprecated commands.
+Now, after two decades of LaTeX2e and NFSS2, these commands will not work any
+more. If loading a package results in this error message, you should contact
+the author of that package and ask him to replace the deprecated font command
+`\rm', e.g., by `\mathrm `. Otherwise you should reconfigure
+or replace the package. If you have used the old font command `\rm' yourself,
+you should replace it, e.g., by `\mathrm '.
+To make it work for now, you can use the already also deprecated class option
+`enabledeprecatedfontcommands'.
+
+! Undefined control sequence.
+l.72 \mathbf{G}_{x}=\begin{bmatrix}  0 \\ -g\cdiot
+                                                   \sin{\theta_{x}}\cdot \ga...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! Class scrreprt Error: undefined old font command `\rm'.
+
+See the scrreprt class documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.72 ...end{bmatrix}  &,&  \mathbf{G_{x}} \in {\rm
+                                                   I\!R}\textsuperscript{\te...
+
+You should note that since 1994 LaTeX2e provides a new font selection scheme
+called NFSS2 with several new, combinable font commands. KOMA-Script
+classes had defined the old font commands like `\rm' only for compatibility
+with old LaTeX 2.09 document styles of Script 2.0. Nevertheless, these
+commands are deprecated and undocumented at least since 2003. Since 2013
+KOMA-Script classes warned about soon removement of these deprecated commands.
+Now, after two decades of LaTeX2e and NFSS2, these commands will not work any
+more. If loading a package results in this error message, you should contact
+the author of that package and ask him to replace the deprecated font command
+`\rm', e.g., by `\mathrm `. Otherwise you should reconfigure
+or replace the package. If you have used the old font command `\rm' yourself,
+you should replace it, e.g., by `\mathrm '.
+To make it work for now, you can use the already also deprecated class option
+`enabledeprecatedfontcommands'.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 76.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 76.
+! Argument of \math@egroup has an extra }.
+<inserted text> 
+                \par 
+l.79 \dot\mathbf
+                {\vec{x}}= \begin{bmatrix} \mathbf{\vec{q}}\\ \dot\mathbf{\v...
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \math@egroup was complete.
+<to be read again> 
+                   \par 
+l.79 \dot\mathbf
+                {\vec{x}}= \begin{bmatrix} \mathbf{\vec{q}}\\ \dot\mathbf{\v...
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.79 \dot\mathbf
+                {\vec{x}}= \begin{bmatrix} \mathbf{\vec{q}}\\ \dot\mathbf{\v...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.79 \dot\mathbf
+                {\vec{x}}= \begin{bmatrix} \mathbf{\vec{q}}\\ \dot\mathbf{\v...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.79 \dot\mathbf
+                {\vec{x}}= \begin{bmatrix} \mathbf{\vec{q}}\\ \dot\mathbf{\v...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Underfull \hbox (badness 10000) detected at line 79
+$[]$
+ []
+
+! Argument of \math@egroup has an extra }.
+<inserted text> 
+                \par 
+l.79 ...in{bmatrix} \mathbf{\vec{q}}\\ \dot\mathbf
+                                                  {\vec{q}}\\ \end{bmatrix} ...
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \math@egroup was complete.
+<to be read again> 
+                   \par 
+l.79 ...in{bmatrix} \mathbf{\vec{q}}\\ \dot\mathbf
+                                                  {\vec{q}}\\ \end{bmatrix} ...
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.79 ...\mathbf{\vec{q}}\\ \dot\mathbf{\vec{q}}\\ 
+                                                  \end{bmatrix} =\begin{bmat...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Argument of \math@egroup has an extra }.
+<inserted text> 
+                \par 
+l.79 ...\end{bmatrix} =\begin{bmatrix} \dot\mathbf
+                                                  {\vec{q}}\\  \mathbf{ M_{x...
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \math@egroup was complete.
+<to be read again> 
+                   \par 
+l.79 ...\end{bmatrix} =\begin{bmatrix} \dot\mathbf
+                                                  {\vec{q}}\\  \mathbf{ M_{x...
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.79 ...} =\begin{bmatrix} \dot\mathbf{\vec{q}}\\ 
+                                                   \mathbf{ M_{x}}^{-1}\cdot...
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Display math should end with $$.
+<to be read again> 
+                   \hfil 
+l.80 \end{equation}
+                   
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+! Extra }, or forgotten \endgroup.
+\endmathdisplay@fleqn ...kip \@mathmargin \egroup 
+                                                  \ifnum \badness <\inf@bad ...
+l.80 \end{equation}
+                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+Overfull \hbox (35.20023pt too wide) detected at line 80
+  []
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.80 \end{equation}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.80 \end{equation}
+                   
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
 
 ) (inc/Anhang.tex
 Package babel Info: Redefining ngerman shorthand "|
@@ -1952,7 +2258,19 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [2]
+ [3]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+ [4
+
+
+]
 chapter A.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -1967,10 +2285,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 111.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 111.
- [3
-
-
-]
+ [5]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 111.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1979,7 +2294,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 111.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 111.
- [4]
+ [6]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 113.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1999,7 +2314,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 123.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 123.
- [5
+ [7
 
 
 
@@ -2015,13 +2330,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 25592 strings out of 493318
- 446820 string characters out of 3138991
+ 25636 strings out of 493318
+ 447364 string characters out of 3138991
  636737 words of memory out of 3000000
- 28603 multiletter control sequences out of 15000+200000
- 616426 words of font info for 120 fonts, out of 3000000 for 9000
+ 28630 multiletter control sequences out of 15000+200000
+ 641960 words of font info for 151 fonts, out of 3000000 for 9000
  1147 hyphenation exceptions out of 8191
- 70i,15n,108p,10572b,543s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 70i,15n,108p,10572b,579s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Florian/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/ly1/texnansi.enc
 }{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files (x8
 6)/TUD-Design/fonts/type1/softmake/charter/5chb8a.pfb><C:/Program Files (x86)/T
@@ -2029,17 +2344,19 @@ UD-Design/fonts/type1/softmake/charter/5chr8a.pfb><C:/Program Files (x86)/TUD-D
 esign/fonts/type1/softmake/charter/5chri8a.pfb><C:/Program Files (x86)/TUD-Desi
 gn/fonts/type1/softmake/frontpage/5fpm8a.pfb><C:/Program Files (x86)/TUD-Design
 /fonts/type1/softmake/frontpage/5fpr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/bitstrea/charter/bchr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bitst
-rea/charter/bchri8a.pfb><C:/Users/Florian/AppData/Roaming/MiKTeX/2.9/fonts/type
-1/mathdesign/mdbch/md-chb7m.pfb><C:/Users/Florian/AppData/Roaming/MiKTeX/2.9/fo
-nts/type1/mathdesign/mdbch/md-chr7m.pfb><C:/Users/Florian/AppData/Roaming/MiKTe
-X/2.9/fonts/type1/mathdesign/mdbch/md-chr7t.pfb><C:/Users/Florian/AppData/Roami
-ng/MiKTeX/2.9/fonts/type1/mathdesign/mdbch/md-chr7y.pfb><C:/Users/Florian/AppDa
-ta/Roaming/MiKTeX/2.9/fonts/type1/mathdesign/mdbch/md-chri7m.pfb><C:/Users/Flor
-ian/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/t1xtt.pfb>
-Output written on sada_tudreport.pdf (15 pages, 154634 bytes).
+ype1/bitstrea/charter/bchb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bitst
+rea/charter/bchr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bitstrea/charte
+r/bchri8a.pfb><C:/Users/Florian/AppData/Roaming/MiKTeX/2.9/fonts/type1/mathdesi
+gn/mdbch/md-chb7m.pfb><C:/Users/Florian/AppData/Roaming/MiKTeX/2.9/fonts/type1/
+mathdesign/mdbch/md-chr7m.pfb><C:/Users/Florian/AppData/Roaming/MiKTeX/2.9/font
+s/type1/mathdesign/mdbch/md-chr7t.pfb><C:/Users/Florian/AppData/Roaming/MiKTeX/
+2.9/fonts/type1/mathdesign/mdbch/md-chr7v.pfb><C:/Users/Florian/AppData/Roaming
+/MiKTeX/2.9/fonts/type1/mathdesign/mdbch/md-chr7y.pfb><C:/Users/Florian/AppData
+/Roaming/MiKTeX/2.9/fonts/type1/mathdesign/mdbch/md-chri7m.pfb><C:/Users/Floria
+n/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/t1xtt.pfb>
+Output written on sada_tudreport.pdf (17 pages, 175454 bytes).
 PDF statistics:
- 200 PDF objects out of 1000 (max. 8388607)
- 39 named destinations out of 1000 (max. 500000)
- 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 231 PDF objects out of 1000 (max. 8388607)
+ 47 named destinations out of 1000 (max. 500000)
+ 112 words of extra memory for PDF output out of 10000 (max. 10000000)
 

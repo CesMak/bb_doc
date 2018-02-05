@@ -1,7 +1,7 @@
 \chapter{Modellbildung und Regelung}
 
 \section{Model}
-Für die Modellbidung wird der dreidimensionale Ballbot in drei unabhängige planare Modelle aufgeteilt. In jeder Ebene wird das System vereinfacht als Zusammensetzung von drei starren Körpern bestehend aus einer Kugel, ein virtuelles Rad und einen Körper betrachtet und besitzt somit zwei Freiheitsgrade, die sich in eine Translation bzw. Rotation des Balles und eine Rotation des Körpers aufteilen lassen\cite{Manual}.\newline
+Für die Modellbilfdung wird der dreidimensionale Ballbot in drei unabhängige planare Modelle aufgeteilt. In jeder Ebene wird das System vereinfacht als Zusammensetzung von drei starren Körpern bestehend aus einer Kugel, ein virtuelles Rad und einen Körper betrachtet und besitzt somit zwei Freiheitsgrade, die sich in eine Translation bzw. Rotation des Balles und eine Rotation des Körpers aufteilen lassen\cite{Manual}.\newline
 Um ein möglichst vereinfachte Modelle der drei Ebenen zu erhalten, werden weitere Annahmen getroffen, die im Folgenden erläutert werden: 
 \begin{itemize}
 	\item Kein Schlupf: Das System besitzt zwei Kontaktpunkte, in denen ein Schlupf auftreten kann. Hierzu zählt zum einen der Kontaktpunkt von Ball und Boden und zum zweiten der Kontaktpunkt zwischen den Rädern und dem Ball. Damit dies gewährleistet wird, müssen die angelegten Drehmomente begrenzt werden.
@@ -29,7 +29,7 @@ Da der Ursprung des Weltkoordinatensystems in den Mittelpunkt des Balles gelegt 
 
 Die kinetischen Energien des virtuellen Rades der jeweiligen Ebene werden mit den folgenden Formeln angegeben.
 \begin{equation}
-	T_{W,yz} = \frac{1}{2} \cdot m_{W} \cdot ((r_{S} \cdot \dot \varphi_{x})^2 + 2 \cdot (r_{S}+r_{W}) \cdot \cos(\theta_{x})\cdot \dot \theta_{x} \cdot (r_{S}\cdot\dot\varphi_{x})+(r_{S} + r_{W})^2\cdot\dot\theta_{x}^2) + \frac{1}{2} \cdot I_{W}\cdot(\frac{r_{S}}{r_{W}}\cdot(\dot\varphi_{x}-\dot\theta_{x})-\dot\theta_{x})^2
+	T_{W,yz} = \frac{1}{2} \cdot m_{W} \cdot ((r_{S} \cdot \dot \varphi_{x})^2 + 2 \cdot (r_{S}+r_{W}) \cdot \cos(\vartheta_{x})\cdot \dot \vartheta_{x} \cdot (r_{S}\cdot\dot\varphi_{x})+(r_{S} + r_{W})^2\cdot\dot\vartheta_{x}^2) + \frac{1}{2} \cdot I_{W}\cdot(\frac{r_{S}}{r_{W}}\cdot(\dot\varphi_{x}-\dot\vartheta_{x})-\dot\vartheta_{x})^2
 \end{equation}
 \begin{equation}
 	T_{W,xy} =\frac{1}{2} \cdot I_{W} \cdot \dot\Psi_{z}^2
@@ -37,12 +37,12 @@ Die kinetischen Energien des virtuellen Rades der jeweiligen Ebene werden mit de
 
 Die potentielle Energie des virtuellen Rades in der $yz$ Ebene kann folgendermaßen berechnet werden.
 \begin{equation}
-V_{W,yz} = m_{W} \cdot g \cdot (r_{S} + r_{W})\cdot \cos(\theta_{x})
+V_{W,yz} = m_{W} \cdot g \cdot (r_{S} + r_{W})\cdot \cos(\vartheta_{x})
 \end{equation}
 
 Die kinetischen Energien für die $yz$ und der $xy$ Ebene für den Roboterkörper sind ähnlich der des virtuellen Rades und werden folgendermaßen berechnet. 
 \begin{equation}
-T_{B,yz} = \frac{1}{2} \cdot m_{A} \cdot ((r_{S} \cdot \dot \varphi_{x})^2 + 2 \cdot l \cdot \cos(\theta_{x})\cdot \dot \theta_{x} \cdot (r_{S}\cdot\dot\varphi_{x}) + l^2\cdot\dot\theta_{x}^2)+\frac{1}{2} \cdot I_{A}\cdot\dot\theta_{x}^2
+T_{B,yz} = \frac{1}{2} \cdot m_{A} \cdot ((r_{S} \cdot \dot \varphi_{x})^2 + 2 \cdot l \cdot \cos(\vartheta_{x})\cdot \dot \vartheta_{x} \cdot (r_{S}\cdot\dot\varphi_{x}) + l^2\cdot\dot\vartheta_{x}^2)+\frac{1}{2} \cdot I_{A}\cdot\dot\vartheta_{x}^2
 \end{equation}
 \begin{equation}
 	T_{B,xy} =\frac{1}{2} \cdot I_{W,xy} \cdot \dot\Psi_{z}^2
@@ -50,7 +50,33 @@ T_{B,yz} = \frac{1}{2} \cdot m_{A} \cdot ((r_{S} \cdot \dot \varphi_{x})^2 + 2 \
 
 Auch die dazugehörige potentielle Energie ähnelt der des virtuellen Rades. Der Unterschied liegt zum einem im Gewicht des Körpers $m_{B}$ und der Höhe $l$ von Ballmittelpunkt zum Schwerpunkt des Roboteraufbaus.
 \begin{equation}
-V_{B,yz} = m_{A} \cdot g \cdot l \cdot \cos(\theta_{x})
+V_{B,yz} = m_{A} \cdot g \cdot l \cdot \cos(\vartheta_{x})
 \end{equation}
 
+\section{Bewegungsgleichungen}(matlab)
+Mit den kinetischen und potentiellen Energien können nun die Bewegungsgleichungen des Ballbots für die jeweiligen Ebenen mit Hilfe der LAGRANGEschen Gleichungen zweiter Art hergeleitet werden. Als Beispiel wird hier die Herleitung für die $yz$-Ebene angegeben.\newline
+Zunächst wird aus den einzelnen Summen der kinetischen und potentiellen Energien die LANGRANGEsche Funktion gebildet. 	
+\begin{equation}
+		L = T - V 
+\end{equation}
+Die Bewegungsgleichungen für den Ballbot resultieren aus dem Lösen der LAGRANGEschen Gleichungen zweiter Art. 
+	\begin{equation}
+		\frac{d }{dt}(\frac{\partial L}{\partial \dot \vec{q}})^{2} - \frac{\partial L}{\partial \vec{q}} = \vec{f_{NP,yz}}
+\end{equation}
+
+Mit mathematische Umformungen können diese Bewegungsgleichungen in eine Matrixform überführt werden. 
+\begin{eqnarray}
+\label{eq:MatrizenDGL}
+\mathbf{M}_{x}=\begin{bmatrix} m_{tot} \cdot r_{S}^{2} + I_{S} + (\frac{r_{S}}{r_{W}})^{2} \cdot I_{W}  & -\frac{r_{S}}{r_{W}^2}\cdot r_{tot} \cdot I_{W} + \gamma \cdot r_{S} \cdot \cos{\vartheta_{x}} m_{tot} \\ -\frac{r_{S}}{r_{W}^2}\cdot r_{tot} \cdot I_{W} + \gamma \cdot r_{S} \cdot \cos{\vartheta_{x}} m_{tot}	& \frac{r_{S}^2}{r_{W}^2} \cdot I_{W} + I_{B} + m_{b}\cdot l^2 + m_{W}\cdot r_{tot}^2  \\ \end{bmatrix} &,& \mathbf{M}_{x} \in {\rm I\!R}\textsuperscript{\textit{2$\times$2}} \\ 
+\mathbf{C}_{x} =\begin{bmatrix}  -r_{S} \cdot \gamma \cdot \sin{\vartheta_{x}} \cdot \dot \vartheta_{x}^{2} \\ 0 \\ \end{bmatrix} &,& \mathbf{C}_{x} \in {\rm I\!R}\textsuperscript{\textit{2$\times$1}} \nonumber \\
+\mathbf{G}_{x}=\begin{bmatrix}  0 \\ -g\cdiot \sin{\theta_{x}}\cdot \gamma  \\ \end{bmatrix}  &,&  \mathbf{G_{x}} \in {\rm I\!R}\textsuperscript{\textit{2$\times$1}} \nonumber \\ 
+\end{eqnarray}
+	
+
+\section{Zustandsraumdarstellung}
+Bei den hergeleiteten Bewegungsgleichungen handelt es sich um nichtlineare Funktionen. Um ein Zustandsraummodell zu erhalten, müssen zunächst die Zustände bzw. der Zustandsvektor festgelegt werden. Als Beispiel wird auch hier die $yz$-Ebene betrachtet. Mit $\vec{x} = [\varphi_{x}, \vartheta_{x}, \dot\varphi_{x}, \dot\vartheta_{x}]$ können die nichtlinearen Funktionen in folgende Form überführt werden.
+\begin{equation}
+\dot\mathbf{\vec{x}}= \begin{bmatrix} \mathbf{\vec{q}}\\ \dot\mathbf{\vec{q}}\\ \end{bmatrix} =\begin{bmatrix} \dot\mathbf{\vec{q}}\\  \mathbf{ M_{x}}^{-1}\cdot (\mathbf{NP}-(\mathbf{C_{x}}+\mathbf{G_{x}}))\\ \end{bmatrix}
+\end{equation}
+	 
 
