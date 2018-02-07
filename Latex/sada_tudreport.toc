@@ -18,8 +18,8 @@
 \contentsline {section}{\numberline {4.3}Simulations Aufbau}{14}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Kommunikation zwischen ROS und Gazebo}{14}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Plugins der Simulation}{15}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Simulierte Dynamik-Eigenschaften}{17}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.3}Simulierte Dynamik-Eigenschaften}{15}{subsection.4.3.3}
 \contentsline {subsection}{\numberline {4.3.4}Visualisierungsprogramme}{17}{subsection.4.3.4}
 \contentsline {chapter}{\numberline {5}Auswertung}{19}{chapter.5}
 \contentsline {chapter}{\numberline {A}Parameterliste}{21}{appendix.A}
-\contentsline {chapter}{Literaturverzeichnis}{23}{section*.13}
+\contentsline {chapter}{Literaturverzeichnis}{23}{section*.14}
