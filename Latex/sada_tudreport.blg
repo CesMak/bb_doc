@@ -2,5 +2,7 @@ This is BibTeX, Version 0.99dThe top-level auxiliary file: D:\BallBot\Dokumentat
 The style file: gerunsrt.bst
 Database file #1: ./bib/literature.bib
 Warning--I didn't find a database entry for "Richtlinien"
-Warning--I didn't find a database entry for "Manual"
-(There were 2 warnings)
+Warning--I didn't find a database entry for "simulation_code"
+Warning--I didn't find a database entry for "gazebo_anleitung"
+Warning--I didn't find a database entry for "serena_vrep_vs_gz"
+(There were 4 warnings)

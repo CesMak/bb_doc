@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.11.17)  1 FEB 2018 18:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.11.17)  7 FEB 2018 17:19
 entering extended mode
 **D:/BallBot/Dokumentation/bb_doc/Latex/sada_tudreport.tex
 (D:/BallBot/Dokumentation/bb_doc/Latex/sada_tudreport.tex
@@ -1301,7 +1301,7 @@ Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 )
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of KOMA-Script class, that doesn't
-(scrhack)             need that hack, on input line 62.
+(scrhack)             need that hack, on input line 63.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
@@ -1412,13 +1412,18 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip133
-))
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\bookmark.sty"
 Package: bookmark 2016/05/17 v1.26 PDF bookmarks (HO)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\bkm-pdftex.def"
 File: bkm-pdftex.def 2016/05/17 v1.26 bookmark driver for pdfTeX (HO)
 \BKM@id=\count314
+))
+(C:\Users\Florian\AppData\Roaming\MiKTeX\2.9\tex\latex\mdwtools\footnote.sty
+Package: footnote 1997/01/28 1.13 Save footnotes around boxes
+\fn@notes=\box59
+\fn@width=\dimen259
 ))
 (common/setup.tex
 \longtablewidth=\skip134
@@ -1481,13 +1486,13 @@ File: t15ch.fd 2008/06/23 Fontinst v1.927 font definitions for T1/5ch.
 (C:\Users\Florian\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count318
-\scratchdimen=\dimen259
-\scratchbox=\box59
+\scratchdimen=\dimen260
+\scratchbox=\box60
 \nofMPsegments=\count319
 \nofMParguments=\count320
 \everyMPshowfont=\toks36
 \MPscratchCnt=\count321
-\MPscratchDim=\dimen260
+\MPscratchDim=\dimen261
 \MPnumerator=\count322
 \makeMPintoPDFobject=\count323
 \everyMPtoPDFconversion=\toks37
@@ -1504,7 +1509,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\AtBeginShipoutBox=\box60
+\AtBeginShipoutBox=\box61
 
 *geometry* detected driver: dvips
 *geometry* verbose mode - [ preamble ] result:
@@ -1588,11 +1593,11 @@ LaTeX Info: Redefining \Ref on input line 71.
 \TUD@instlogoheight=\skip149
 \TUD@instlogowidth=\skip150
 \TUD@sponsorheight=\skip151
-\TUD@titlebox=\box61
-\TUD@subtitlebox=\box62
-\TUD@logobox=\box63
-\TUD@instbox=\box64
-\TUD@sponsorbox=\box65
+\TUD@titlebox=\box62
+\TUD@subtitlebox=\box63
+\TUD@logobox=\box64
+\TUD@instbox=\box65
+\TUD@sponsorbox=\box66
 \TUD@tmp@height=\skip152
 \TUD@tmp@depth=\skip153
 LaTeX Font Info:    Try loading font information for T1+5fp on input line 3.
@@ -1892,19 +1897,46 @@ Package babel Info: Redefining ngerman shorthand "~
  [8
 
 
-]) (inc/Modellierung.tex
+]) (inc/Einleitung.tex
 chapter 1.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
+) (inc/Modellierung.tex
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+ [1
+
+
+]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+ [2
+
+
+]
+chapter 2.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 3.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 3.
-
-LaTeX Warning: Citation `Manual' on page 1 undefined on input line 4.
-
 LaTeX Font Info:    Try loading font information for TS1+5ch on input line 7.
 
 ("C:\Program Files (x86)\TUD-Design\tex\latex\tex-tudfonts\softmake\charter\ts1
@@ -1923,10 +1955,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 19.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 19.
- [1
-
-
-]
+ [3]
 Overfull \hbox (13.14413pt too wide) detected at line 33
  $\OML/mdbch/m/it/11.5 T[] \OT1/mdbch/m/n/11.5 = [] \OMS/mdbch/m/n/11.5  \OML/
 mdbch/m/it/11.5 m[] \OMS/mdbch/m/n/11.5  \OT1/mdbch/m/n/11.5 ((\OML/mdbch/m/it
@@ -1955,39 +1984,13 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 59.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 59.
-[2]
+[4]
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
-(Font)              scaled to size 11.04007pt on input line 70.
+(Font)              scaled to size 11.04007pt on input line 64.
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
-(Font)              scaled to size 7.68005pt on input line 70.
+(Font)              scaled to size 7.68005pt on input line 64.
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
-(Font)              scaled to size 6.62404pt on input line 70.
-
-
-! Class scrreprt Error: undefined old font command `\rm'.
-
-See the scrreprt class documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.70 ... \end{bmatrix} &,& \mathbf{M}_{x} \in {\rm
-                                                   I\!R}\textsuperscript{\te...
-
-You should note that since 1994 LaTeX2e provides a new font selection scheme
-called NFSS2 with several new, combinable font commands. KOMA-Script
-classes had defined the old font commands like `\rm' only for compatibility
-with old LaTeX 2.09 document styles of Script 2.0. Nevertheless, these
-commands are deprecated and undocumented at least since 2003. Since 2013
-KOMA-Script classes warned about soon removement of these deprecated commands.
-Now, after two decades of LaTeX2e and NFSS2, these commands will not work any
-more. If loading a package results in this error message, you should contact
-the author of that package and ask him to replace the deprecated font command
-`\rm', e.g., by `\mathrm `. Otherwise you should reconfigure
-or replace the package. If you have used the old font command `\rm' yourself,
-you should replace it, e.g., by `\mathrm '.
-To make it work for now, you can use the already also deprecated class option
-`enabledeprecatedfontcommands'.
-
+(Font)              scaled to size 6.62404pt on input line 64.
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
 (Font)              scaled to size 5.76004pt on input line 70.
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
@@ -2024,231 +2027,316 @@ LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
 (Font)              scaled to size 5.64001pt on input line 70.
 LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
 (Font)              scaled to size 4.70001pt on input line 70.
-
-! Class scrreprt Error: undefined old font command `\rm'.
-
-See the scrreprt class documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.71 ... \end{bmatrix} &,& \mathbf{C}_{x} \in {\rm
-                                                   I\!R}\textsuperscript{\te...
-
-You should note that since 1994 LaTeX2e provides a new font selection scheme
-called NFSS2 with several new, combinable font commands. KOMA-Script
-classes had defined the old font commands like `\rm' only for compatibility
-with old LaTeX 2.09 document styles of Script 2.0. Nevertheless, these
-commands are deprecated and undocumented at least since 2003. Since 2013
-KOMA-Script classes warned about soon removement of these deprecated commands.
-Now, after two decades of LaTeX2e and NFSS2, these commands will not work any
-more. If loading a package results in this error message, you should contact
-the author of that package and ask him to replace the deprecated font command
-`\rm', e.g., by `\mathrm `. Otherwise you should reconfigure
-or replace the package. If you have used the old font command `\rm' yourself,
-you should replace it, e.g., by `\mathrm '.
-To make it work for now, you can use the already also deprecated class option
-`enabledeprecatedfontcommands'.
-
-! Undefined control sequence.
-l.72 \mathbf{G}_{x}=\begin{bmatrix}  0 \\ -g\cdiot
-                                                   \sin{\theta_{x}}\cdot \ga...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-! Class scrreprt Error: undefined old font command `\rm'.
-
-See the scrreprt class documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.72 ...end{bmatrix}  &,&  \mathbf{G_{x}} \in {\rm
-                                                   I\!R}\textsuperscript{\te...
-
-You should note that since 1994 LaTeX2e provides a new font selection scheme
-called NFSS2 with several new, combinable font commands. KOMA-Script
-classes had defined the old font commands like `\rm' only for compatibility
-with old LaTeX 2.09 document styles of Script 2.0. Nevertheless, these
-commands are deprecated and undocumented at least since 2003. Since 2013
-KOMA-Script classes warned about soon removement of these deprecated commands.
-Now, after two decades of LaTeX2e and NFSS2, these commands will not work any
-more. If loading a package results in this error message, you should contact
-the author of that package and ask him to replace the deprecated font command
-`\rm', e.g., by `\mathrm `. Otherwise you should reconfigure
-or replace the package. If you have used the old font command `\rm' yourself,
-you should replace it, e.g., by `\mathrm '.
-To make it work for now, you can use the already also deprecated class option
-`enabledeprecatedfontcommands'.
-
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 76.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 76.
-! Argument of \math@egroup has an extra }.
-<inserted text> 
-                \par 
-l.79 \dot\mathbf
-                {\vec{x}}= \begin{bmatrix} \mathbf{\vec{q}}\\ \dot\mathbf{\v...
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \math@egroup was complete.
-<to be read again> 
-                   \par 
-l.79 \dot\mathbf
-                {\vec{x}}= \begin{bmatrix} \mathbf{\vec{q}}\\ \dot\mathbf{\v...
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.79 \dot\mathbf
-                {\vec{x}}= \begin{bmatrix} \mathbf{\vec{q}}\\ \dot\mathbf{\v...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.79 \dot\mathbf
-                {\vec{x}}= \begin{bmatrix} \mathbf{\vec{q}}\\ \dot\mathbf{\v...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.79 \dot\mathbf
-                {\vec{x}}= \begin{bmatrix} \mathbf{\vec{q}}\\ \dot\mathbf{\v...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 91.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 91.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 91.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 91.
+ [5]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 121.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 121.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 121.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 121.
+ [6]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 121.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 121.
+) (inc/Konstruktion.tex
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+ [7]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+ [8
 
 
-Underfull \hbox (badness 10000) detected at line 79
-$[]$
+]
+chapter 3.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+) (inc/Simulation.tex
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+ [9]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+ [10
+
+
+]
+chapter 4.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+
+LaTeX Warning: Citation `simulation_code' on page 11 undefined on input line 2.
+
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 4.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 4.
+LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
+(Font)              scaled to size 9.21606pt on input line 22.
+LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
+(Font)              scaled to size 6.43204pt on input line 22.
+LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
+(Font)              scaled to size 5.56804pt on input line 22.
+LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
+(Font)              scaled to size 9.21606pt on input line 22.
+LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
+(Font)              scaled to size 6.43204pt on input line 22.
+LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
+(Font)              scaled to size 5.56804pt on input line 22.
+LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
+(Font)              scaled to size 9.21606pt on input line 22.
+LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
+(Font)              scaled to size 6.43204pt on input line 22.
+LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
+(Font)              scaled to size 5.56804pt on input line 22.
+LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
+(Font)              scaled to size 9.21606pt on input line 22.
+LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
+(Font)              scaled to size 6.43204pt on input line 22.
+LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
+(Font)              scaled to size 5.56804pt on input line 22.
+LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
+(Font)              scaled to size 9.21606pt on input line 22.
+LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
+(Font)              scaled to size 6.43204pt on input line 22.
+LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
+(Font)              scaled to size 5.56804pt on input line 22.
+LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
+(Font)              scaled to size 9.21606pt on input line 22.
+LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
+(Font)              scaled to size 6.43204pt on input line 22.
+LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
+(Font)              scaled to size 5.56804pt on input line 22.
+LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
+(Font)              scaled to size 9.21606pt on input line 22.
+LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
+(Font)              scaled to size 6.43204pt on input line 22.
+LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
+(Font)              scaled to size 5.56804pt on input line 22.
+LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
+(Font)              scaled to size 9.21606pt on input line 22.
+LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
+(Font)              scaled to size 6.43204pt on input line 22.
+LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
+(Font)              scaled to size 5.56804pt on input line 22.
+LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
+(Font)              scaled to size 9.02402pt on input line 22.
+LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
+(Font)              scaled to size 6.298pt on input line 22.
+LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
+(Font)              scaled to size 5.45201pt on input line 22.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 24.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 24.
+<./Bilder/Markus/easy_model.png, id=188, 242.9075pt x 470.75874pt>
+File: ./Bilder/Markus/easy_model.png Graphic file (type png)
+<use ./Bilder/Markus/easy_model.png>
+Package pdftex.def Info: ./Bilder/Markus/easy_model.png  used on input line 33.
+ on input line 33.
+Package pdftex.def Info: Requested size: 142.26378pt x 275.70523pt on input lin
+e 33.
+
+Underfull \hbox (badness 3240) in paragraph at lines 33--33
+[][]|\T1/5ch/m/n/9.2 Über-sicht des ge-sam-ten Auf-
  []
 
-! Argument of \math@egroup has an extra }.
-<inserted text> 
-                \par 
-l.79 ...in{bmatrix} \mathbf{\vec{q}}\\ \dot\mathbf
-                                                  {\vec{q}}\\ \end{bmatrix} ...
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
+<./Bilder/Markus/simulation_easy.png, id=189, 416.55624pt x 384.43625pt>
+File: ./Bilder/Markus/simulation_easy.png Graphic file (type png)
+<use ./Bilder/Markus/simulation_easy.png>
+Package pdftex.def Info: ./Bilder/Markus/simulation_easy.png  used on input lin
+e 35. on input line 35.
+Package pdftex.def Info: Requested size: 170.71652pt x 157.55534pt on input lin
+e 35.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 38.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 38.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 38.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 38.
+[11]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 38.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 38.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 38.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 38.
+ [12]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 44.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 44.
 
-Runaway argument?
-! Paragraph ended before \math@egroup was complete.
-<to be read again> 
-                   \par 
-l.79 ...in{bmatrix} \mathbf{\vec{q}}\\ \dot\mathbf
-                                                  {\vec{q}}\\ \end{bmatrix} ...
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-! Missing } inserted.
-<inserted text> 
-                }
-l.79 ...\mathbf{\vec{q}}\\ \dot\mathbf{\vec{q}}\\ 
-                                                  \end{bmatrix} =\begin{bmat...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 47.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 47.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 47.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 47.
+ [13 <./Bilder/Markus/easy_model.png (PNG copy)> <./Bilder/Markus/simulation_ea
+sy.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 48.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 48.
+<./Bilder/Markus/rosgraph.png, id=210, 1869.384pt x 1100.11pt>
+File: ./Bilder/Markus/rosgraph.png Graphic file (type png)
+<use ./Bilder/Markus/rosgraph.png>
+Package pdftex.def Info: ./Bilder/Markus/rosgraph.png  used on input line 51. o
+n input line 51.
+Package pdftex.def Info: Requested size: 523.42397pt x 308.0287pt on input line
+ 51.
 
-! Argument of \math@egroup has an extra }.
-<inserted text> 
-                \par 
-l.79 ...\end{bmatrix} =\begin{bmatrix} \dot\mathbf
-                                                  {\vec{q}}\\  \mathbf{ M_{x...
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \math@egroup was complete.
-<to be read again> 
-                   \par 
-l.79 ...\end{bmatrix} =\begin{bmatrix} \dot\mathbf
-                                                  {\vec{q}}\\  \mathbf{ M_{x...
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.79 ...} =\begin{bmatrix} \dot\mathbf{\vec{q}}\\ 
-                                                   \mathbf{ M_{x}}^{-1}\cdot...
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-! Display math should end with $$.
-<to be read again> 
-                   \hfil 
-l.80 \end{equation}
-                   
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-! Extra }, or forgotten \endgroup.
-\endmathdisplay@fleqn ...kip \@mathmargin \egroup 
-                                                  \ifnum \badness <\inf@bad ...
-l.80 \end{equation}
-                   
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-
-Overfull \hbox (35.20023pt too wide) detected at line 80
-  []
+Overfull \hbox (68.17986pt too wide) in paragraph at lines 51--52
+[][]
  []
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.80 \end{equation}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
 
-! Display math should end with $$.
-<to be read again> 
-                   \endgroup 
-l.80 \end{equation}
-                   
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
+ []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 56.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 56.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 56.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 56.
+[14 <./Bilder/Markus/rosgraph.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 60.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 60.
+
+Overfull \hbox (30.21736pt too wide) in paragraph at lines 61--61
+ [][][]\T1/5ch/m/n/9.2 siehe: htt-ps://github.com/CesMak/bb/blob/master/src/bal
+lbot/bb_descrpition/urdf/bb_double_wheel.gazebo.xacro| 
+ []
+
+<./Bilder/Markus/simulation_plugins.png, id=223, 501.875pt x 514.92375pt>
+File: ./Bilder/Markus/simulation_plugins.png Graphic file (type png)
+<use ./Bilder/Markus/simulation_plugins.png>
+Package pdftex.def Info: ./Bilder/Markus/simulation_plugins.png  used on input 
+line 65. on input line 65.
+Package pdftex.def Info: Requested size: 326.21487pt x 334.69647pt on input lin
+e 65.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 69.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 69.
+
+Overfull \hbox (682.15483pt too wide) in paragraph at lines 73--89
+\T1/5ch/m/n/11 Nicht an die-ser ta-bel-le ori-en-tie-ren. [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 90.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 90.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 90.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 90.
+ [15]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 90.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 90.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 90.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 90.
+
+[16 <./Bilder/Markus/simulation_plugins.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 92.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 92.
+) (inc/Auswertung.tex
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+ [17]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
+
+[18
+
+
+]
+chapter 5.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 1.
 ) (inc/Anhang.tex
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
@@ -2258,7 +2346,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [3]
+ [19]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
@@ -2267,7 +2355,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
- [4
+ [20
 
 
 ]
@@ -2278,85 +2366,92 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 1.
 )
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 111.
+(babel)             in language  on input line 114.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 111.
+(babel)             in language  on input line 114.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 111.
+(babel)             in language  on input line 114.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 111.
- [5]
+(babel)             in language  on input line 114.
+ [21]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 111.
+(babel)             in language  on input line 114.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 111.
+(babel)             in language  on input line 114.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 111.
+(babel)             in language  on input line 114.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 111.
- [6]
+(babel)             in language  on input line 114.
+ [22]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 113.
+(babel)             in language  on input line 116.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 113.
+(babel)             in language  on input line 116.
  (sada_tudreport.bbl
 
 LaTeX Warning: Empty `thebibliography' environment or \BreakBibliography
                before end of `thebibliography' environment on input line 3.
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 123.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 125.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 123.
+(babel)             in language  on input line 125.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 123.
+(babel)             in language  on input line 125.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 123.
+(babel)             in language  on input line 125.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 123.
- [7
+(babel)             in language  on input line 125.
+ [23
 
 
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 123.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 125.
  (sada_tudreport.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 123.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 123.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 125.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 125.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 25636 strings out of 493318
- 447364 string characters out of 3138991
- 636737 words of memory out of 3000000
- 28630 multiletter control sequences out of 15000+200000
- 641960 words of font info for 151 fonts, out of 3000000 for 9000
+ 25854 strings out of 493318
+ 451015 string characters out of 3138991
+ 639489 words of memory out of 3000000
+ 28778 multiletter control sequences out of 15000+200000
+ 697636 words of font info for 190 fonts, out of 3000000 for 9000
  1147 hyphenation exceptions out of 8191
- 70i,15n,108p,10572b,579s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Florian/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/ly1/texnansi.enc
-}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files (x8
-6)/TUD-Design/fonts/type1/softmake/charter/5chb8a.pfb><C:/Program Files (x86)/T
-UD-Design/fonts/type1/softmake/charter/5chr8a.pfb><C:/Program Files (x86)/TUD-D
-esign/fonts/type1/softmake/charter/5chri8a.pfb><C:/Program Files (x86)/TUD-Desi
-gn/fonts/type1/softmake/frontpage/5fpm8a.pfb><C:/Program Files (x86)/TUD-Design
-/fonts/type1/softmake/frontpage/5fpr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/bitstrea/charter/bchb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bitst
-rea/charter/bchr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bitstrea/charte
-r/bchri8a.pfb><C:/Users/Florian/AppData/Roaming/MiKTeX/2.9/fonts/type1/mathdesi
-gn/mdbch/md-chb7m.pfb><C:/Users/Florian/AppData/Roaming/MiKTeX/2.9/fonts/type1/
-mathdesign/mdbch/md-chr7m.pfb><C:/Users/Florian/AppData/Roaming/MiKTeX/2.9/font
-s/type1/mathdesign/mdbch/md-chr7t.pfb><C:/Users/Florian/AppData/Roaming/MiKTeX/
-2.9/fonts/type1/mathdesign/mdbch/md-chr7v.pfb><C:/Users/Florian/AppData/Roaming
-/MiKTeX/2.9/fonts/type1/mathdesign/mdbch/md-chr7y.pfb><C:/Users/Florian/AppData
-/Roaming/MiKTeX/2.9/fonts/type1/mathdesign/mdbch/md-chri7m.pfb><C:/Users/Floria
-n/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/t1xtt.pfb>
-Output written on sada_tudreport.pdf (17 pages, 175454 bytes).
+ 70i,16n,108p,10572b,602s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{cite.serena_vrep_vs_gz} has been referenced but d
+oes not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.gazebo_anleitung} has been referenced but does
+ not exist, replaced by a fixed one
+
+{C:/Users/Florian/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/ly1/texnansi.enc}{
+C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files (x86)
+/TUD-Design/fonts/type1/softmake/charter/5chb8a.pfb><C:/Program Files (x86)/TUD
+-Design/fonts/type1/softmake/charter/5chr8a.pfb><C:/Program Files (x86)/TUD-Des
+ign/fonts/type1/softmake/charter/5chri8a.pfb><C:/Program Files (x86)/TUD-Design
+/fonts/type1/softmake/frontpage/5fpm8a.pfb><C:/Program Files (x86)/TUD-Design/f
+onts/type1/softmake/frontpage/5fpr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/bitstrea/charter/bchb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bitstre
+a/charter/bchr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bitstrea/charter/
+bchri8a.pfb><C:/Users/Florian/AppData/Roaming/MiKTeX/2.9/fonts/type1/mathdesign
+/mdbch/md-chb7m.pfb><C:/Users/Florian/AppData/Roaming/MiKTeX/2.9/fonts/type1/ma
+thdesign/mdbch/md-chr7m.pfb><C:/Users/Florian/AppData/Roaming/MiKTeX/2.9/fonts/
+type1/mathdesign/mdbch/md-chr7t.pfb><C:/Users/Florian/AppData/Roaming/MiKTeX/2.
+9/fonts/type1/mathdesign/mdbch/md-chr7v.pfb><C:/Users/Florian/AppData/Roaming/M
+iKTeX/2.9/fonts/type1/mathdesign/mdbch/md-chr7y.pfb><C:/Users/Florian/AppData/R
+oaming/MiKTeX/2.9/fonts/type1/mathdesign/mdbch/md-chri7m.pfb><C:/Users/Florian/
+AppData/Roaming/MiKTeX/2.9/fonts/type1/mathdesign/mdbch/md-chrma.pfb><C:/Users/
+Florian/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/txfonts/t1xtt.pfb>
+Output written on sada_tudreport.pdf (33 pages, 632186 bytes).
 PDF statistics:
- 231 PDF objects out of 1000 (max. 8388607)
- 47 named destinations out of 1000 (max. 500000)
- 112 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 406 PDF objects out of 1000 (max. 8388607)
+ 91 named destinations out of 1000 (max. 500000)
+ 228 words of extra memory for PDF output out of 10000 (max. 10000000)
 

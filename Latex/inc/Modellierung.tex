@@ -1,7 +1,7 @@
 \chapter{Modellbildung und Regelung}
 
 \section{Model}
-Für die Modellbilfdung wird der dreidimensionale Ballbot in drei unabhängige planare Modelle aufgeteilt. In jeder Ebene wird das System vereinfacht als Zusammensetzung von drei starren Körpern bestehend aus einer Kugel, ein virtuelles Rad und einen Körper betrachtet und besitzt somit zwei Freiheitsgrade, die sich in eine Translation bzw. Rotation des Balles und eine Rotation des Körpers aufteilen lassen\cite{Manual}.\newline
+Für die Modellbildung wird der dreidimensionale Ballbot in drei unabhängige planare Modelle aufgeteilt. In jeder Ebene wird das System vereinfacht als Zusammensetzung von drei starren Körpern bestehend aus einer Kugel, ein virtuelles Rad und einen Körper betrachtet und besitzt somit zwei Freiheitsgrade, die sich in eine Translation bzw. Rotation des Balles und eine Rotation des Körpers aufteilen lassen[ETHZ].\newline
 Um ein möglichst vereinfachte Modelle der drei Ebenen zu erhalten, werden weitere Annahmen getroffen, die im Folgenden erläutert werden: 
 \begin{itemize}
 	\item Kein Schlupf: Das System besitzt zwei Kontaktpunkte, in denen ein Schlupf auftreten kann. Hierzu zählt zum einen der Kontaktpunkt von Ball und Boden und zum zweiten der Kontaktpunkt zwischen den Rädern und dem Ball. Damit dies gewährleistet wird, müssen die angelegten Drehmomente begrenzt werden.
@@ -61,22 +61,68 @@ Zunächst wird aus den einzelnen Summen der kinetischen und potentiellen Energien
 \end{equation}
 Die Bewegungsgleichungen für den Ballbot resultieren aus dem Lösen der LAGRANGEschen Gleichungen zweiter Art. 
 	\begin{equation}
-		\frac{d }{dt}(\frac{\partial L}{\partial \dot \vec{q}})^{2} - \frac{\partial L}{\partial \vec{q}} = \vec{f_{NP,yz}}
+		\frac{d}{dt}(\frac{\partial L}{\partial \dot{\mathbf{q}}^{2}}) - \frac{\partial L}{\partial \mathbf{q}} = \mathbf{f}_{NP,yz}
 \end{equation}
 
 Mit mathematische Umformungen können diese Bewegungsgleichungen in eine Matrixform überführt werden. 
 \begin{eqnarray}
 \label{eq:MatrizenDGL}
-\mathbf{M}_{x}=\begin{bmatrix} m_{tot} \cdot r_{S}^{2} + I_{S} + (\frac{r_{S}}{r_{W}})^{2} \cdot I_{W}  & -\frac{r_{S}}{r_{W}^2}\cdot r_{tot} \cdot I_{W} + \gamma \cdot r_{S} \cdot \cos{\vartheta_{x}} m_{tot} \\ -\frac{r_{S}}{r_{W}^2}\cdot r_{tot} \cdot I_{W} + \gamma \cdot r_{S} \cdot \cos{\vartheta_{x}} m_{tot}	& \frac{r_{S}^2}{r_{W}^2} \cdot I_{W} + I_{B} + m_{b}\cdot l^2 + m_{W}\cdot r_{tot}^2  \\ \end{bmatrix} &,& \mathbf{M}_{x} \in {\rm I\!R}\textsuperscript{\textit{2$\times$2}} \\ 
-\mathbf{C}_{x} =\begin{bmatrix}  -r_{S} \cdot \gamma \cdot \sin{\vartheta_{x}} \cdot \dot \vartheta_{x}^{2} \\ 0 \\ \end{bmatrix} &,& \mathbf{C}_{x} \in {\rm I\!R}\textsuperscript{\textit{2$\times$1}} \nonumber \\
-\mathbf{G}_{x}=\begin{bmatrix}  0 \\ -g\cdiot \sin{\theta_{x}}\cdot \gamma  \\ \end{bmatrix}  &,&  \mathbf{G_{x}} \in {\rm I\!R}\textsuperscript{\textit{2$\times$1}} \nonumber \\ 
+\mathbf{M}_{x}=\begin{bmatrix} m_{tot} \cdot r_{S}^{2} + I_{S} + (\frac{r_{S}}{r_{W}})^{2} \cdot I_{W}  & -\frac{r_{S}}{r_{W}^2}\cdot r_{tot} \cdot I_{W} + \gamma \cdot r_{S} \cdot \cos{\vartheta_{x}} m_{tot} \\ -\frac{r_{S}}{r_{W}^2}\cdot r_{tot} \cdot I_{W} + \gamma \cdot r_{S} \cdot \cos{\vartheta_{x}} m_{tot}	& \frac{r_{S}^2}{r_{W}^2} \cdot I_{W} + I_{B} + m_{b}\cdot l^2 + m_{W}\cdot r_{tot}^2  \\ \end{bmatrix} &,& \mathbf{M}_{x} \in \mathbb{R}\textsuperscript{2$\times$2} \nonumber \\ 
+\mathbf{C}_{x} =\begin{bmatrix}  -r_{S} \cdot \gamma \cdot \sin{\vartheta_{x}} \cdot \dot \vartheta_{x}^{2} \\ 0 \\ \end{bmatrix} &,& \mathbf{C}_{x} \in \mathbb{R}\textsuperscript{\textit{2$\times$1}} \nonumber \\
+\mathbf{G}_{x}=\begin{bmatrix}  0 \\ -g\cdot \sin{\theta_{x}}\cdot \gamma  \\ \end{bmatrix}  &,&  \mathbf{G}_{x} \in \mathbb{R}\textsuperscript{\textit{2$\times$1}} \nonumber \\ 
 \end{eqnarray}
 	
 
 \section{Zustandsraumdarstellung}
-Bei den hergeleiteten Bewegungsgleichungen handelt es sich um nichtlineare Funktionen. Um ein Zustandsraummodell zu erhalten, müssen zunächst die Zustände bzw. der Zustandsvektor festgelegt werden. Als Beispiel wird auch hier die $yz$-Ebene betrachtet. Mit $\vec{x} = [\varphi_{x}, \vartheta_{x}, \dot\varphi_{x}, \dot\vartheta_{x}]$ können die nichtlinearen Funktionen in folgende Form überführt werden.
+Bei den hergeleiteten Bewegungsgleichungen handelt es sich um nichtlineare Funktionen. Um ein Zustandsraummodell zu erhalten, müssen zunächst die Zustände bzw. der Zustandsvektor festgelegt werden. Als Beispiel wird auch hier die $yz$-Ebene betrachtet. Mit $\mathbf{x} = [\varphi_{x}, \vartheta_{x}, \dot\varphi_{x}, \dot\vartheta_{x}]$ können die nichtlinearen Funktionen in folgende Form überführt werden.
 \begin{equation}
-\dot\mathbf{\vec{x}}= \begin{bmatrix} \mathbf{\vec{q}}\\ \dot\mathbf{\vec{q}}\\ \end{bmatrix} =\begin{bmatrix} \dot\mathbf{\vec{q}}\\  \mathbf{ M_{x}}^{-1}\cdot (\mathbf{NP}-(\mathbf{C_{x}}+\mathbf{G_{x}}))\\ \end{bmatrix}
+\dot{\mathbf{x}} = \begin{bmatrix} \mathbf{q}\\ \dot{\mathbf{q}}\\ \end{bmatrix} = \begin{bmatrix} \dot{\mathbf{q}}\\  \mathbf{M_{x}}^{-1}\cdot (\mathbf{f}_{NP}-(\mathbf{C_{x}}+\mathbf{G_{x}}))\\ \end{bmatrix}
 \end{equation}
-	 
 
+Das Ziel dieser Arbeit ist das Auslegen eines Reglers, damit der Roboter innerhalb eines kleinen Bereiches um den Arbeitspunkt $\mathbf{x}_{0}= [0, 0, 0, 0]$ auf dem einen Ball balanciert. Hierzu muss zunächst das nichtlineare Modell um den Arbeitspunkt mit der Taylor-Reihenentwicklung linearisiert werden, um die lineare Zustandsraumdarstellung 
+\begin{eqnarray}
+\label{eq:LZRD}
+\dot{\mathbf{x}}=\mathbf{A}\cdot\mathbf{x} + \mathbf{B} \cdot \mathbf{u} \nonumber \\
+\label{eq:LZRD1}
+\mathbf{y}=\mathbf{C} \cdot \mathbf{x} + \mathbf{D} \cdot \mathbf{u} 
+\end{eqnarray}
+zu erhalten. Mit den zum Roboter dazugehörigen Parametern und dem eingesetzten Arbeitspunkt lauten die konkreten Matrizen für die Zustandsraumdarstellung der $yz$-Ebene folgender Maßen:
+
+\begin{align}
+\label{eq:konkZRD}
+\mathbf{A}=\begin{bmatrix} 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0.4886 & 0 & 0 \\ 0 & 17.1119 & 0 & 0\end{bmatrix} & 
+\mathbf{B}=\begin{bmatrix} 0 \\ 0 \\ 63.5516 \\ -10.6945 \end{bmatrix} &
+\mathbf{C}=\begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0\\ 0 & 0 & 0 & 1 \end{bmatrix} &
+\mathbf{D}=\begin{bmatrix} 0 \\ 0 \\ 0\\ 0 \end{bmatrix} \nonumber 
+\end{align} 
+
+Damit der Roboter auf einen Ball die eigene Gleichgewichtslage einhalten kann, ist es zunächst nebensächlich, welche Position und Geschwindigkeit der Ball dabei einnimmt, da in dem linearisierten Modell nur geringe Abweichungen um die Ruhelage zulässig sind. Dadurch sind für den späteren Entwurf einer Regelung die Zustände des Roboters von Bedeutung und die Zustände für den Ball müssen nicht für eine Regelung berücksichtigt werden. Mit dem neuem Zustandsvektor ... wird die Ordnung des Modells \ref{eq:LZRD} reduziert, das zu folgenden Zustandsraummatrizen führt: 
+
+
+\begin{align}
+%\label{eq:redZRD}
+\mathbf{A}^{*}=\begin{bmatrix} 0 & 1 \\ 17.1119 & 0 \end{bmatrix} & 
+\mathbf{B}^{*}=\begin{bmatrix} 0 \\ -10.6945 \end{bmatrix} &
+\mathbf{C}^{*}=\begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} &
+\mathbf{D}^{*}=\begin{bmatrix} 0 \\ 0 \end{bmatrix} \nonumber 
+\end{align}
+
+Die Prüfung auf Stabilität der beiden Modellen erfolgt anhand der Lage der Eigenwerte. Das ursprüngliche als auch das reduzierte Modell besitzt folgende Eigenwerte: 
+
+\begin{align}
+%\label{eq:EW}
+\mathbf{\lambda}=\begin{pmatrix} 0 \\ 0 \\  4.1367\\ -4.1367 \end{pmatrix} & 
+\mathbf{\lambda}^{*}=\begin{pmatrix} 4.1367 \\ -4.1367 \end{pmatrix} & 
+\end{align}
+
+Das ursprünglich Modell besitzt zwei grenzstabilen Eigenwerte $\lambda_{1,2} = 0$ auf der Imaginären Achse und einen instabilen Eigenwert $\lambda_{3} = 4.1367$ in der rechten Halbebene des Bildbereiches. Somit ist das System instabil. Bei dem reduzierten Modell handelt es sich ebenfalls um ein instabiles System, da es auch einen Eigenwerte $\lambda_{1}^{*} = 4.1367$ besitzt.\newline
+Die Untersuchung der Steuer- und Beobachtbarkeit erfolgt in beiden Modelle mit den entsprechenden Kriterien von KALMANN. In beiden Fällen besitzen die Steuerbarkeits- und Beobachtbarkeitsmatrizen vollen Rang, wodurch beide Modelle vollständig steuer- und beobachtbar sind. Mit diesen Systemeigenschaften ist mit Hilfe eines Reglers möglich, die entsprechende instabile System zu stabilisieren. Das Auslegen eines geeigneten Regler wird nachfolgend erläutert. [ETHZ,MGR]   
+  
+\section{Reglerentwurf}
+Der Entwurf eines geeigneten Regler zur Stabilisierung der Gleichgewichtslage des Roboters wird im Folgenden auf das reduzierte Model beschränkt. Für die beiden Modelle der $yz$- und $xz$-Ebene wird jeweils eine Linear-quadratische Regelung (LQR) ausgelegt, die auf die Minimierung des Gütemaß
+\begin{equation}
+	J = \int_{0}^{\infty} \mathbf{x}^{T}(t)\cdot \mathbf{Q} \cdot \mathbf{x}(t) + \mathbf{u}^{T}(t)\cdot \mathbf{R} \cdot \mathbf{u}(t)
+\end{equation}
+durch einen vorgegebenen Stellgrößenverlauf basiert. In das Güteintegral geht quadratisch zum einen der Trajektorienverlauf $\mathbf{x}(t)$ und der Stellgrößenverlauf $\mathbf{u}(t)$ ein. Dabei handelt es sich bei der symmetrischen und positiv semidefiniten Matrix $\mathbf{Q}$ um eine Gewichtungsmatrix für den Trajektorienverlauf. Die symmetrische und positiv definite Matrix $\mathbf{R}$ gewichtet die Stellgröße.[AD]   
+
+  
