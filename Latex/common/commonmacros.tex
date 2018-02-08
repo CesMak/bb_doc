@@ -296,8 +296,8 @@
 	postbreak = \textleftarrow,
 	%escapeinside = {(*@}{@*)},
 	%moredelim = [s][\itshape\color[rgb]{0.5,0.5,0.5}]{[.}{.]},
-	numbers = left,
-	numberstyle = \tiny,
+	numbers = none,
+	%numberstyle = \tiny,
 	stepnumber = 5
 }
 
@@ -309,6 +309,30 @@
 	frame=tb,
 	classoffset = 0,	
 	basicstyle = \ttfamily,
+	keywordstyle = \bfseries\color[rgb]{0,0,1},
+	commentstyle = \itshape\color[rgb]{0.133,0.545,0.133},
+	stringstyle = \color[rgb]{0.627,0.126,0.941},
+	extendedchars = true,
+	breaklines = true,
+	prebreak = \textrightarrow,
+	postbreak = \textleftarrow,
+	%escapeinside = {(*@}{@*)},
+	%moredelim = [s][\itshape\color[rgb]{0.5,0.5,0.5}]{[.}{.]},
+	numbers = left,
+	numberstyle = \tiny,
+	stepnumber = 5
+}
+
+%%Florian 
+\lstset
+{
+	language=Python,
+	backgroundcolor = \color{lightgray},
+	tabsize = 4,
+	framesep = 3mm,
+	%frame=tb,	
+	classoffset = 0,	
+	basicstyle = \footnotesize\ttfamily,
 	keywordstyle = \bfseries\color[rgb]{0,0,1},
 	commentstyle = \itshape\color[rgb]{0.133,0.545,0.133},
 	stringstyle = \color[rgb]{0.627,0.126,0.941},
