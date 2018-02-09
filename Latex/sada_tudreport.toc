@@ -20,6 +20,5 @@
 \contentsline {subsection}{\numberline {4.3.2}Plugins der Simulation}{15}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}Simulierte Dynamik-Eigenschaften}{15}{subsection.4.3.3}
 \contentsline {subsection}{\numberline {4.3.4}Visualisierungsprogramme}{17}{subsection.4.3.4}
-\contentsline {chapter}{\numberline {5}Auswertung}{19}{chapter.5}
-\contentsline {chapter}{\numberline {A}Parameterliste}{21}{appendix.A}
-\contentsline {chapter}{Literaturverzeichnis}{23}{section*.14}
+\contentsline {chapter}{\numberline {5}Auswertung}{21}{chapter.5}
+\contentsline {chapter}{\numberline {A}Parameterliste}{23}{appendix.A}

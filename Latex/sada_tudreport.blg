@@ -1,11 +1,48 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: D:\BallBot\Dokumentation\bb_doc\Latex\sada_tudreport.aux
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: sada_tudreport.aux
 The style file: gerunsrt.bst
-Database file #1: ./bib/Literature.bib
+Database file #1: ./bib/literature_markus.bib
 Warning--I didn't find a database entry for "Richtlinien"
-Warning--I didn't find a database entry for "gazebo_code"
-Warning--I didn't find a database entry for "gazebo_anleitung"
-Warning--I didn't find a database entry for "serena_vrep_vs_gz"
-Warning--I didn't find a database entry for "gz7_fdir1_broken"
-Warning--I didn't find a database entry for "dyn_datasheet"
-Warning--I didn't find a database entry for "gz_adjust_mu"
-(There were 7 warnings)
+You've used 14 entries,
+            2016 wiz_defined-function locations,
+            543 strings with 5671 characters,
+and the built_in function-call counts, 2161 in all, are:
+= -- 190
+> -- 64
+< -- 0
++ -- 30
+- -- 16
+* -- 87
+:= -- 304
+add.period$ -- 28
+call.type$ -- 14
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 14
+duplicate$ -- 112
+empty$ -- 290
+format.name$ -- 16
+if$ -- 545
+int.to.chr$ -- 0
+int.to.str$ -- 14
+missing$ -- 5
+newline$ -- 59
+num.names$ -- 14
+pop$ -- 97
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 70
+stack$ -- 0
+substring$ -- 0
+swap$ -- 43
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 14
+width$ -- 16
+write$ -- 118
+(There was 1 warning)
