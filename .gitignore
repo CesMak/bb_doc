@@ -1,7 +1,8 @@
 *.bak
 *.aux
-*.pdf
 *.blg
 *.log
 *.synctex
 *.toc
+*.gz
+*.log
