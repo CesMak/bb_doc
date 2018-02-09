@@ -13,7 +13,7 @@ Als Entwicklungsumgebung für den Zustandsregler des Ballbots wird die ArduionoID
 
 Die Grundstruktur eines Programmes, die im Listing \ref{lst:Programm} dargestellt ist, gliedert sich in zwei Bereichen. In der Setup-Funktionen, die nur einmal beim Start des Board ausgeführt wird, werden verschieden Initialisierungen für den späteren Programmablauf festgelegt. Bei der Loop-Funktion handelt es sich um das eigentliche Programm, die als endlose Schleife durchlaufen wird. Werden für das Programm noch weitere Funktionen bzw. Variablen benötigt, müssen diese am Anfang oder am Ende eines Programmes definiert werden. 
 
-\begin{lstlisting}[label=lst:Programm, style = C_colored_smallfont]
+\begin{lstlisting}[caption=Hier der Caption flo, label=lst:Programm, style = C_colored_smallfont]
 void setup()	{
 		// Diese Funktion wird nur beim Starten 
 		// des entsprechen Boards einmal ausgeführt
@@ -24,6 +24,7 @@ void loop()	{
 		// durchlaufen
 }
 \end{lstlisting}
+
 Um die Übersichtlichkeit zu erhöhen, können Funktionen und Klassendefinitionen in seperate Dateien ausgelagert werden und im Hauptprogramm eingebunden werden. 
 
 
