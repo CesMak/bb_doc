@@ -1,0 +1,29 @@
+\chapter{Implementation}
+In diesem Kapitel wird zunächst die eingesetzte Entwicklungsumgebung und Programmiersprache vorgestellt.  
+
+
+\section{Entwicklungsumgebung}
+Als Entwicklungsumgebung für den Zustandsregler des Ballbots wird die ArduionoIDE eingesetzt, die in Abbildung \ref{fig:IDE} abgebildet ist. Die Hauptbestandteile dieser Entwicklungsumgebung umfasst einen Texteditor für das eigentliche Programm, eine Konsole für Fehler- und Kompilierungsmeldungen und einen seriellen Monitor für das Senden und Empfangen von Daten zwischen Computer und Board. Weiterhin eignet sich die Entwicklungsumgebung für den Einsatz, da ab der Version 1.6.4 diese über eine Bibliothek des eingesetzten OpenCR Board verfügt. Allerdings ist diese Bibliothek nicht vorinstalliert, weshalb diese über den Boardverwalter nachinstalliert werden muss.[Git,Arduino]
+\begin{figure}[htbp]
+	\centering
+		\includegraphics[width=0.70\textwidth]{Bilder/Florian/ArduinoIDE.PNG}
+	\caption{Arduino Entwicklungsumgebung}
+	\label{fig:IDE}
+\end{figure}
+
+Die Grundstruktur eines Programmes, die im Listing \ref{lst:Programm} dargestellt ist, gliedert sich in zwei Bereichen. In der Setup-Funktionen, die nur einmal beim Start des Board ausgeführt wird, werden verschieden Initialisierungen für den späteren Programmablauf festgelegt. Bei der Loop-Funktion handelt es sich um das eigentliche Programm, die als endlose Schleife durchlaufen wird. Werden für das Programm noch weitere Funktionen bzw. Variablen benötigt, müssen diese am Anfang oder am Ende eines Programmes definiert werden. 
+
+\begin{lstlisting}[label=lst:Programm, style = C_colored_smallfont]
+void setup()	{
+		// Diese Funktion wird nur beim Starten 
+		// des entsprechen Boards einmal ausgeführt
+}
+
+void loop()	{
+		// Diese Funktion in einer endlosen Schleife 
+		// durchlaufen
+}
+\end{lstlisting}
+Um die Übersichtlichkeit zu erhöhen, können Funktionen und Klassendefinitionen in seperate Dateien ausgelagert werden und im Hauptprogramm eingebunden werden. 
+
+

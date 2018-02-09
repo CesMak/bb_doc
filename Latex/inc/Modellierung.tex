@@ -89,7 +89,7 @@ Das Ziel dieser Arbeit ist das Auslegen eines Reglers, damit der Roboter innerha
 zu erhalten. Mit den zum Roboter dazugehörigen Parametern und dem eingesetzten Arbeitspunkt lauten die konkreten Matrizen für die Zustandsraumdarstellung der $yz$-Ebene folgender Maßen:
 
 \begin{align}
-\label{eq:konkZRD}
+%\label{eq:konkZRD}
 \mathbf{A}=\begin{bmatrix} 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0.4886 & 0 & 0 \\ 0 & 17.1119 & 0 & 0\end{bmatrix} & 
 \mathbf{B}=\begin{bmatrix} 0 \\ 0 \\ 63.5516 \\ -10.6945 \end{bmatrix} &
 \mathbf{C}=\begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0\\ 0 & 0 & 0 & 1 \end{bmatrix} &
@@ -110,7 +110,7 @@ Damit der Roboter auf einen Ball die eigene Gleichgewichtslage einhalten kann, i
 Die Prüfung auf Stabilität der beiden Modellen erfolgt anhand der Lage der Eigenwerte. Das ursprüngliche als auch das reduzierte Modell besitzt folgende Eigenwerte: 
 
 \begin{align}
-%\label{eq:EW}
+\label{eq:EW}
 \mathbf{\lambda}=\begin{pmatrix} 0 \\ 0 \\  4.1367\\ -4.1367 \end{pmatrix} & 
 \mathbf{\lambda}^{*}=\begin{pmatrix} 4.1367 \\ -4.1367 \end{pmatrix} & 
 \end{align}
@@ -118,11 +118,90 @@ Die Prüfung auf Stabilität der beiden Modellen erfolgt anhand der Lage der Eigen
 Das ursprünglich Modell besitzt zwei grenzstabilen Eigenwerte $\lambda_{1,2} = 0$ auf der Imaginären Achse und einen instabilen Eigenwert $\lambda_{3} = 4.1367$ in der rechten Halbebene des Bildbereiches. Somit ist das System instabil. Bei dem reduzierten Modell handelt es sich ebenfalls um ein instabiles System, da es auch einen Eigenwerte $\lambda_{1}^{*} = 4.1367$ besitzt.\newline
 Die Untersuchung der Steuer- und Beobachtbarkeit erfolgt in beiden Modelle mit den entsprechenden Kriterien von KALMANN. In beiden Fällen besitzen die Steuerbarkeits- und Beobachtbarkeitsmatrizen vollen Rang, wodurch beide Modelle vollständig steuer- und beobachtbar sind. Mit diesen Systemeigenschaften ist mit Hilfe eines Reglers möglich, die entsprechende instabile System zu stabilisieren. Das Auslegen eines geeigneten Regler wird nachfolgend erläutert. [ETHZ,MGR]   
   
+	
 \section{Reglerentwurf}
-Der Entwurf eines geeigneten Regler zur Stabilisierung der Gleichgewichtslage des Roboters wird im Folgenden auf das reduzierte Model beschränkt. Für die beiden Modelle der $yz$- und $xz$-Ebene wird jeweils eine Linear-quadratische Regelung (LQR) ausgelegt, die auf die Minimierung des Gütemaß
+
+\begin{figure}[h!]
+		\centering
+		\label{fig:sada_tudreport}
+	
+\begin{tikzpicture}[auto, thick, node distance=0.5cm]
+% Definition of blocks:
+\usetikzlibrary{positioning,arrows,calc}
+\tikzset{%
+  block/.style    = {draw, thick, rectangle, minimum height = 3em, minimum width = 3em, node distance = 1.5cm},
+  sum/.style      = {draw, circle, node distance = 1.5cm}, % Adder
+	%join/.style			= {coordinate}, 
+  input/.style    = {coordinate}, % Input
+  output/.style   = {coordinate} % Output
+}
+\draw
+	node [input](w){0}
+	node [sum, right = of w](s1){}
+	node [block, right = of s1] (B) {$\mathbf{B}$}
+	node [sum, right = of B] (s2) {}
+	node [block, right = of s2] (I) {$\mathbf{\int}$}
+	node [input, right = of I] (temp) {}
+	node [block, right = of temp] (C) {$\mathbf{C}$}
+	node [output, right = of C] (y) {}
+	node [block, below = of I] (A) {$\mathbf{A}$}
+	node [block, below = of A] (K) {$\mathbf{K}$};
+	
+	
+	\draw[->](w) -- node {$\mathbf{w} = 0$}(s1);	
+	\draw[->](s1) --node {$\mathbf{u}$} (B);
+	\draw[->](B) -- (s2);
+	\draw[->](s2) -- node {$\dot{\mathbf{x}}$}(I);
+	\draw[-](I) -- node {$\dot{\mathbf{x}}$}(temp);
+	\draw[->](temp) --(C);
+	\draw[->](C) -- node (y_temp) {$\mathbf{y}$}(y);
+	\draw[->](temp) |- node[very near end] {} (A);
+	\draw[->](temp) |- node[very near end] {} (K);
+	\draw[->](A) -| node[pos=0.99] {$+$} node[very near end] {} (s2);
+	\draw[->](K) -| node[pos=0.99] {$-$} node[very near end] {} (s1);
+	%
+\end{tikzpicture}
+\end{figure}
+
+Der Entwurf eines geeigneten Regler zur Stabilisierung der Gleichgewichtslage des Roboters wird im Folgenden auf das reduzierte Model beschränkt. Für die beiden Modelle der $yz$- und $xz$-Ebene wird jeweils ein linear quadratischer Zustandsregler (LQR) ausgelegt, dessen Funktionsweise in Abbildung \ref{fig:LQR} dargestellt ist und auf die Minimierung des Gütemaß
 \begin{equation}
 	J = \int_{0}^{\infty} \mathbf{x}^{T}(t)\cdot \mathbf{Q} \cdot \mathbf{x}(t) + \mathbf{u}^{T}(t)\cdot \mathbf{R} \cdot \mathbf{u}(t)
 \end{equation}
-durch einen vorgegebenen Stellgrößenverlauf basiert. In das Güteintegral geht quadratisch zum einen der Trajektorienverlauf $\mathbf{x}(t)$ und der Stellgrößenverlauf $\mathbf{u}(t)$ ein. Dabei handelt es sich bei der symmetrischen und positiv semidefiniten Matrix $\mathbf{Q}$ um eine Gewichtungsmatrix für den Trajektorienverlauf. Die symmetrische und positiv definite Matrix $\mathbf{R}$ gewichtet die Stellgröße.[AD]   
+durch einen vorgegebenen Stellgrößenverlauf basiert. In das Güteintegral geht quadratisch zum einen der Trajektorienverlauf $\mathbf{x}(t)$ und der Stellgrößenverlauf $\mathbf{u}(t)$ ein. Dabei handelt es sich bei der symmetrischen und positiv semidefiniten Matrix $\mathbf{Q}$ um eine Gewichtungsmatrix für den Trajektorienverlauf. Für ein rasches Einschwingen eines bestimmten Zustandes dieser entsprechend mit einem größeren Gewicht in der Gewichtungsmatrix versehen werden. Die symmetrische und positiv definite Matrix $\mathbf{R}$ gewichtet dagegen die Stellgröße. Müssen Stellgrößenbeschränkungen berücksichtigt werden, sind die zugehörigen in dieser Matrix größere Gewichte vorzusehen. Wird insgesamt die Gewichtungsmatrix $\mathbf{Q}$ im Verhältnis zur der Gewichtungsmatrix $\mathbf{R}$ vergrößert, führt das zu einem schnelleren Einschwingen der Zustände mit höheren Stellgrößen. Im umgekehrten Fall stabilisiert sich das System langsamer, da die Höhe der Stellgrößen abnehmen.[AD][Skript] \newline
+Das Regelgesetz, dass aus der Minimierung des Gütemaß resultiert, ergibt sich zu 
+ \begin{align}
+%\label{eq:redZRD}
+\mathbf{u}(t) = -\mathbf{K}\cdot\mathbf{x}(t) & mit & \mathbf{K}=\mathbf{R}^{-1}\cdot\mathbf{B}^{T}\cdot\mathbf{P}. 
+\end{align}
+Die symmetrisch positiv definite Matrix $\mathbf{P}$ errechnet sich aus dem algebraischen Teil der Riccati-Differentialgleichung[Adamy] 
+\begin{equation}
+	\mathbf{A}^{T} \cdot \mathbf{P} + \mathbf{P} \cdot \mathbf{A} - \mathbf{P} \cdot \mathbf{B} \cdot \mathbf{R}^{-1} \cdot \mathbf{B}^{T} \cdot \mathbf{P} = - \mathbf{Q}.
+\end{equation}
+Das Lösen der Riccati-Differentialgleichung und somit die Berechnung der Reglermatrix $\mathbf{K}$ kann mit Hilfe 
+von MATLAB und dem dazugehörigen Befehl lqr durchgeführt werden. Zu Beginn werden die einzelnen Gewichtungen der einzelnen Zustände und Stellgrößen zu 
+ \begin{align}
+%\label{eq:redZRD}
+\mathbf{Q} = \begin{bmatrix} 20 & 0 & 0 & 0 \\ 0 & 100 & 0 & 0 \\ 0 & 0 & 10 & 0 \\ 0 & 0 & 0 & 50 \end{bmatrix} \nonumber & &
+\mathbf{R} = 200 \nonumber 
+\end{align}
+festgelegt. Mit dieser Konfiguration werden die einzelnen Verstärkungsfaktoren des Regler zu 
+\begin{equation}
+	\mathbf{K} = \begin{bmatrix} -3.3494 & -0.9362 \end{bmatrix}
+\end{equation}
+ berechnet.\newline
+Diese Verstärkungsfaktoren sind nicht ideal für den das System. Durch manuelles Anpassen der Werte kann das Balancieren des Roboters um die Gleichgewichtslage schrittweise angepasst werden, das schließlich auf folgende Reglermatrix 
+\begin{equation}
+	\mathbf{K} = \begin{pmatrix} ? & ? \end{pmatrix}
+\end{equation}
+führt. 
+
+
+\section{Simulation des Modells}
+Mit dem Aufbau und Durchführung einer Simulation, die mit MATLAB/SIMULINK durchgeführt wird, können sowohl die nichtlinearen Bewegungsgleichungen und somit das dynamsiche Systemverhalten des Ballbots als auch der entworfene Zustandsregler verifiziert werden. Weiterhin besteht die Möglichkeit, sowohl die Versätrkungsfaktoren des Regler zu optimieren, um die Dynamik des Systems zu erhöhen oder Stellgrößen zu beschränken, als auch Grenzsituationen zu testen. Dadurch entfällt das Testen am realen System, das zeitaufwendig und eventuelle Schäden beinhaltet. \newline
+Im folgenden wird zunächst die allgemeine Implementierung in MATLAB/SIMULINK erläutert, die dann schrittweise an den realen Gegebenheiten angepasst wird.
+
+\subsection{Implementierung Modell}
+ 
+
 
   
