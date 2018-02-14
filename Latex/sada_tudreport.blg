@@ -2,47 +2,74 @@ This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: sada_tudreport.aux
 The style file: gerunsrt.bst
-Database file #1: ./bib/literature_markus.bib
-Warning--I didn't find a database entry for "Richtlinien"
-You've used 14 entries,
+Database file #1: ./bib/Literature_flo.bib
+Warning--entry type for "pendel" isn't style-file defined
+--line 29 of file ./bib/Literature_flo.bib
+Warning--entry type for "Arduino" isn't style-file defined
+--line 98 of file ./bib/Literature_flo.bib
+Warning--entry type for "gazebo_anleitung" isn't style-file defined
+--line 107 of file ./bib/Literature_flo.bib
+Warning--entry type for "gazebo_code" isn't style-file defined
+--line 116 of file ./bib/Literature_flo.bib
+Warning--entry type for "gz_adjust_mu" isn't style-file defined
+--line 125 of file ./bib/Literature_flo.bib
+Warning--entry type for "gz7_fdir1_broken" isn't style-file defined
+--line 134 of file ./bib/Literature_flo.bib
+Warning--entry type for "moveit_moveit" isn't style-file defined
+--line 143 of file ./bib/Literature_flo.bib
+Warning--entry type for "openCR" isn't style-file defined
+--line 152 of file ./bib/Literature_flo.bib
+Warning--entry type for "pla" isn't style-file defined
+--line 161 of file ./bib/Literature_flo.bib
+Warning--entry type for "plot_juggler" isn't style-file defined
+--line 170 of file ./bib/Literature_flo.bib
+Warning--entry type for "rqt_multiplot" isn't style-file defined
+--line 179 of file ./bib/Literature_flo.bib
+Warning--entry type for "rqt_plot" isn't style-file defined
+--line 188 of file ./bib/Literature_flo.bib
+Warning--entry type for "rviz_rviz" isn't style-file defined
+--line 197 of file ./bib/Literature_flo.bib
+Warning--entry type for "XM430" isn't style-file defined
+--line 206 of file ./bib/Literature_flo.bib
+You've used 24 entries,
             2016 wiz_defined-function locations,
-            543 strings with 5671 characters,
-and the built_in function-call counts, 2161 in all, are:
-= -- 190
-> -- 64
+            587 strings with 6563 characters,
+and the built_in function-call counts, 3324 in all, are:
+= -- 309
+> -- 65
 < -- 0
-+ -- 30
-- -- 16
-* -- 87
-:= -- 304
-add.period$ -- 28
-call.type$ -- 14
++ -- 37
+- -- 13
+* -- 104
+:= -- 426
+add.period$ -- 61
+call.type$ -- 24
 change.case$ -- 0
 chr.to.int$ -- 0
-cite$ -- 14
-duplicate$ -- 112
-empty$ -- 290
-format.name$ -- 16
-if$ -- 545
+cite$ -- 24
+duplicate$ -- 181
+empty$ -- 471
+format.name$ -- 13
+if$ -- 864
 int.to.chr$ -- 0
-int.to.str$ -- 14
-missing$ -- 5
-newline$ -- 59
-num.names$ -- 14
-pop$ -- 97
+int.to.str$ -- 24
+missing$ -- 9
+newline$ -- 112
+num.names$ -- 11
+pop$ -- 159
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 70
+skip$ -- 104
 stack$ -- 0
 substring$ -- 0
-swap$ -- 43
+swap$ -- 58
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 14
-width$ -- 16
-write$ -- 118
-(There was 1 warning)
+while$ -- 11
+width$ -- 26
+write$ -- 217
+(There were 14 warnings)

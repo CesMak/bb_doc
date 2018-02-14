@@ -1,0 +1,68 @@
+%% Creator: Inkscape inkscape 0.92.2, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'Modell_2.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{171.37770045bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,1.35679409)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{Bilder/Florian/Modell_2.pdf}}%
+    \put(0.37241783,0.13512664){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$r_{S}$}}}%
+    \put(0.54592887,0.65004976){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$r_{W}$}}}%
+    \put(0.46842984,1.27174813){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\vartheta_{x}$}}}%
+    \put(0.08952943,0.69543827){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\varphi_{x}$}}}%
+    \put(0.59787185,0.80850802){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\psi_{x}$}}}%
+    \put(0.66667518,1.33434278){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$m_{B}, I_{B,yz}$}}}%
+    \put(0.53851959,0.57855725){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$m_{W},$}}}%
+    \put(0.6527594,0.28232548){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$m_{S}, I_{S}$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{Bilder/Florian/Modell_2.pdf}}%
+    \put(0.78208,0.76008432){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$l$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{Bilder/Florian/Modell_2.pdf}}%
+    \put(-0.00220793,0.84136661){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\mathbf{e}_{z}^{I}$}}}%
+    \put(0.78805725,0.02549943){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\mathbf{e}_{y}^{I}$}}}%
+    \put(0.53133014,0.52369746){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$I_{W,yz}$}}}%
+  \end{picture}%
+\endgroup%
