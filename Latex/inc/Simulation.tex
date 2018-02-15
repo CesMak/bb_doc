@@ -1,8 +1,8 @@
 \chapter{Simulation} \label{ch:Simulation}
-Die Simulation des Ballbot's wurde mittels Gazebo realisiert und kann mittels eines globalen ROS launch files gestartet werden. Die Simulation steht frei zur Verfügung und kann über \cite{gazebo_code} abgerufen werden. Zudem gibt es ein Youtube Video \cite{gazebo_anleitung} das zeigt, wie man die Simulation auf einem Ubuntu-Betriebssystem mit ROS-Kinetic und Gazebo7 testen kann.
+Die Simulation des Ballbots wurde mittels Gazebo realisiert und kann mittels eines globalen ROS launch files gestartet werden. Die Simulation steht frei zur Verfügung und kann über \cite{gazebo_code} abgerufen werden. Zudem gibt es ein Youtube Video \cite{gazebo_anleitung} das zeigt, wie man die Simulation auf einem Ubuntu-Betriebssystem mit ROS-Kinetic und Gazebo7 testen kann.
 
 \section{3D Simulatoren}
-Für eine 3D-Simulation des Ballbot's bieten sich grundsätzlich zwei 3D Simulatoren an: Gazebo und V-Rep. 
+Für eine 3D-Simulation des Ballbots bieten sich grundsätzlich zwei 3D Simulatoren an: Gazebo und V-Rep. 
 Die Unterschiede dieser beiden Simulatoren sind in Tabelle \ref{table:vrep_gazebo} aufgeführt.
 
 \begin{table}
@@ -21,14 +21,14 @@ Die Unterschiede dieser beiden Simulatoren sind in Tabelle \ref{table:vrep_gazeb
 Auf dem Up-Board des Ballbots soll ROS\footnote{Das Robot Operating System (ROS) ist eine Open Source Middelware. Diese ermöglicht es die verschiedenen Komponenten eines Roboters (Sensoren und Aktoren) geschickt miteinander zu verbinden. So ist es möglich einen Roboter zu simulieren und mittels eins UP-Level Computers zu steueren.} laufen. Aus diesem Grund wurde der Gazebo Simulator gewählt, denn dieser ist der Standart Simulator von ROS und daher besser integriert als V-REP\cite{serena_vrep_vs_gz}.
 
 \section{Simulation von omnidirektionalen Rädern}
-Bei der Simulation des Ballbot's in Gazebo stellt sich zunächst die Frage, wie man die omnidirektionalen Räder simulieren soll. Hierzu gibt es zwei Möglichkeiten: 
+Bei der Simulation des Ballbots in Gazebo stellt sich zunächst die Frage, wie man die omnidirektionalen Räder simulieren soll. Hierzu gibt es zwei Möglichkeiten: 
 
 Die erste Möglichkeit besteht darin, das omnidirektionale Rad ohne frei drehende kleine Räder zu simulieren. Um stattdessen das omnidirektionale Rad zu simulieren, gibt man dem Rad zwei verschiedene Reibungskoeffizienten für die unterschiedlichen Reibungsrichtungen vor. Die Reibungskoeffizienten werden in Gazebo \textit{mu1} und \textit{mu2} genannt. Der erste Reibungskoeffizient entspricht der Reibung zwischen Ball und Rad. Der zweite Reibungskoeffizient muss zu 0 gewählt werden, denn dieser simuliert die kleinen frei drehenden Räder des omnidirektionalen Rades. Zusätzlich muss man noch den \textit{fdir1} Parameter von Gazebo setzen. Dieser gibt an in welche Richtung des aktuellen Gelenks(Joints) der \textit{mu1} Parameter zeigen soll. 
 
-In Abbildung \ref{fig:simple_simulation} (a) ist die einfachste Modellierungs-Möglichkeit eines Ballbot's dargestellt. Abbildung \ref{fig:simple_simulation} (b) zeigt, wie man die Reibungskoeffizienten \textit{mu1} und \textit{mu2} sowie den \textit{fdir1} Parameter für dieses Rad einstellen müsste, um unendlich viele freie Räder zu simulieren. Leider hat diese einfache Modellierungs-Möglichkeit beim Testen nicht funktioniert, da in Gazebo7 der \textit{fdir1} Parameter nicht richtig funktioniert \cite{gz7_fdir1_broken}.\footnote{Seit Gazebo8 sollte der \textit{fdir1} Parameter wieder richtig funktionieren. Dies konnte jedoch in dieser Arbeit nicht weiter betrachtet werden.} 
+In Abbildung \ref{fig:simple_simulation} (a) ist die einfachste Modellierungs-Möglichkeit eines Ballbots dargestellt. Abbildung \ref{fig:simple_simulation} (b) zeigt, wie man die Reibungskoeffizienten \textit{mu1} und \textit{mu2} sowie den \textit{fdir1} Parameter für dieses Rad einstellen müsste, um unendlich viele freie Räder zu simulieren. Leider hat diese einfache Modellierungs-Möglichkeit beim Testen nicht funktioniert, da in Gazebo7 der \textit{fdir1} Parameter nicht richtig funktioniert \cite{gz7_fdir1_broken}.\footnote{Seit Gazebo8 sollte der \textit{fdir1} Parameter wieder richtig funktionieren. Dies konnte jedoch in dieser Arbeit nicht weiter betrachtet werden.} 
 \begin{figure}[!htbp]%
 	\centering
-	\subfloat[Übersicht des gesamten Aufbau's des Ballbots.]{{\includegraphics[width=5cm]{./Bilder/Markus/easy_model.png} }}%
+	\subfloat[Übersicht des gesamten Aufbaus des Ballbots.]{{\includegraphics[width=5cm]{./Bilder/Markus/easy_model.png} }}%
 	\qquad \qquad
 	\subfloat[Simulation der freien Räder des omnidirektionalen Rades.]{{\includegraphics[width=6cm]{./Bilder/Markus/simulation_easy.png} }}%
 	\caption{Die einfachste Simulations Möglichkeit eines Ballbots in Gazebo7.}%
@@ -46,25 +46,25 @@ Zudem wird auf dynamische Eigenschaften der Simulation wie etwa die Steifigkeit 
 \subsection{Kommunikation zwischen ROS und Gazebo}
 Die Simulation mittels Gazebo wurde komplett in ROS aufgebaut. Sie besteht aus mehreren Teilprogrammen(Nodes), die alle durch ein globales ROS launch file gestartet werden. Beim Ausführen der Simulation sind sehr viele Nodes aktiv, die untereinander über sogenannte Topics Nachrichten austauschen. 
 
-Anhang \ref{fig:rosgraph} zeigt den sogenannten ROS Graph der aktiven Nodes und deren Topics nach dem Starten des globalen ROS launch files. In der Mitte dieser Abbildung ist der Node \textit{/ballbot/bb\_control} zu erkennen. Dieser beinhaltet das Regelungsprogramm des simulierten Ballbot's. Hierfür liest(subscribt) es Nachrichten der Topics \textit{/ballbot/joints/joint\_states}\footnote{Dieses Topic enthält eine Nachricht die die aktuellen Rad Drehmomente, Geschwindigkeiten [rad/sec] und deren absolute Positionen enthält. Für die Regelung der Odometrie werden jedoch nur die Rad Drehgeschwindigkeiten verwendet. } und \textit{/ballbot/sensor/imu} ein, berechnet damit die entsprechenden Drehmomente für die einzelnen Räder und veröffentlicht(published) die Nachrichten mit den berechneten Drehmomenten auf den Topics \textit{/ballbot/wheelx\_effort\_controller/command}. Der Node \textit{/gazebo} wiederum liest diese Drehmomentbefehle der einzelnen omnidirektionalen Räder ein und dreht entsprechend in der sichtbaren Simulation die Räder. 
+Anhang \ref{fig:rosgraph} zeigt den sogenannten ROS Graph der aktiven Nodes und deren Topics nach dem Starten des globalen ROS launch files. In der Mitte dieser Abbildung ist der Node \textit{/ballbot/bb\_control} zu erkennen. Dieser beinhaltet das Regelungsprogramm des simulierten Ballbots. Hierfür liest(subscribt) es Nachrichten der Topics \textit{/ballbot/joints/joint\_states}\footnote{Dieses Topic enthält eine Nachricht die die aktuellen Rad Drehmomente, Geschwindigkeiten [rad/sec] und deren absolute Positionen enthält. Für die Regelung der Odometrie werden jedoch nur die Rad Drehgeschwindigkeiten verwendet. } und \textit{/ballbot/sensor/imu} ein, berechnet damit die entsprechenden Drehmomente für die einzelnen Räder und veröffentlicht(published) die Nachrichten mit den berechneten Drehmomenten auf den Topics \textit{/ballbot/wheelx\_effort\_controller/command}. Der Node \textit{/gazebo} wiederum liest diese Drehmomentbefehle der einzelnen omnidirektionalen Räder ein und dreht entsprechend in der sichtbaren Simulation die Räder. 
 
 Es sei noch darauf hingewiesen, dass es möglich ist, Gazebo mit ROS zu synchronisieren. Möchte man zum Beispiel einen Regler implementieren, der eine sehr hohe Updatefrequenz (bzw. eine geringe Abtastzeit) aufweist, die Berechnung der Verstärkungsfaktoren dieser Regelung jedoch länger dauert als die Abtastzeit, so muss die Regelung mit Gazebo synchronisiert werden. Hierfür gibt es die Möglichkeit, Gazebo pausiert zu starten und auch die ganze Zeit pausiert zu lassen. Ist nun die Berechnung der Regelung fertig, schickt man einen \textit{rosservice call} an Gazebo um die Simulation einen Schritt weiterlaufen zu lassen. Anschließend wird der nächste Regelungswert berechnet. Bei dem simulierten Ballbot wurde eine Update Frequenz von $100$\,Hz benutzt. Die Verstärkungsfaktoren der 2D-Regelung wurden jedoch mit mindestens $1000$\,Hz berechnet. Daher musste Gazebo nicht mit dem entsprechendem ROS Node, der die Regelung darstellt \textit{/ballbot\_controll} synchronisiert werden. 
 
 \subsection{Plugins der Simulation}
-Die Sensoren des Ballbot's können in Gazebo durch Plugins simuliert werden. Abbildung \ref{fig:plugins_simulation} zeigt die simulierten Sensoren und deren Plugin Bibliotheken. Hierbei wurde die IMU mit einer \textit{update\_rate} von $200$\,Hz sowie mit einem Gaußschen Rauschen von $0.01$\,$\text{dps}/\sqrt{\text{Hz}}$ simuliert. Als Motoren-Interface wurde das Joint-Effort- Interface verwendet, welches über das \textit{ros\_control} Paket \footnote{Dieses Paket ist standardmäßig in der ROS-Kinetic Version enthalten. Weitere Informationen zu diesem Paket gibt es unter: http://wiki.ros.org/ros\_control .} zur Verfügung steht. Die Motoren wurden dabei mit einem PID-Regler simuliert. Dabei wurden die Verstärkungsfaktoren zu P=100, I=0.01 und D=10 gewählt. Für weitere Details zur Implementierung der RealSense-Kamera sowie des LDS-Laser Scanners sei auf den Programmcode \cite{gazebo_code} verwiesen.
+Die Sensoren des Ballbots können in Gazebo durch Plugins simuliert werden. Abbildung \ref{fig:plugins_simulation} zeigt die simulierten Sensoren und deren Plugin Bibliotheken. Hierbei wurde die IMU mit einer \textit{update\_rate} von $200$\,Hz sowie mit einem Gaußschen Rauschen von $0.01$\,$^\circ/\sqrt{\text{Hz}}$ simuliert. Als Motoren-Interface wurde das Joint-Effort- Interface verwendet, welches über das \textit{ros\_control} Paket\footnote{Dieses Paket ist standardmäßig in der ROS-Kinetic Version enthalten. Weitere Informationen zu diesem Paket gibt es unter: http://wiki.ros.org/ros\_control .} zur Verfügung steht. Die Motoren wurden dabei mit einem PID-Regler simuliert. Dabei wurden die Verstärkungsfaktoren standardmäßig zu P=100, I=0.01 und D=10 gewählt. Für weitere Details zur Implementierung der RealSense-Kamera sowie des LDS-Laser Scanners sei auf den Programmcode \cite{gazebo_code} verwiesen.
 
 \begin{figure}[htbp]%
 	\centering
 	{\includegraphics[scale=0.65]{./Bilder/Markus/simulation_plugins.png} }
-	\caption{Der Simulierte Ballbot mit den simulierten Sensoren und deren Plugin Bibliotheken.}
+	\caption{Der simulierte Ballbot mit den simulierten Sensoren und deren Plugin-Bibliotheken.}
 	\label{fig:plugins_simulation}
 \end{figure}
 
 \subsection{Simulierte Dynamik-Eigenschaften}
 \label{chap:Simulierte_Dynamik_Eigenschaften}
-In Gazebo kann man für jedes Gelenk(Joint) ein maximales Drehmomentlimit und ein maximales Geschwindigkeitslimit setzen. Dieses maximale Drehmomentlimit kann für die verwendeten Dynamixel XM430-W350-R Motoren aus dem Datenblatt  \cite{XM430} entnommen werden. Betrachtet man zusätzlich, dass eine Batterie von 11.1 Volt verwendet wurde, so beträgt das maximale Drehmomentenlimit $3.8$\,Nm und das maximale Geschwindigkeitslimit $4.5$\,rad/s\footnote{Dieses Geschwindigkeitslimit konnte zusätzlich durch eine Messung bestätigt werden.}. Diese beiden Begrenzungswerte wurden ebenfalls in der Simulation verwendet. 
+In Gazebo kann man für jedes Gelenk(Joint) ein maximales Drehmomentlimit und ein maximales Geschwindigkeitslimit setzen. Dieses maximale Drehmomentlimit kann für die verwendeten Dynamixel XM430-W350-R Motoren aus dem Datenblatt  \cite{XM430} entnommen werden. Betrachtet man zusätzlich, dass eine Batterie von 11.1 Volt verwendet wurde, so beträgt das maximale Drehmomentenlimit $3.8$\,Nm und das maximale Geschwindigkeitslimit\footnote{Dieses Geschwindigkeitslimit konnte zusätzlich durch eine Messung bestätigt werden.} $4.5$\,rad/s. Diese beiden Begrenzungswerte wurden ebenfalls in der Simulation verwendet. 
 
-Für jedes Bindeglied(link) kann man in Gazebo dynamische Eigenschaften festlegen\footnote{Gazebo stellt verschiedene Physics Engine's zur Verfügung. Je nach Physics Engine haben die dynamischen Parameter unterschiedliche Namen. In diesem Projekt wurde der Standard Physics Engine der Open Dynamics Engine(ODE) verwendet.}. Die wichtigsten dieser dimensionsloser Größen sind in Tabelle \ref{table:gazebo_params} aufgeführt.
+Für jedes Bindeglied(link) kann man in Gazebo dynamische Eigenschaften festlegen\footnote{Gazebo stellt verschiedene Physics Engines zur Verfügung. Je nach Physics Engine haben die dynamischen Parameter unterschiedliche Namen. In diesem Projekt wurde die Standard Physics Engine der Open Dynamics Engine(ODE) verwendet.}. Die wichtigsten dieser dimensionsloser Größen sind in Tabelle \ref{table:gazebo_params} aufgeführt.
 
 \begin{table}
 	\centering
@@ -74,34 +74,41 @@ Für jedes Bindeglied(link) kann man in Gazebo dynamische Eigenschaften festlegen
 		Parameter Name& Beschreibung & Beispiel\\ \hline \hline
 		mu1 & Der erste Coulombsche Reibungskoeffizient. & 0.6 (Holz)\\
 		mu2 & Der zweite Coulombsche Reibungskoeffizient. & 0.7 (Gummi) \\
-		kp  & Steifigkeit im Kontaktpunkt, festglegt gemäß ODE für Festkörper Kontaktpunkte. & 1+e5...1+e15 \\
-	    kd  & Dämpfungskonstante im Kontaktpunkt, festglegt gemäß ODE für Festkörper Kontaktpunkte. & 1...100\\
+		kp  & Steifigkeit im Kontaktpunkt, festglegt gemäß Open Dynamics Engine (ODE) für Festkörper-Kontaktpunkte. & 1+e5...1+e15 \\
+	    kd  & Dämpfungskonstante im Kontaktpunkt, festglegt gemäß ODE für Festkörper-Kontaktpunkte. & 1...100\\
 	\end{tabular}
 \end{table}
 
 Diese dynamischen Größen müssen speziell für den Ball, die Subwheels (die kleinen frei laufenden Räder der omnidirektionalen Räder) sowie den Untergrund festgelegt werden. Das Einstellen dieser Größen gestaltet sich als sehr kompliziert, da Gazebo diese Parameter nicht ausführlich dokumentiert hat. In \cite{gz_adjust_mu} heißt es lediglich, dass von zwei zusammenstoßenden Objekten immer der kleinste Coulombsche Reibungskoeffizient benutzt wird. Aus diesem Grund wurden die \textit{mu1} und \textit{mu2} Konstanten für die Subwheels, den Ball und den Untergrund alle auf den gleichen Wert von $0.7$ gesetzt. Dieser Wert entspricht einem Reibkoeffizient von Asphalt oder Gummi.
 
-In den Annahmen (siehe Kapitel \ref{ch:Modellierung}) wurde erläutert, dass der Ball optimalerweise so steif wie möglich sein sollte. Aus diesem Grund wurde der $kp$ Parameter des Balls auf $1+e15$ und der $kd$ Parameter zu $1.0$ gewählt.
+In den Annahmen (siehe Kapitel \ref{ch:Modellierung}) wurde erläutert, dass der Ball optimalerweise so steif wie möglich sein sollte. Aus diesem Grund wurde der $kp$ Parameter des Balls auf $1+e15$ und der $kd$ Parameter zu $50$ gewählt.
 
-Die dynamischen Parameter $kp$ und $kd$ der Subwheels wurden basierend auf bereits gewonnenen Erkenntnissen zu $kp_{subwheel}=5$ und $kd_{subwheel}=1+e10$ gewählt. Dies entspricht einem relativ hartem und nur sehr gering dämpfendem Rad.
+Die dynamischen Parameter $kp$ und $kd$ der Subwheels wurden basierend experimentell gewonnenen  Erkenntnissen zu $kp_{subwheel}=1+e10$ und $kd_{subwheel}=5$ gewählt. Dies entspricht einem relativ hartem und nur sehr gering dämpfendem Rad.
 
 \subsection{Visualisierungsprogramme}
 Zum testen der Simulation ist es wichtig bestimmte Werte (wie zum Beispiel die Winkel der IMU) live darstellen zu können. Hierfür stehen verschiedene Programme zur Verfügung: \begin{enumerate}
-	\item Das Standartprogramm von ROS namens rqt\_plot \cite{rqt_plot}.
+	\item Das Standardprogramm von ROS namens rqt\_plot \cite{rqt_plot}.
 	\item Rqt\_Multiplot \cite{rqt_multiplot}, ein bedienerfreundliches Paket der ETHZ zum Darstellen mehrererer Topics.
 	\item PlotJuggler \cite{plot_juggler}, ein sehr einfach zu bedienendes Paket, mit dem man sehr schnell live Daten plotten kann.
 \end{enumerate}  
 
-In dieser Arbeit hat sich PlotJuggler als das beste dieser drei Programme herausgestellt, da es die Daten am schnellsten plotten konnte und dabei im Gegensatz zu \textit{Rqt\_Multiplot} nie abgestürzt ist. Abbildung \ref{fig:plot_juggler} zeigt die Auswertung der gewünschten und tatsächlichen Drehmomente sowie der Winkel der IMU mittels PlotJuggler. In diesem Experiment wurde die maximale Geschwindigkeit der Motoren (vgl. Kapitel \ref{chap:Simulierte_Dynamik_Eigenschaften} ) auf $2$\,rad/s begrenzt. Anhand dieses Experiments konnte simulativ gezeigt werden, dass eine Begrenzung der maximalen Motordrehzahlen ein instabiles Verhalten des Ballbot's zur Folge hat. 
+In dieser Arbeit hat sich PlotJuggler als das beste dieser drei Programme herausgestellt, da es die Daten am schnellsten plotten konnte und dabei im Gegensatz zu \textit{Rqt\_Multiplot} nie abgestürzt ist. Abbildung \ref{fig:plot_juggler} zeigt die Auswertung der gewünschten und tatsächlichen Drehmomente sowie der Winkel der IMU mittels PlotJuggler. In diesem Experiment wurde die maximale Geschwindigkeit der Motoren (vgl. Kapitel \ref{chap:Simulierte_Dynamik_Eigenschaften}) auf $2$\,rad/s begrenzt. Setzt man die maximale Geschwindigkeit der Motoren auf $4.5$\,rad/s, wie in Abbildung \ref{fig:plot_juggler2} dargestellt, balanciert der Roboter. Anhand dieses Experiments konnte simulativ gezeigt werden, dass eine Begrenzung der maximalen Motordrehzahlen ein instabiles Verhalten des Ballbots zur Folge hat. 
 
 \begin{figure}[!htbp]%
 	\centering
 	{\includegraphics[scale=0.4]{./Bilder/Markus/plot_juggler.png} }
-	\caption{Auswertung eines fallenden Ballbot's mit PlotJuggler. Dargestellt sind: Oben links die gewünschten Drehmomente [Nm], oben rechts die tatsächlichen Drehmomente [Nm] und unten links die Winkel der IMU [$^\circ$].} 
-	\label{fig:plotjuggler}
+	\caption{Auswertung eines fallenden Ballbots mit PlotJuggler. Dargestellt sind: Oben links die gewünschten Drehmomente [Nm], oben rechts die tatsächlichen Drehmomente [Nm] und unten links die Winkel der IMU [$^\circ$]. Für diesen Plot wurde das Geschwindigkeitslimit der Motoren auf $2.0$\,rad/s begrenzt.} 
+	\label{fig:plot_juggler}
 \end{figure}
 
-Neben Gazebo gibt es ein weiteres nützliches 3D- Visualisierungs Programm namens RVIZ\cite{rviz_rviz}. RVIZ bietet die Möglichkeit Sensoren wie zum Beispiel Kameras oder Laser Sensoren zu visualisieren. Zudem lassen sich in RVIZ die Links mit Namen anzeigen und bieten so eine  Möglichkeit den Roboteraufbau näher zu betrachten. Abbildung \ref{fig:plotjuggler} zeigt den Ballbot dargestellt mittels RVIZ. Zu beachten ist hierbei, dass RVIZ lediglich die Nachrichten von Gazebo bzw. ROS liest und anhand dieser Daten den Roboter simuliert. Um in RVIZ den Roboter und den Ball anzuzeigen, ist es nötig, zusätzlich eine Transformations-Nachricht (/tf) zu veröffentlichen. Diese stellt einen Bezug zwischen dem Fixed Frame \textit{world} und dem Hauptlink des Balls bzw. des Ballbots dar \footnote{Das \textit{/tf} Topic sowie die nodes \textit{/odom\_to\_tf\_robot} und \textit{/odom\_to\_tf\_ball} sind in Anhang \ref{fig:rosgraph} dargestellt.}.
+\begin{figure}[!htbp]%
+	\centering
+	{\includegraphics[scale=0.3]{./Bilder/Markus/plot_juggler2.png} }
+	\caption{Auswertung eines balancierenden Ballbots mit PlotJuggler. Dargestellt sind: Oben links die gewünschten Drehmomente [Nm], oben rechts die tatsächlichen Drehmomente [Nm] und unten links die Winkel der IMU [$^\circ$]. Für diesen Plot wurde das Geschwindigkeitslimit der Motoren auf $4.5$\,rad/s begrenzt. Gut zu sehen ist in der Abbildung links unten, dass sich der Ball um die eigene Achse dreht, denn es wurde keine Regelung um die z-Achse implementiert.} 
+	\label{fig:plot_juggler2}
+\end{figure}
+
+Neben Gazebo gibt es ein weiteres nützliches 3D-Visualisierungs Programm namens RVIZ\cite{rviz_rviz}. RVIZ bietet die Möglichkeit, Sensoren, wie zum Beispiel Kameras oder Laser-Sensoren, zu visualisieren. Zudem lassen sich in RVIZ die Links mit Namen anzeigen und bietet so eine  Möglichkeit, den Roboteraufbau näher zu betrachten. Abbildung \ref{fig:plot_juggler} zeigt den Ballbot dargestellt mittels RVIZ. Zu beachten ist hierbei, dass RVIZ lediglich die Nachrichten von Gazebo bzw. ROS liest und anhand dieser Daten den Roboter mittels Gazebo simuliert. Um in RVIZ den Roboter und den Ball anzuzeigen, ist es nötig, zusätzlich eine Transformations-Nachricht (/tf) zu veröffentlichen. Diese stellt einen Bezug zwischen dem Fixed Frame \textit{world} und dem Hauptlink des Balls bzw. des Ballbots dar\footnote{Das \textit{/tf} Topic sowie die nodes \textit{/odom\_to\_tf\_robot} und \textit{/odom\_to\_tf\_ball} sind in Anhang \ref{fig:rosgraph} dargestellt.}.
 
 \begin{figure}[!htbp]%
 	\centering

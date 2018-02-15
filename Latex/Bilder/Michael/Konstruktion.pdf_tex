@@ -50,7 +50,7 @@
   \makeatother%
   \begin{picture}(1,0.63865959)%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{./Bilder/Michael/Konstruktion.pdf}}%
-    \put(0.19013217,0.22321655){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\alpha$}}}%
+    \put(0.18640849,0.22880209){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$\alpha$}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{./Bilder/Michael/Konstruktion.pdf}}%
     \put(0.60089544,0.31053274){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$r_{S} \cdot \sin{\alpha}$}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{./Bilder/Michael/Konstruktion.pdf}}%
@@ -61,7 +61,7 @@
     \put(0.54162306,0.46614028){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$T_{2}$}}}%
     \put(0.64286784,0.07714435){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$T_{3}$}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{./Bilder/Michael/Konstruktion.pdf}}%
-    \put(0.17855777,0.25800925){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$r_{S} \cdot \sin{\alpha}$}}}%
+    \put(0.1683176,0.26452573){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$r_{S} \cdot \sin{\alpha}$}}}%
     \put(0.23186826,0.19536441){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$r_{S}$}}}%
   \end{picture}%
 \endgroup%

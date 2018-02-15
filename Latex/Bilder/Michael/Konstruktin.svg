@@ -196,10 +196,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="204.29082"
-     inkscape:cy="-56.970784"
+     inkscape:cx="-154.95296"
+     inkscape:cy="232.36265"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g2568"
      showgrid="true"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -225,7 +225,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -245,7 +245,7 @@
          style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.40406391;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
       <rect
          y="101.43439"
-         x="63.5"
+         x="59.063187"
          height="142.64894"
          width="3.9223645"
          id="rect821"
@@ -254,8 +254,8 @@
          inkscape:transform-center-y="-3.4745087"
          inkscape:transform-center-x="3.2072343"
          transform="rotate(42.650087)"
-         y="71.02301"
-         x="212.11781"
+         y="70.632759"
+         x="209.85408"
          height="17.818094"
          width="3.5636189"
          id="rect853"
@@ -263,39 +263,39 @@
       <path
          inkscape:connector-curvature="0"
          id="path857"
-         d="M 65.228206,244.13113 96.203388,211.2542"
-         style="fill:none;stroke:#000000;stroke-width:0.21286422px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker2256)" />
+         d="M 61.903957,244.12678 94.513443,209.61792"
+         style="fill:none;stroke:#000000;stroke-width:0.22376253px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker2256)" />
       <path
          inkscape:connector-curvature="0"
          id="path859"
-         d="M 96.743294,210.49826 25.121603,210.13863"
-         style="fill:none;stroke:#000000;stroke-width:0.36449942px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+         d="M 94.991082,208.64312 27.293989,208.21221"
+         style="fill:none;stroke:#000000;stroke-width:0.41922627;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
       <path
          inkscape:connector-curvature="0"
          id="path861"
-         d="M 65.281811,244.08334 V 94.411356"
+         d="M 61.265173,243.80322 V 94.13124"
          style="fill:none;stroke:#000000;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <circle
          r="3.5636189"
-         cy="97.848785"
-         cx="65.398712"
+         cy="97.650711"
+         cx="61.140167"
          id="path863"
          style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.40406391;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
       <path
          sodipodi:nodetypes="cc"
          inkscape:connector-curvature="0"
          id="path869"
-         d="m 65.281811,224.48344 c 5.862164,-4.64174 11.797896,-4.8602 17.818095,0"
+         d="m 63.601115,222.52262 c 5.862164,-4.64174 11.797896,-4.8602 17.818095,0"
          style="fill:none;stroke:#000000;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker2452)" />
       <text
          id="text867-4"
-         y="219.09039"
-         x="71.771507"
+         y="217.4097"
+         x="70.651047"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.75149155px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.35636187"
          xml:space="preserve"><tspan
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.75149155px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.35636187"
-           y="219.09039"
-           x="71.771507"
+           y="217.4097"
+           x="70.651047"
            id="tspan865-1"
            sodipodi:role="line">$\alpha$</tspan></text>
       <g
@@ -418,13 +418,13 @@
       </g>
       <text
          id="text867-3"
-         y="208.62123"
-         x="68.288757"
+         y="206.66042"
+         x="65.207481"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.75149155px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.35636187"
          xml:space="preserve"><tspan
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.75149155px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.35636187"
-           y="208.62123"
-           x="68.288757"
+           y="206.66042"
+           x="65.207481"
            id="tspan865-4"
            sodipodi:role="line">$r_{S} \cdot \sin{\alpha}$</tspan></text>
       <text

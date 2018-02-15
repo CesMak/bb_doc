@@ -1,9 +1,8 @@
 \chapter{Implementierung} \label{ch:Implementierung}
-In diesem Kapitel wird anfangs die eingesetzte Entwicklungsumgebung für die Programmierung des Regelgesetzes vorgestellt. Daraufhin wird die allgemeine Vorgehensweise der praktischen Umsetzung der Implementierung des Ballbot's erläutert.   
-
+In diesem Kapitel wird zunächst die eingesetzte Entwicklungsumgebung für die Programmierung des Regelgesetzes vorgestellt. Daraufhin wird die allgemeine Vorgehensweise der praktischen Umsetzung der Implementierung des Ballbot's erläutert.   
 
 \section{Entwicklungsumgebung}
-Als Entwicklungsumgebung für den Zustandsregler des Ballbot's wird die ArduinoIDE \footnote{https://www.arduino.cc/en/Main/Software} eingesetzt, die in Abbildung \ref{fig:IDE} abgebildet ist. Die Hauptbestandteile dieser Entwicklungsumgebung umfasst einen Texteditor für das eigentliche Programm, eine Konsole für Fehler- und Kompilierungsmeldungen und einen seriellen Monitor für das Senden und Empfangen von Daten zwischen Computer und Board. Weiterhin eignet sich die Entwicklungsumgebung für den Einsatz, da ab der Version 1.6.4 das eingesetzte OpenCR-Board unterstützt. Allerdings muss die dafür nötige Bibliothek über den Boardverwalter nachinstalliert werden \cite{openCR} \cite{Arduino}.
+Als Entwicklungsumgebung für den Zustandsregler des Ballbot's wird die ArduinoIDE \footnote{https://www.arduino.cc/en/Main/Software} eingesetzt, die in Abbildung \ref{fig:IDE} abgebildet ist. Die Hauptbestandteile dieser Entwicklungsumgebung umfassen einen Texteditor für das eigentliche Programm, eine Konsole für Fehler- und Kompilierungsmeldungen und einen seriellen Monitor für das Senden und Empfangen von Daten zwischen Computer und Board. Weiterhin eignet sich die Entwicklungsumgebung für den Einsatz, da ab der Version 1.6.4 das eingesetzte OpenCR-Board unterstützt wird. Allerdings muss die dafür nötige Bibliothek über den Boardverwalter nachinstalliert werden \cite{openCR} \cite{Arduino}.
 \begin{figure}[htbp]
 	\centering
 		\includegraphics[width=0.70\textwidth]{Bilder/Florian/ArduinoIDE.PNG}
@@ -27,7 +26,12 @@ void loop()	{
 Um die Übersichtlichkeit zu steigern, können Funktionen und Klassendefinitionen in separaten Dateien ausgelagert werden und im Hauptprogramm eingebunden werden. 
 
 \section{Hauptprogramm}
-Die benötigten Daten für die Regelung werden nach dem EVA-Prinzip (Eingabe, Verarbeitung, Ausgabe) verarbeitet. Das bedeutet, dass das OpenCR-Board die benötigten Sensordaten des Gyroskops empfängt, entsprechend dem Regelgesetz aus Gl. \ref{eq:Regelgesetz} verarbeitet und die entsprechenden Stellgrößen an die einzelnen Motoren weiterleitet. Nachfolgend werden die einzelnen Schritte näher erläutert.
+Die benötigten Daten für die Regelung werden nach dem EVA-Prinzip (Eingabe, Verarbeitung, Ausgabe) in einem Interrupt verarbeitet. Das bedeutet, dass das OpenCR-Board die benötigten Sensordaten des Gyroskops empfängt, entsprechend dem Regelgesetz aus Gl. \ref{eq:Regelgesetz} verarbeitet und die entsprechenden Stellgrößen an die einzelnen Motoren weiterleitet. Im Hauptprogramm sind folgende Bibliotheken aus der OpenCR-Bibliothek inkludiert worden:
+\begin{itemize}
+	\item IMU.h : Schnittstelle zur IMU.
+	\item DynamixelSDK.h : Schnittstelle zu den Motoren.
+\end{itemize}
+Nachfolgend wird das Hauptprogramm näher erläutert.
 
 \subsection{Initialisierung Komponenten}
 Für die Implementierung der Zustandsregelung müssen zunächst die inertiale Messeinheit, die Motoren und der Hardware-Interrupt initialisiert werden. Hierzu wird die Setup-Funktion benutzt.
@@ -36,7 +40,7 @@ Bei der Initialisierung der IMU bzw. des gesamten Systems muss darauf geachtet w
 
 Da der Ballbot seine Gleichgewichtslage durch das Aufbringen von entsprechenden Drehmomenten auf den Ball versucht zu halten, stellen diese  gleichzeitig die Stellgröße des Systems dar. Daher müssen die drei Motoren zu Beginn auf die stromgeregelte Betriebsart konfiguriert und für den Einsatz freigeben werden. Die entsprechenden Adressen und Werte sind dem Datenblatt \cite{XM430} zu entnehmen.
 
-Damit die Berechnung des Regelgesetzes nach Gl. \ref{eq:Regelgesetz} zu den Zeitpunkten der Aktualisierungsfrequenz durchgeführt werden kann, wird ein Hardware-Timer initialisiert, der als Interrupt arbeitet und in festgelegten Zeitabständen das Hauptprogramm des Mikrocontrollers unterbricht und eine Ausnahmeroutine aufruft. Die auszuführenden Funktionen der Routine sind für die Berechnung der Stellgröße zuständig. Die Abbildung \ref{fig:ISP} zeigt die Funktionsweise eines Interrupts.   
+Damit die Berechnung des Regelgesetzes nach Gl. \ref{eq:Regelgesetz} zu den Zeitpunkten der Aktualisierungsfrequenz durchgeführt werden kann, wird ein Hardware-Timer initialisiert, der als Interrupt arbeitet und in festgelegten Zeitabständen das Hauptprogramm des Mikrocontrollers unterbricht und einen Interrupt (Ausnahmeroutine) aufruft. Die auszuführenden Funktionen der Routine sind für das Einlesen der Daten und die Berechnung der Stellgröße zuständig. Die Abbildung \ref{fig:ISP} zeigt die Funktionsweise eines Interrupts.   
 
 \begin{figure}[h!]
 \centering
@@ -86,12 +90,12 @@ Damit die Berechnung des Regelgesetzes nach Gl. \ref{eq:Regelgesetz} zu den Zeit
 
 \end{tikzpicture}
 }
-\caption{Funktionsweise des Interrupts und dem damit verbunden Aufrufen der Serviceroutine}
+\caption{Links: Hauptprogramm. Rechts: Aufrufen und Abarbeiten der Serviceroutine}
 \label{fig:ISP}
 \end{figure}
 
 \subsection{Einlesen der Sensordaten}
-Der Zugriff auf die Winkel und Winkelgeschwindigkeiten wird durch das Einbinden der Bibliothek der inertialen Messeinheit hergestellt. Für die weitere Datenverarbeitung müssen die Winkel und Winkelgeschwindigkeiten, die in der Einheit $\circ$ und $1/min$ angegeben sind, mit einer entsprechenden Funktion in die Einheit $\text{rad}$ und $\text{rad/s}$ konvertiert werden. Die Abbildung \ref{fig:Winkel} zeigt die Winkel $\vartheta_{x}$ und die entsprechenden Winkelgeschwindigkeiten $\dot{\vartheta}_{x}$. Aufgrund der höheren Übersichtlichkeit sind diese in $\text{Grad}$ und $\text{Grad/s}$ angeben. Zudem ist zu erkennen, dass die Winkel mit einem Rauschen überlagert sind. 
+Der Zugriff auf die Winkel und Winkelgeschwindigkeiten wird durch das Einbinden der Bibliothek der inertialen Messeinheit hergestellt. Für die weitere Datenverarbeitung müssen die Winkel und Winkelgeschwindigkeiten, die in der Einheit Grad und Umdrehungen pro Minute angegeben sind, mit einer entsprechenden Funktion in die Einheit $\text{rad}$ und $\text{rad/s}$ konvertiert werden. Die Abbildung \ref{fig:Winkel} zeigt die Winkel $\vartheta_{x}$ und die entsprechenden Winkelgeschwindigkeiten $\dot{\vartheta}_{x}$. Aufgrund der höheren Übersichtlichkeit sind diese in $\text{Grad}$ und $\text{Grad/s}$ angeben. Zudem ist zu erkennen, dass die Winkel mit einem Rauschen überlagert sind. Zu beachten ist, dass die eingebundene IMU Bibliothek (IMU.h) intern einen MadgwickAHRS-Filter\footnote{Für weitere Informationen siehe: \url{https://github.com/arduino-libraries/MadgwickAHRS}.} verwendet. Dieser wurde so übernommen. Abbildung \ref{fig:Winkel} zeigt eine beispielhafte Ausgabe dieses Filters bei aufrechter Ruhelage des Roboters.
 
 \begin{figure}[h!]
 \centering
@@ -117,10 +121,10 @@ Mit den berechneten, virtuellen Drehmomenten kann auf die realen Drehmomente für
 \begin{lstlisting}[label=lst:Defines, style = C_colored_smallfont, caption=Zuweisen fester Zahlenwerte für eine kürzerer Berechnungsdauer]
 #define ALPHA                           PI/4
 #define BETA                            0
-#define COS_ALPHA                       cos(ALPHA)       
-#define SIN_ALPHA                       sin(ALPHA)
-#define SIN_BETA                        sin(BETA)
-#define COS_BETA                        cos(BETA)
+#define COS_ALPHA                       0.70710678118      
+#define SIN_ALPHA                       0.70710678118 
+#define SIN_BETA                        0.0
+#define COS_BETA                        1.0
 #define SQRT3                           1.73205080757
 \end{lstlisting}
 
@@ -130,3 +134,35 @@ Das OpenCR-Board kommuniziert mit den Motoren über die RS485-Schnittstelle. Dahe
 Diese Umrechnungskonstanten sind experimentell im Kapitel \ref{sec:Motoren} bestimmt worden. 
 
 Da in der Modellbildung die Reibung zwischen Motor und Ball vernachlässigt wurde, muss ein Offset der Drehmomente eingestellt werden, damit diese Reibung überwunden werden kann \cite{ETHZ}.
+
+\section{Auswertung}
+Nach der Implementierung wurde die Regelung wie in Kapitel \ref{ch:Modellierung} beschrieben am realen Ballbot getestet. Abbildung \ref{fig:ballbot_real} zeigt den Aufbau des Ballbots, wie er auf dem Ball balanciert. Für dieses balancierende Experiment wurden zusätzlich die Winkel der IMU und die realen Drehmomente der Motoren aufgenommen. Diese sind in Abbildung \ref{fig:ballbot_balancieren} dargestellt.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.2]{./Bilder/Florian/ballbot_real.png}
+	\caption{Aufbau des realen Ballbots.}
+	\label{fig:ballbot_real}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.2]{./Bilder/Florian/ballbot_real.png}
+	\caption{Finale Messdaten.}
+	\label{fig:ballbot_balancieren}
+\end{figure}
+
+Das Regelverhalten weist jedoch Grenzen auf. Weitere Optimierungen für ein robusteres Regelverhalten sind:
+
+\begin{itemize}\itemsep-0.5\parsep
+	\item \text{Ball:}\
+	\ Es konnte zwar ein Ball gefunden werden, der einen guten Kompromiss(vgl. Kapitel \ref{sec:ball}) zwischen den gewünschten Eigenschaften bietet, allerdings könnte dieser Kompromiss noch weiter verbessert werden. So kann zum Beispiel mit einer maßgenauen Aluminiumhohlkugel mit Gummibeschichtung die nötige notwendige Steifigkeit und den Reibwert bereitstellen.
+	
+	\item \text{Filterung des Messdaten:}\
+	\ Auch die Filterung hat einen großen Einfluss auf die Regelgüte. Im bestehenden Ballbot ist ein einfacher Mittelwertfilter verwendet worden. Dadurch konnte das Rauschen in einigen Fällen schon um den Faktor 2 reduziert werden, jedoch ist das Rauschen weiterhin im Regelverhalten zu spüren. Eine Verbesserung in diesem Verhalten könnte durch ein besseres Filter beispielsweise ein Kalmanfilter erzielt werden. Dies hätte zudem den Vorteil, dass kein Zeitverzug entstehen würde.
+	
+	\item \text{Modellierung:}\
+	\ Auch bei der Modellierung des Ballbots sind Vereinfachungen getroffen worden. Es hat sich gezeigt, dass die Vereinfachung zulässig sind und eine zweckmäßige Regelung implementiert werden kann. Allerdings werden damit Verkopplungen zwischen der xz- und yz-Ebene vernachlässigt. Diese sind zwar relativ klein, bei Berücksichtigung dieser Verkopplungen könnte jedoch sicherlich ein noch besseres Regelverhalten erzielt werden. Dies könnte durch eine 3D-Regelung erzielen werden. 
+	
+	\item \text{Motoren:}\
+	\ Die im Projekt verwendeten Motoren weisen Drehzahlbegrenzungen auf. Sowohl Experimente als auch Simulation konnten zeigen, dass das System nicht wie vorgesehen stabilisiert werden kann. Durch die Verwendung anderer Motoren, die eine höhere Drehzahlbegrenzung aufweisen kann dieser Effekt umgangen werden.
+\end{itemize}

@@ -6,42 +6,42 @@ Database file #1: ./bib/Literature_flo.bib
 Warning--entry type for "pendel" isn't style-file defined
 --line 29 of file ./bib/Literature_flo.bib
 Warning--entry type for "Arduino" isn't style-file defined
---line 98 of file ./bib/Literature_flo.bib
+--line 99 of file ./bib/Literature_flo.bib
 Warning--entry type for "gazebo_anleitung" isn't style-file defined
---line 107 of file ./bib/Literature_flo.bib
+--line 108 of file ./bib/Literature_flo.bib
 Warning--entry type for "gazebo_code" isn't style-file defined
---line 116 of file ./bib/Literature_flo.bib
+--line 117 of file ./bib/Literature_flo.bib
 Warning--entry type for "gz_adjust_mu" isn't style-file defined
---line 125 of file ./bib/Literature_flo.bib
+--line 126 of file ./bib/Literature_flo.bib
 Warning--entry type for "gz7_fdir1_broken" isn't style-file defined
---line 134 of file ./bib/Literature_flo.bib
+--line 135 of file ./bib/Literature_flo.bib
 Warning--entry type for "moveit_moveit" isn't style-file defined
---line 143 of file ./bib/Literature_flo.bib
+--line 144 of file ./bib/Literature_flo.bib
 Warning--entry type for "openCR" isn't style-file defined
---line 152 of file ./bib/Literature_flo.bib
+--line 153 of file ./bib/Literature_flo.bib
 Warning--entry type for "pla" isn't style-file defined
---line 161 of file ./bib/Literature_flo.bib
+--line 162 of file ./bib/Literature_flo.bib
 Warning--entry type for "plot_juggler" isn't style-file defined
---line 170 of file ./bib/Literature_flo.bib
+--line 171 of file ./bib/Literature_flo.bib
 Warning--entry type for "rqt_multiplot" isn't style-file defined
---line 179 of file ./bib/Literature_flo.bib
+--line 180 of file ./bib/Literature_flo.bib
 Warning--entry type for "rqt_plot" isn't style-file defined
---line 188 of file ./bib/Literature_flo.bib
+--line 189 of file ./bib/Literature_flo.bib
 Warning--entry type for "rviz_rviz" isn't style-file defined
---line 197 of file ./bib/Literature_flo.bib
+--line 198 of file ./bib/Literature_flo.bib
 Warning--entry type for "XM430" isn't style-file defined
---line 206 of file ./bib/Literature_flo.bib
+--line 207 of file ./bib/Literature_flo.bib
 You've used 24 entries,
             2016 wiz_defined-function locations,
-            587 strings with 6563 characters,
-and the built_in function-call counts, 3324 in all, are:
-= -- 309
+            588 strings with 6542 characters,
+and the built_in function-call counts, 3338 in all, are:
+= -- 312
 > -- 65
 < -- 0
 + -- 37
 - -- 13
-* -- 104
-:= -- 426
+* -- 106
+:= -- 429
 add.period$ -- 61
 call.type$ -- 24
 change.case$ -- 0
@@ -50,17 +50,17 @@ cite$ -- 24
 duplicate$ -- 181
 empty$ -- 471
 format.name$ -- 13
-if$ -- 864
+if$ -- 869
 int.to.chr$ -- 0
 int.to.str$ -- 24
 missing$ -- 9
 newline$ -- 112
 num.names$ -- 11
-pop$ -- 159
+pop$ -- 158
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 104
+skip$ -- 105
 stack$ -- 0
 substring$ -- 0
 swap$ -- 58
@@ -71,5 +71,5 @@ type$ -- 0
 warning$ -- 0
 while$ -- 11
 width$ -- 26
-write$ -- 217
+write$ -- 218
 (There were 14 warnings)

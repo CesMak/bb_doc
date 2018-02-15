@@ -3,7 +3,7 @@
 \bibitem{ETHZ}
 {\sc Fankhauser, Peter} \btxandlong{}\ {\sc Corsin Gwerder}: {\em Modeling and
   Control of a Ballbot}.
-\newblock ETH Z{\"u}rich, 2010.
+\newblock ETH Z{\"u}rich, Bachelor Arbeit \btxeditionlong{}, 2010.
 
 \bibitem{umashankar_ballbot}
 {\sc Umashankar~Nagarajan, George~Kantor, Ralph~Hollis}: {\em The ballbot: An
@@ -13,12 +13,12 @@
 \bibitem{kumaga}
 {\sc Kumaga, M.} \btxandlong{}\ {\sc T.~Ochiai}: {\em Development of a robot
   balanced on a ball: Application of passive motion to transport}.
-\newblock \Btxinlong{}\ {\em IEEE International Conference on, pages
+\newblock \Btxinlong{}\ {\em IEEE International Conference on pages
   4106-4111.}, 2009.
 
 \bibitem{pendel}
 {\sc Buchholz, Dr.-Ing.~Michael}: {\em Regelung eines inversen Pendels,
-  Institut f{\"u}r Mess-, Regel- und Mikrotechnik}.
+  Institut f{\"u}r Mess-, Regel- und Mikrotechnik, Universit{\"a}t Ulm.}
 \newblock 29.10.2010.
 
 \bibitem{openCR}
@@ -39,26 +39,24 @@
 \newblock [Zugriff am 06.02.18].
 
 \bibitem{MatPrakt}
-{\sc Konigorski, Professor Dr.-Ing.~U.}: {\em Praktikum MATLAB/Simulink II}.
-\newblock Tu Darmstadt, 2016/2017.
+{\sc Konigorski, U.}: {\em Praktikum MATLAB/Simulink II}.
+\newblock TU Darmstadt, 2016/2017.
 
 \bibitem{MGR}
-{\sc Konigorski, Professor Dr.-Ing.~U.}: {\em Mehrgr{\"o}{\ss}enreglerentwurf
-  im Zustandsraum}.
-\newblock Tu Darmstadt, 2016/2017.
+{\sc Konigorski, U.}: {\em Mehrgr{\"o}{\ss}enreglerentwurf im Zustandsraum}.
+\newblock TU Darmstadt, 2016/2017.
 
 \bibitem{SDRTII}
-{\sc Adamy, Professor Dr.-Ing.~J{\"u}rgen}: {\em Systemdynamik und
-  Regelungstechnik II}.
+{\sc Adamy, J{\"u}rgen}: {\em Systemdynamik und Regelungstechnik II}.
 \newblock Shaker Verlag, 2016.
 
 \bibitem{AUGS}
-{\sc Ament, Professor Dr.-Ing.~Christoph}: {\em Regelungstechnik 2}.
+{\sc Ament, Christoph}: {\em Regelungstechnik 2}.
 \newblock Universit{\"a}t Augsburg, 2017.
 
 \bibitem{M&S}
-{\sc Konigorski, Professor Dr.-Ing.~U.}: {\em Modellbildung und Simulation}.
-\newblock Tu Darmstadt, 2017.
+{\sc Konigorski, U.}: {\em Modellbildung und Simulation}.
+\newblock TU Darmstadt, 2017.
 
 \bibitem{gazebo_code}
 {\em Code des Ballbotprojekts.}
