@@ -1,5 +1,5 @@
 \chapter{Modellbildung und Regelung} \label{ch:Modellierung}
-In diesem Kapitel wird anhand des Vorgehens in \cite{ETHZ} die Modellbildung des Ballbot's erläutert, die für die Auslegung eines geeigneten Regler benötigt wird. Im Anschluss kann mit Hilfe der Simulationsumgebung MATLAB/Simulink sowohl das Modell als auch der Regler verifiziert werden. 
+In diesem Kapitel wird anhand des Vorgehens in \cite{ETHZ} die Modellbildung des Ballbots erläutert, die für die Auslegung eines geeigneten Regler benötigt wird. Im Anschluss kann mit Hilfe der Simulationsumgebung MATLAB/Simulink sowohl das Modell als auch der Regler verifiziert werden. 
 
 \section{Model}\label{sec:Model}
 Für die Modellbildung wird der dreidimensionale Ballbot in die $yz$-, $xz$- und $xy$-Ebenen aufgeteilt, das in Abbildung \ref{fig:2D_Modell} dargestellt ist. In jeder Ebene wird das System vereinfacht als Zusammensetzung von drei starren Körpern, bestehend aus einer Kugel, einem virtuellem Rad und einem Körper betrachtet. Das Modell jeder Ebene besitzt somit zwei Freiheitsgrade, die sich in eine Translation bzw. Rotation des Balles und eine Rotation des Körpers aufteilen lassen \cite{ETHZ}.
@@ -9,7 +9,7 @@ Für die Modellbildung wird der dreidimensionale Ballbot in die $yz$-, $xz$- und 
 	\subfloat[Darstellung der $yz$-Ebene mit Parameter (gleicher Aufbau auch für die $xz$-Ebene]{ \scalebox{.7}{{\input{./Bilder/Florian/Modell_2.pdf_tex} }}}%
 	\qquad \qquad
 	\subfloat[Darstellung der $xz$-Ebene]{ \scalebox{.7}{{\input{./Bilder/Florian/xyPlane.pdf_tex}}}}%
-	\caption{Aufteilung des Ballbot's in drei unabhängigen Ebenen \cite{ETHZ}}%
+	\caption{Aufteilung des Ballbots in drei unabhängigen Ebenen \cite{ETHZ}}%
 	\label{fig:2D_Modell}%
 \end{figure}%\newline
 
@@ -21,7 +21,7 @@ Um möglichst vereinfachte Modelle der drei Ebenen zu erhalten, werden weitere An
 	\item Schnelle Motorendynamik: Für die Gleichgewichtsstabilisierung des Roboters ist es wichtig, dass die Motoren eine schnellere Dynamik als das Gesamtsystem aufweisen. 
 	\item Horizontale Bewegung: Die Ballbewegung wird für die horizontale Bewegung auf einer flachen Oberfläche ohne starken Neigungen eingeschränkt. Somit wird die vertikale Bewegung vernachlässigt. 
 \end{itemize}
-Mit den getroffenen Annahmen ist es möglich, das Modell des Ballbot's aufzustellen. 
+Mit den getroffenen Annahmen ist es möglich, das Modell des Ballbots aufzustellen. 
 
 \section{Minimalkoordinaten}
 Für die Beschreibung der einzelnen Modellebenen werden bestimmte Winkel verwendet, die in Abbildung \ref{fig:2D_Modell} zu sehen sind. Dabei beschreiben die Winkel $\vartheta_{xyz}$ die Orientierung des Roboters, die Winkel $\varphi_{xyz}$ die Orientierung des Balles und die Winkel $\psi_{xyz}$ die Orientierung des virtuellen Rades in den jeweiligen planaren Ebenen. Unter Verwendung folgender minimalen Koordinaten 
@@ -59,7 +59,7 @@ T_{B,yz} &= \frac{1}{2} \cdot m_{A} \cdot ((r_{S} \cdot \dot \varphi_{x})^2 + 2 
 V_{B,yz} &= m_{A} \cdot g \cdot l \cdot \cos(\vartheta_{x})
 \end{align}
 
-Die Gesamtenergie setzt sich aus allen Teilenergien der einzelnen Komponenten des Ballbot's zusammen \cite{ETHZ}. 
+Die Gesamtenergie setzt sich aus allen Teilenergien der einzelnen Komponenten des Ballbots zusammen \cite{ETHZ}. 
 
 \subsection{Externe Kräfte und Drehmomente}
 Die Krafteinwirkung auf das Gesamtsystem erfolgt über das Drehmoment der Motoren. Für die einzelnen Ebenen der Modellbildung wirkt daher über das entsprechende virtuelle Rad ein virtuelles Drehmoment $T_{x,y,z}$. Daher kann die resultierende Krafteinwirkung in zwei Teile aufgeteilt werden. Ein Teil resultiert aus dem Effekt der Motordrehmomente und der andere Teil beschreibt die Krafteinwirkung durch das erzeugte Gegendrehmoment. Die gesamte Krafteinwirkung kann durch die Summe von
@@ -82,7 +82,7 @@ Ein weiterer, wichtiger Punkt in Bezug auf die spätere Simulation und Implementi
 Für die genaue Herleitung der in diesem Kapitel beschriebenen Gleichungen ist auf \cite{ETHZ} verwiesen. 
 
 \section{Bewegungsgleichungen}
-Mit den kinetischen und potentiellen Energien können nun die Bewegungsgleichungen des Ballbot's für die jeweiligen Ebenen mit Hilfe der LAGRANGEschen Gleichungen zweiter Art hergeleitet werden. Als Beispiel wird auch hier die Herleitung für die $yz$-Ebene angegeben.\newline
+Mit den kinetischen und potentiellen Energien können nun die Bewegungsgleichungen des Ballbots für die jeweiligen Ebenen mit Hilfe der LAGRANGEschen Gleichungen zweiter Art hergeleitet werden. Als Beispiel wird auch hier die Herleitung für die $yz$-Ebene angegeben.\newline
 Zunächst wird aus den einzelnen Summen der kinetischen und potentiellen Energien die LANGRANGEsche Funktion gebildet \cite{MatPrakt}. 	
 \begin{align}
 		L = T - V 
@@ -255,11 +255,11 @@ Die inertiale Messeinheit liefert in der Realität verrauschte Signale, die für d
 \begin{figure}[h!]
 \centering
 \input{Bilder/Florian/Daten/Rauschen_Sim.tex}
-\caption{Rauscheinfluss der Winkel $\vartheta_{x}$ und reales Drehmoment $T_{1}$ in der Simulation }
+\caption{Rauscheinfluss auf den Winkel $\vartheta_{x}$ und auf das reale Drehmoment $T_{1}$ in der Simulation }
 \label{fig:Rauschen}
 \end{figure}
 
-Ein weiterer Effekt, der in der Realität auftritt, ist das Auslesen der Sensorsignale, die nur in bestimmten Zeitabständen aktualisiert ausgelesen werden können. Daraus ergibt sich eine Abtastfrequenz, die sich additiv aus der Aktualisierungsfrequenz der IMU, der benötigten Zeit für das Auslesen/ Verarbeiten der Sensordaten und dem Ausgeben der Drehmomente zusammen setzt. Mit der eingesetzten Hardware des Ballbot's ergibt sich eine Abtastfrequenz (engl. Sampling Time) von $f = 200 \,\text{Hz}$.
+Ein weiterer Effekt, der in der Realität auftritt, ist das Auslesen der Sensorsignale, die nur in bestimmten Zeitabständen aktualisiert ausgelesen werden können. Daraus ergibt sich eine Abtastfrequenz, die sich additiv aus der Aktualisierungsfrequenz der IMU, der benötigten Zeit für das Auslesen/ Verarbeiten der Sensordaten und dem Ausgeben der Drehmomente zusammen setzt. Mit der eingesetzten Hardware des Ballbots ergibt sich eine Abtastfrequenz (engl. Sampling Time) von $f = 200 \,\text{Hz}$.
 
 In der Realität ergibt sich durch das Schreiben der Motorenmomente eine Totzeit von $t_{V,Motoren} = 3 \,\text{ms}$. 
 
