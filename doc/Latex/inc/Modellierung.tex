@@ -113,7 +113,7 @@ mit den Substitutionen:
 \section{Zustandsraumdarstellung}
 Bei den hergeleiteten Bewegungsgleichungen für die $yz$-Ebene handelt es sich um nichtlineare Funktionen. Um ein lineares Zustandsraummodell zu erhalten, müssen zunächst die Zustände bzw. der Zustandsvektor festgelegt werden. Mit $\mathbf{x} = \begin{bmatrix}\varphi_{x} \quad \vartheta_{x} \quad  \dot\varphi_{x} \quad \dot\vartheta_{x}\end{bmatrix}^{T}$ können die nichtlinearen Funktionen in folgende Form überführt werden.
 \begin{equation}
-\dot{\mathbf{x}}_{nl} = \begin{bmatrix} \mathbf{q}\\ \dot{\mathbf{q}}\\ \end{bmatrix} = \begin{bmatrix} \dot{\mathbf{q}}\\  \mathbf{M_{x}}^{-1}\cdot (\mathbf{f}_{NP,yz}-(\mathbf{C_{x}}+\mathbf{G_{x}}))\\ \end{bmatrix}
+\dot{\mathbf{x}}_{nl} = \begin{bmatrix} \dot{\mathbf{q}}\\ \ddot{\mathbf{q}}\\ \end{bmatrix} = \begin{bmatrix} \dot{\mathbf{q}}\\  \mathbf{M_{x}}^{-1}\cdot (\mathbf{f}_{NP,yz}-(\mathbf{C_{x}}+\mathbf{G_{x}}))\\ \end{bmatrix}
 \end{equation}
 
 Das Ziel dieser Arbeit ist das Auslegen eines Reglers, damit der Roboter innerhalb eines kleinen Bereiches um den Arbeitspunkt $\mathbf{x}_{0}= \left[0 \quad 0 \quad 0 \quad 0\right]^{T}$ auf dem einen Ball balanciert. Hierzu muss zunächst das nichtlineare Modell um den Arbeitspunkt mit der Taylor-Reihenentwicklung linearisiert werden, um die lineare Zustandsraumdarstellung 
@@ -200,7 +200,7 @@ Die Untersuchung der Steuer- und Beobachtbarkeit erfolgt in beiden Modelle mit d
 
 Der Entwurf eines geeigneten Reglers zur Stabilisierung der Gleichgewichtslage des Roboters wird im Folgenden auf das reduzierte Model beschränkt. Für die beiden Modelle der $yz$- und $xz$-Ebene wird jeweils ein linear-quadratischer Zustandsregler (LQR) ausgelegt, dessen Funktionsweise in Abbildung \ref{fig:LQR1} dargestellt ist und auf der Minimierung des Gütemaß
 \begin{equation}
-	J = \int_{0}^{\infty} \mathbf{x}^{T}(t)\cdot \mathbf{Q} \cdot \mathbf{x}(t) + \mathbf{u}^{T}(t)\cdot \mathbf{R} \cdot \mathbf{u}(t)
+	J = \int_{0}^{\infty} \mathbf{x}^{T}(t)\cdot \mathbf{Q} \cdot \mathbf{x}(t) + \mathbf{u}^{T}(t)\cdot \mathbf{R} \cdot \mathbf{u}(t) dt
 \end{equation}
 durch einen vorgegebenen Stellgrößenverlauf basiert. In das Güteintegral geht quadratisch der Trajektorienverlauf $\mathbf{x}(t)$ und der Stellgrößenverlauf $\mathbf{u}(t)$ ein. Dabei handelt es sich bei der symmetrischen und positiv semidefiniten Matrix $\mathbf{Q}$ um eine Gewichtungsmatrix für den Trajektorienverlauf. Für ein rasches Einschwingen eines bestimmten Zustandes ist dieser entsprechend mit einem größeren Gewicht in der Gewichtungsmatrix zu versehen. Die symmetrische und positiv definite Matrix $\mathbf{R}$ gewichtet dagegen die Stellgröße. Müssen Stellgrößenbeschränkungen berücksichtigt werden, sind die entsprechenden Stellgrößen in dieser Matrix mit größeren Gewichten zu versehen. Wird insgesamt die Gewichtungsmatrix $\mathbf{Q}$ im Verhältnis zur der Gewichtungsmatrix $\mathbf{R}$ vergrößert, führt das zu einem schnelleren Einschwingen der Zustände mit höheren Stellgrößen. Im umgekehrten Fall stabilisiert sich das System langsamer, da die Höhe der Stellgrößen abnimmt \cite{SDRTII}\cite{AUGS}.
 

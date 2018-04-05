@@ -14,7 +14,7 @@ Für den Entwurf eines auf einem Ball balancierenden Roboters kann das System zur
         \begin{align} \label{eq:InvPendelThetaDotDot}
             \ddot{\vartheta} &= \frac{l\cdot m}{I}\cdot [-\cos{\vartheta} \cdot \ddot{x}_{w}+g\cdot  \sin{\vartheta}] ,\\   
             \label{eq:InvPendelXDotDot}
-            \ddot{x}_w &= \frac{F_{motor}-F_{Reib}}{M+m} + \frac{m\cdot l}{M+m}\dot{\vartheta}^2 \cdot \sin{\vartheta} - \ddot{\vartheta} . 
+            \ddot{x}_w &= \frac{F_{motor}-F_{Reib}}{M+m} + \frac{m\cdot l}{M+m}\dot{\vartheta}^2 \cdot \sin{\vartheta} - \ddot{\vartheta}\cdot cos(\vartheta) . 
         \end{align}
 
 
